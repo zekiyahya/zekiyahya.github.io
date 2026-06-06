@@ -291,20 +291,88 @@
             color: #ffffff;
             border-bottom: 1px solid #ffffff;
         }
+   <!-- كسر الطوق البرمجي لإجبار الأفلام على النزول لأسفل الصفحة بالكامل -->
+<div style="display: block !important; clear: both !important; position: relative !important; float: none !important; width: 100% !important; margin: 0 !important; padding: 0 !important;">
+
+    <style>
+        /* إجبار الحاوية على اتخاذ كامل عرض الشاشة والتموضع في سطر جديد مستقل */
+        .fixed-portfolio-section {
+            display: block !important;
+            clear: both !important;
+            float: none !important;
+            width: 100% !important;
+            max-width: 800px !important;
+            margin: 100px auto 0 auto !important; /* مسافة أمان علوية لفصل الفيلم عن روابطك العامة */
+            padding: 40px 20px !important;
+            font-family: 'Courier New', Courier, monospace !important;
+            text-align: center !important;
+            box-sizing: border-box !important;
+        }
+        .fixed-film-card {
+            border-top: 1px solid #222 !important;
+            padding-top: 60px !important;
+            margin-bottom: 80px !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .fixed-poster {
+            max-width: 280px !important;
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            margin: 0 auto 30px auto !important;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8) !important;
+        }
+        .fixed-title {
+            color: #ffffff !important;
+            font-size: 1.4rem !important;
+            letter-spacing: 3px !important;
+            margin: 0 0 15px 0 !important;
+            display: block !important;
+        }
+        .fixed-statement {
+            color: #888888 !important;
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            max-width: 620px !important;
+            margin: 0 auto 30px auto !important;
+            text-align: justify !important;
+            text-align-last: center !important;
+            display: block !important;
+        }
+        .fixed-seals {
+            margin-top: 25px !important;
+            display: block !important;
+        }
+        .fixed-seals a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-size: 0.85rem !important;
+            letter-spacing: 2px !important;
+            margin: 0 15px !important;
+            opacity: 0.5 !important;
+            transition: opacity 0.3s ease !important;
+            border-bottom: 1px dashed #333 !important;
+            padding-bottom: 2px !important;
+            display: inline-block !important;
+        }
+        .fixed-seals a:hover {
+            opacity: 1 !important;
+            border-bottom: 1px solid #ffffff !important;
+        }
     </style>
 
-    <div class="film-wrapper-universal">
+    <div class="fixed-portfolio-section">
         <!-- بطاقة فيلم: CASE 0: TOMORROW -->
-        <div class="film-card-universal">
-            <img src="CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow" class="film-poster-universal">
+        <div class="fixed-film-card">
+            <img src="CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow" class="fixed-poster">
             
-            <h2 class="film-title-universal">CASE 0: TOMORROW (2026)</h2>
-            
-            <p class="film-statement-universal">
+            <h2 class="fixed-title">CASE 0: TOMORROW (2026)</h2>
+            <p class="fixed-statement">
                 A cinematic prosecution of time. Moving beyond conventional narrative, this project materializes the bureaucratic deferral of existence—a visual translation of Kafkaesque nightmare and the Nietzschean dread of the modern industrial soul. By stripping the narrative of dialogue and musical comfort, the viewer is forced to physically endure the erosion of waiting, transforming the screen into an existential purgatory.
             </p>
             
-            <div class="film-seals-universal">
+            <div class="fixed-seals">
                 <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
                 <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
             </div>
@@ -313,6 +381,5 @@
     </div>
 
 </div>
-<!-- نهاية قسم المجلد الرقمي المطور للأفلام -->
 </body>
 </html>
