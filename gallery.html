@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeki Yahya — Visual Archives</title>
+    <style>
+        /* Pure Cinematic Dark Aesthetic */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 13px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        header a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 10px;
+            letter-spacing: 2px;
+            transition: color 0.4s;
+        }
+        header a:hover { color: #555; }
+
+        /* Experimental Film Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            background: #030303;
+            padding-bottom: 15px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(100%) contrast(115%);
+            opacity: 0.3;
+            transition: all 0.8s ease;
+        }
+
+        /* Tarkovskian atmosphere: revealing contrast slowly on hover */
+        .gallery-item:hover img {
+            filter: grayscale(50%) contrast(100%);
+            opacity: 0.7;
+        }
+
+        .img-caption {
+            font-size: 9px;
+            color: #252525;
+            margin-top: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.5s;
+        }
+        .gallery-item:hover .img-caption {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Visual Archives</h1>
+        <a href="index.html">[ RETURN TO SILENCE ]</a>
+    </header>
+
+    <main class="gallery-grid">
+        
+        <div class="gallery-item">
+            <img src="CASE0TOMORROW-poster.jpg" alt="Zeki Yahya - CASE 0 : TOMORROW - Official Movie Poster">
+            <div class="img-caption">CASE 0 : TOMORROW (2026) — Poster</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Zeki Yahya - Archaeology of Unborn Faces - Experimental Silent Cinema">
+            <div class="img-caption">Archaeology of Unborn Faces — Frame</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="poster-the-great-city.png" alt="Zeki Yahya - The Great City - Cinematic Inquiry">
+            <div class="img-caption">The Great City — Ontology of Truth</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="poster-the-illusion-industry.jpg" alt="Zeki Yahya - The Illusion Industry - Documentary Film Structure">
+            <div class="img-caption">The Illusion Industry — Archive</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya - Independent Film Director & Creative Director Portrait">
+            <div class="img-caption">Director Portrait — Personal Archive</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Zeki_Yahya_Cinematography.png" alt="Zeki Yahya - Cinematic Visual Vision and Composition">
+            <div class="img-caption">Cinematography Still — Perspective I</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Zeki_Yahya_Cinematography1.jpg" alt="Zeki Yahya - Cinematic Textures and Lighting Patterns">
+            <div class="img-caption">Cinematography Still — Perspective II</div>
+        </div>
+
+    </main>
+
+</body>
+</html>
