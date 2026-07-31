@@ -35,3 +35,10 @@ The following represents a closed system written in Digital Epigraphy. The metad
         </𒋞>
     </𒂍>
 </𒋼>
+## Concept & Creative Direction
+
+Conceived as a philosophical manifesto in code, Digital Epigraphy explores the tension between deep time and digital impermanence. It stands as a silent monolith within the digital noise, inviting the viewer to contemplate the ruins of the internet before they even occur.
+
+* **Creative Direction:** Zeki Yahya
+* **Year:** 2026
+* **Status:** Conceptual / Live Art
