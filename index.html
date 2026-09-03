@@ -265,6 +265,24 @@
             display: inline-block;
             margin-bottom: 25px;
         }
+        .hero-banner {
+            width: 100%;
+            max-width: 650px;
+            margin: 40px auto 10px auto;
+            text-align: center;
+        }
+        .hero-banner img {
+            width: 100%;
+            height: auto;
+            opacity: 0.45;
+            filter: grayscale(85%) contrast(115%);
+            border-radius: 4px;
+            border: 1px solid #161616;
+            transition: opacity 0.5s ease;
+        }
+        .hero-banner img:hover {
+            opacity: 0.8;
+        }
         h1 {
             font-size: 2.5rem;
             letter-spacing: 6px;
@@ -377,7 +395,10 @@
     </style>
 </head>
 <body>
-
+<div class="hero-banner">
+        <img src="Zeki_Yahya_Cinematography1.jpg" alt="Filmmaker Zeki Yahya - Official Knowledge Panel Hero Image">
+    </div>
+    
     <div class="profile-container">
         <div style="text-align: center;">
             <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya - Filmmaker and Independent Researcher" class="profile-portrait">
