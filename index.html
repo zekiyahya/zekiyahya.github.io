@@ -374,6 +374,90 @@
             opacity: 1;
             border-bottom: 1px solid #ffffff;
         }
+        .research-section {
+            width: 100%;
+            max-width: 800px;
+            margin: 80px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-separator {
+            text-align: center;
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #111;
+            padding-bottom: 15px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .article-card {
+            border: 1px solid #111;
+            background: #020202;
+            padding: 25px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 160px;
+            transition: all 0.5s ease;
+        }
+
+        .article-card:hover {
+            border-color: #2a2a2a;
+            background: #050505;
+        }
+
+        .article-meta {
+            font-size: 9px;
+            color: #444;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .article-title {
+            font-size: 13px;
+            color: #888;
+            margin: 0 0 15px 0;
+            line-height: 1.4;
+            transition: color 0.5s ease;
+        }
+
+        .article-card:hover .article-title {
+            color: #fff;
+        }
+
+        .article-excerpt {
+            font-size: 10px;
+            color: #000; 
+            line-height: 1.6;
+            margin-bottom: 15px;
+            transition: color 0.5s ease;
+        }
+
+        .article-card:hover .article-excerpt {
+            color: #555;
+        }
+
+        .article-link {
+            font-size: 9px;
+            color: #222;
+            letter-spacing: 1px;
+            margin-top: auto;
+            transition: color 0.5s ease;
+        }
+
+        .article-card:hover .article-link {
+            color: #888;
+        }
     </style>
 </head>
 <body>
@@ -469,6 +553,38 @@
                 <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
             </div>
         </article>
+
+        <!-- بداية قسم الأبحاث -->
+    <div class="research-section">
+        <div class="section-separator">TEXTS & RESEARCH</div>
+        
+        <div class="articles-grid">
+            
+            <!-- المقال الأول -->
+            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
+                <div>
+                    <div class="article-meta">2026 — PhilPapers</div>
+                    <h3 class="article-title">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3>
+                    <div class="article-excerpt">A cinematic and philosophical manifesto exploring "Melancholic Realism" as a disruptive visual methodology in the age of synthetic and digital cinema. Drawing deep phenomenological parallels to Andrei Tarkovsky’s 1983 masterpiece 'Nostalghia', this paper examines the weaponization of physical friction, environmental decay, and agonizing duration against contemporary hyperreal perfection. It outlines a deliberate aesthetic sabotage executed within the digital grading suite to reclaim the existential gravity and ontological truth of the cinematic image.
+</div>
+                </div>
+                <div class="article-link">[ https://philpapers.org/rec/YAHMRI ]</div>
+            </a>
+
+            <!-- المقال الثاني -->
+            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
+                <div>
+                    <div class="article-meta">2026 — PhilPapers</div>
+                    <h3 class="article-title">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3>
+                    <div class="article-excerpt">This article examines the epistemological crisis of the digital epoch, arguing that the modern media apparatus controls society not by suppressing truth, but by mass-producing hyper-personalized algorithmic illusions. Utilizing Martin Scorsese’s Shutter Island (2010) as a primary metaphor, the essay parallels the immersive, manufactured reality of Ashecliffe Hospital with contemporary digital echo chambers. To deconstruct this cognitive prison, the article outlines the directorial methodology behind the documentary The Illusion Industry (2026). By adopting a claustrophobic visual language and employing the camera as an "anti-algorithm," the film exposes the semiotics of digital deception. Ultimately, the essay poses a critical existential question: whether the modern digital citizen possesses the courage to awaken from a meticulously curated simulation.
+</div>
+                </div>
+                <div class="article-link">[ https://philpapers.org/rec/YAHSRS ]</div>
+            </a>
+
+        </div>
+    </div>
+    <!-- نهاية قسم الأبحاث -->
 
     </section> 
 
