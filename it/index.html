@@ -28,11 +28,15 @@
 
     <meta property="og:title" content="Zeki Yahya | Cineasta & Ricercatore Indipendente">
     <meta property="og:description" content="Esplora il portfolio cinematografico di Zeki Yahya. Film sperimentali indipendenti incentrati su profondità filosofica, strutture distopiche e semiotica visiva.">
-    <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Director.1984.jpg">
+    <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
     <meta property="og:url" content="https://zekiyahya.github.io/it/">
     <meta property="og:type" content="profile">
 
-   <script type="application/ld+json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -41,7 +45,7 @@
       "@id": "https://zekiyahya.github.io/#person",
       "name": "Zeki Yahya",
       "alternateName": "زكي يحيى",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Director.1984.jpg",
+      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
       "jobTitle": "Cineasta & Ricercatore Indipendente",
       "description": "Cineasta e ricercatore indipendente con focus sul cinema sperimentale, filosofico e d'avanguardia.",
       "url": "https://zekiyahya.github.io",
@@ -75,8 +79,8 @@
         "https://www.crew-united.com/en/Zeki-Yahya_904411.html",
         "https://medium.com/@zekiyahya40",
         "https://en.wikiquote.org/wiki/Zeki_Yahya",
-       "https://guidedoc.tv/people/zeki-yahya-98982/",
-       "https://philpeople.org/profiles/zeki-yahya",
+        "https://guidedoc.tv/people/zeki-yahya-98982/",
+        "https://philpeople.org/profiles/zeki-yahya",
         "https://muckrack.com/zeki-yahya-1"
       ],
       "knowsAbout": [
@@ -91,7 +95,7 @@
         "Narrative distopiche",
         "Iperrealtà e analisi semiotica",
         "Direzione visiva",
-        "Indagine ontologica cinematografica",
+        "Indagazione ontologica cinematografica",
         "Nichilismo post-industriale nel cinema",
         "Cinematografia dello spazio latente",
         "Iperrealtà baudrillardiana nel cinema",
@@ -234,154 +238,334 @@
     }
   ]
 }
-</script>
+    </script>
 
     <style>
+        :root {
+            --bg-color: #030303;
+            --text-main: #e5e5e5;
+            --text-dim: #888888;
+            --accent: #222222;
+        }
+        
         body {
-            background-color: #050505;
-            color: #e5e5e5;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .section-separator, .director-manifesto strong {
+            font-family: 'Amiri', serif;
+        }
+
+        /* --- HEADER & HERO --- */
+        .header-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-        .profile-container {
-            max-width: 650px;
-            padding: 60px 20px 40px 20px;
+            justify-content: flex-start;
+            min-height: auto;
             text-align: center;
-            box-sizing: border-box;
+            padding: 0 0 40px 0;
+            border-bottom: 1px solid var(--accent);
         }
-        .profile-portrait {
-            width: 160px;
-            height: 240px;
-            border-radius: 4px;
-            object-fit: cover;
-            filter: grayscale(100%) contrast(115%);
-            border: 1px solid #222;
-            display: inline-block;
-            margin-bottom: 25px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 6px;
-            margin: 0 0 25px 0;
-            color: #ffffff;
-            font-weight: 300;
-        }
-        .profile-bio {
-            font-size: 0.95rem;
-            line-height: 1.9;
-            color: #8c8c8c;
-            margin: 0 0 45px 0;
-            letter-spacing: 0.5px;
-        }
-        .global-links {
-            display: block;
-            margin-bottom: 40px;
-        }
-        .global-links a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 12px 10px 12px;
-            font-size: 0.85rem;
-            letter-spacing: 1.5px;
-            border-bottom: 1px dashed #333;
-            transition: color 0.3s ease, border-color 0.3s ease;
-            display: inline-block;
-        }
-        .global-links a:hover {
-            color: #8c8c8c;
-            border-bottom-color: #ffffff;
-        }
-        .director-manifesto {
-            max-width: 650px;
-            margin: 0 auto 40px auto;
-            padding: 20px 0;
-            border-top: 1px dashed #222;
-            border-bottom: 1px dashed #222;
-            color: #555555;
-            font-size: 0.85rem;
-            line-height: 1.8;
-            text-align: justify;
-            text-align-last: center;
-        }
-        .director-manifesto strong {
-            color: #888;
-            letter-spacing: 2px;
-            font-weight: normal;
-        }
-        .portfolio-section {
-            width: 100%;
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        .film-card {
-            border-top: 1px solid #161616;
-            padding-top: 60px;
-            margin-bottom: 80px;
-            text-align: center;
-            width: 100%;
-        }
-        .film-poster {
-            max-width: 280px;
+
+        .hero-banner {
             width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto 35px auto;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
-            border: 1px solid #111;
+            margin: 0 auto 40px auto;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
         }
-        .film-title {
-            color: #ffffff;
-            font-size: 1.4rem;
-            letter-spacing: 3px;
-            margin: 0 0 20px 0;
-            font-weight: bold;
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 8px;
+            margin: 0 0 15px 0;
+            font-weight: 400;
             text-transform: uppercase;
         }
-        .film-statement {
-            color: #888888;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            max-width: 620px;
-            margin: 0 auto 35px auto;
-            text-align: justify;
-            text-align-last: center;
+
+        .profile-bio {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
         }
-        .film-seals {
-            margin-top: 25px;
-            padding: 0;
+
+        .global-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-        .film-seals a {
-            color: #ffffff;
+
+        .global-links a {
+            color: var(--text-main);
             text-decoration: none;
             font-size: 0.85rem;
             letter-spacing: 2px;
-            margin: 0 15px;
-            opacity: 0.5;
-            transition: opacity 0.3s ease, border-color 0.3s ease;
-            border-bottom: 1px dashed #333;
-            padding-bottom: 3px;
-            display: inline-block;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
         }
+
+        .global-links a:hover {
+            color: var(--text-dim);
+            border-bottom: 1px solid var(--text-dim);
+        }
+
+        /* --- MANIFESTO --- */
+        .manifesto-section {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        .director-manifesto {
+            color: #999;
+            font-size: 1.05rem;
+            line-height: 2.2;
+            text-align: justify;
+            text-align-last: center;
+        }
+
+        .director-manifesto strong {
+            display: block;
+            color: #fff;
+            letter-spacing: 3px;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        /* --- PORTFOLIO ZIG-ZAG LAYOUT --- */
+        .portfolio-section {
+            max-width: 1400px;
+            margin: 100px auto;
+            padding: 0 40px;
+        }
+
+        .film-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            margin-bottom: 120px;
+            flex-direction: row;
+        }
+
+        /* Alternating Layout */
+        .film-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .film-image-container {
+            flex: 1;
+            max-width: 45%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .film-poster {
+            max-width: 100%;
+            max-height: 75vh;
+            width: auto;
+            height: auto;
+            display: block;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+            border: 1px solid #111;
+            transition: transform 0.5s ease;
+            object-fit: contain;
+        }
+
+        .film-poster:hover {
+            transform: scale(1.02);
+        }
+
+        .film-content {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .film-title {
+            color: #ffffff;
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin: 0 0 25px 0;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .film-statement {
+            color: var(--text-dim);
+            font-size: 1rem;
+            line-height: 1.9;
+            margin: 0 0 30px 0;
+            text-align: justify;
+            width: 100%;
+        }
+
+        .film-seals {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .film-seals a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+
         .film-seals a:hover {
             opacity: 1;
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #fff;
+        }
+
+        .film-seals span {
+            color: #666;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            align-self: flex-end;
+        }
+
+        /* --- RESEARCH SECTION --- */
+        .research-section {
+            max-width: 1400px;
+            margin: 120px auto 60px auto;
+            padding: 0 40px;
+        }
+
+        .section-separator {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 6px;
+            color: #555; 
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--accent); 
+            padding-bottom: 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .article-card {
+            border: 1px solid #111;
+            background: #020202;
+            padding: 35px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s ease;
+        }
+
+        .article-card:hover {
+            border-color: #333;
+            transform: translateY(-5px);
+        }
+
+        .article-meta {
+            font-size: 10px;
+            color: #666; 
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-family: monospace;
+        }
+
+        .article-title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 0 0 20px 0;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            font-size: 0.9rem;
+            color: var(--text-dim); 
+            line-height: 1.8;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .article-link {
+            font-size: 10px;
+            color: #555; 
+            letter-spacing: 1px;
+            font-family: monospace;
+            transition: color 0.3s ease;
+        }
+
+        .article-card:hover .article-link {
+            color: #fff;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid var(--accent);
+            margin-top: 80px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 11px;
+            letter-spacing: 4px;
+            transition: color 0.5s ease;
+        }
+
+        footer a:hover {
+            color: #888;
+        }
+
+        /* --- RESPONSIVE MOBILE --- */
+        @media (max-width: 900px) {
+            .film-card, .film-card:nth-child(even) {
+                flex-direction: column;
+                gap: 40px;
+                margin-bottom: 80px;
+            }
+            .film-image-container, .film-content {
+                max-width: 100%;
+            }
+            .film-poster {
+                max-height: 60vh;
+            }
+            .film-statement {
+                text-align-last: center;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
 <body>
-
-    <div class="profile-container">
-        <div style="text-align: center;">
-            <img src="../Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya - Filmmaker and Independent Researcher" class="profile-portrait">
-        </div>
+    
+    <header class="header-section">
+        <img src="../Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - Cineasta e Ricercatore Indipendente" class="hero-banner">
         <h1>ZEKI YAHYA</h1>
         <p class="profile-bio">Cineasta & Ricercatore Indipendente.<br>Incentrato sul cinema filosofico, distopico e d'avanguardia.</p>
         
@@ -393,8 +577,10 @@
             <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
             <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
         </div>
+    </header>
 
-       <div class="director-manifesto">
+    <section class="manifesto-section">
+        <div class="director-manifesto">
             <strong>L'ESCAVAZIONE CINEMATOGRAFICA: UN MANIFESTO DEL REGISTA</strong><br><br>
             Il cinema, per me, non è semplicemente un mezzo per raccontare storie; è un atto di escavazione spirituale e filosofica. È la ricerca di visualizzare il non manifestato, catturando le lotte silenziose dell'esistenza prima che prendano forma.<br><br>
             La mia indagine cinematografica è profondamente radicata nella ricerca dell'ontologia della verità. Attingendo alla profonda pesantezza esistenziale della filosofia nietzschiana e alla quiete meditativa e malinconica della tradizione tarkovskiana, mi avvicino allo schermo non come a una tela, ma come a uno specchio che riflette le rovine dell'anima moderna.<br><br>
@@ -402,78 +588,127 @@
             Con la mia ultima opera, "Archaeology of Unborn Faces", mi immergo nello «spazio latente» dell'Intelligenza Artificiale. Non considero gli algoritmi semplicemente come strumenti, ma come un «purgatorio digitale» in cui ricordi mai esistiti e identità non ancora nate lottano atrocemente per manifestarsi. Attraverso un obiettivo cupo e monocromatico e la potenza grezza del cinema muto, cerco di dissotterrare questi volti non nati, chiedendomi cosa significhi essere umani in un'epoca in cui le macchine possono sognare il dolore umano.<br><br>
             Faccio film per documentare il collasso silenzioso e le resurrezioni mute dello spirito umano. Il mio lavoro è un invito a guardare nell'abisso, non con paura, ma con il profondo desiderio di comprendere l'architettura delle nostre stesse illusioni.
         </div>
-    </div>
+    </section>
 
     <section class="portfolio-section">
 
         <article class="film-card">
-            <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film Directed by Zeki Yahya" class="film-poster">
-            <h2 class="film-title">CASE 0: TOMORROW (2026)</h2>
-            <p class="film-statement">
-                Un inseguimento cinematografico del tempo. Andando oltre la narrazione convenzionale, questo progetto materializza il rinvio burocratico dell'esistenza — una traduzione visiva dell'incubo kafkiano e dell'angoscia nietzschiana dell'anima industriale moderna. Spogliando il racconto dai dialoghi e dal conforto musicale, lo spettatore è costretto a subire fisicamente l'erosione dell'attesa, trasformando lo schermo in un purgatorio esistenziale.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
+            <div class="film-image-container">
+                <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film Directed by Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">CASE 0: TOMORROW (2026)</h2>
+                <p class="film-statement">
+                    Un inseguimento cinematografico del tempo. Andando oltre la narrazione convenzionale, questo progetto materializza il rinvio burocratico dell'esistenza — una traduzione visiva dell'incubo kafkiano e dell'angoscia nietzschiana dell'anima industriale moderna. Spogliando il racconto dai dialoghi e dal conforto musicale, lo spettatore è costretto a subire fisicamente l'erosione dell'attesa, trasformando lo schermo in un purgatorio esistenziale.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema by Director Zeki Yahya" class="film-poster">
-            <h2 class="film-title">ARCHAEOLOGY OF UNBORN FACES (2026)</h2>
-           <p class="film-statement">
-                Una profonda escavazione cinematografica dello «spazio latente» dell'IA. Superando la critica dell'inganno digitale, questo progetto indaga l'ontologia stessa dell'esistenza sintetica. Abbracciando la filosofia di Tarkovskij di scolpire il tempo, le riprese atrocemente lente e il pesante silenzio costringono lo spettatore a sopportare il peso fisico del tempo all'interno di una macchina che non comprende la mortalità. I volti impeccabili che emergono non sono riflessi della realtà, ma un'«iperrealtà» baudrillardiana che nasconde l'assenza di un'origine.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">Letterboxd</a>
+            <div class="film-image-container">
+                <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema by Director Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">ARCHAEOLOGY OF UNBORN FACES (2026)</h2>
+                <p class="film-statement">
+                    Una profonda escavazione cinematografica dello «spazio latente» dell'IA. Superando la critica dell'inganno digitale, questo progetto indaga l'ontologia stessa dell'esistenza sintetica. Abbracciando la filosofia di Tarkovskij di scolpire il tempo, le riprese atrocemente lente e il pesante silenzio costringono lo spettatore a sopportare il peso fisico del tempo all'interno di una macchina che non comprende la mortalità. I volti impeccabili che emergono non sono riflessi della realtà, ma un'«iperrealtà» baudrillardiana che nasconde l'assenza di un'origine.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">Letterboxd</a>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project Directed by Zeki Yahya" class="film-poster">
-            <h2 class="film-title">THE GREAT CITY (2026)</h2>
-            <p class="film-statement">
-                Ispirato al capolavoro filosofico di Friedrich Nietzsche, "Così parlò Zarathustra", questo progetto d'avanguardia funge da oscuro specchio cinematografico della metropoli contemporanea. Seziona visivamente l'agghiacciante profezia dell'«Ultimo Uomo» — la manifestazione suprema del nichilismo spirituale e della decadenza culturale all'interno della folla moderna. Attraverso un prisma sperimentale intransigente, il film spoglia il romanticismo del progresso urbano per esporre l'essenza vuota di una società intrappolata nella ripetizione meccanica.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">Letterboxd</a>
-                <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank" style="color: #ffffff; text-decoration: none; border-bottom: 1px dashed #333;">MUBI</a>
-                <span style="color: #8c8c8c; font-family: monospace; font-size: 10px; letter-spacing: 1px; margin-left: 10px;">[ Lift-Off 2026 — Official Selection ]</span>
+            <div class="film-image-container">
+                <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project Directed by Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">THE GREAT CITY (2026)</h2>
+                <p class="film-statement">
+                    Ispirato al capolavoro filosofico di Friedrich Nietzsche, "Così parlò Zarathustra", questo progetto d'avanguardia funge da oscuro specchio cinematografico della metropoli contemporanea. Seziona visivamente l'agghiacciante profezia dell'«Ultimo Uomo» — la manifestazione suprema del nichilismo spirituale e della decadenza culturale all'interno della folla moderna. Attraverso un prisma sperimentale intransigente, il film spoglia il romanticismo del progresso urbano per esporre l'essenza vuota di una società intrappolata nella ripetizione meccanica.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">Letterboxd</a>
+                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank">MUBI</a>
+                    <span>[ Lift-Off 2026 — Official Selection ]</span>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film Directed by Zeki Yahya" class="film-poster">
-            <h2 class="film-title">THE ILLUSION INDUSTRY (2026)</h2>
-            <p class="film-statement">
-                Un'intensa critica cinematografica dell'iperrealtà e dell'inganno digitale. Questo progetto esplora i confini sfumati tra l'autentica esistenza umana e le realtà simulate, mettendo in discussione le narrazioni fabbricate che dominano la nostra cultura visiva. Spogliato dalle superficiali convenzioni cinematografiche, il film sfida lo spettatore a sezionare l'ontologia dell'immagine e la produzione sistematica dell'illusione nel mondo moderno.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">Letterboxd</a>
-                <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank" style="color: #ffffff; text-decoration: none; border-bottom: 1px dashed #333;">MUBI</a>
-                <span style="color: #8c8c8c; font-family: monospace; font-size: 10px; letter-spacing: 1px; margin-left: 10px;">[ Lift-Off 2026 — Official Selection ]</span>
+            <div class="film-image-container">
+                <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film Directed by Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">THE ILLUSION INDUSTRY (2026)</h2>
+                <p class="film-statement">
+                    Un'intensa critica cinematografica dell'iperrealtà e dell'inganno digitale. Questo progetto esplora i confini sfumati tra l'autentica esistenza umana e le realtà simulate, mettendo in discussione le narrazioni fabbricate che dominano la nostra cultura visiva. Spogliato dalle superficiali convenzioni cinematografiche, il film sfida lo spettatore a sezionare l'ontologia dell'immagine e la produzione sistematica dell'illusione nel mondo moderno.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">Letterboxd</a>
+                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank">MUBI</a>
+                    <span>[ Lift-Off 2026 — Official Selection ]</span>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - Film sperimentale diretto da Zeki Yahya" class="film-poster">
-            <h2 class="film-title">PAINTING (2024)</h2>
-            <p class="film-statement">
-                Un viaggio visivo contemplativo nelle profondità della solitudine e della routine quotidiana, dove 'il dipinto' si trasforma da mero oggetto in uno specchio che riflette la lotta umana tra il desiderio di appartenenza e l'amarezza dell'alienazione. 'Painting' è un'esperienza cinematografica che esplora il divario tra il sé e l'altro.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
+            <div class="film-image-container">
+                <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - Film sperimentale diretto da Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">PAINTING (2024)</h2>
+                <p class="film-statement">
+                    Un viaggio visivo contemplativo nelle profondità della solitudine e della routine quotidiana, dove 'il dipinto' si trasforma da mero oggetto in uno specchio che riflette la lotta umana tra il desiderio di appartenenza e l'amarezza dell'alienazione. 'Painting' è un'esperienza cinematografica che esplora il divario tra il sé e l'altro.
+                </p>
+                <div class="film-seals"> 
+                    <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
+                </div>
             </div>
         </article>
 
     </section> 
 
-    <footer style="text-align: center; margin-top: 80px; padding-bottom: 40px;">
-        <a href="../gallery.html" style="color: #151515; text-decoration: none; font-family: monospace; font-size: 10px; letter-spacing: 3px; transition: color 0.6s ease;" onmouseover="this.style.color='#444'" onmouseout="this.style.color='#151515'">[ VISUAL ARCHIVES ]</a>
+    <section class="research-section">
+        <div class="section-separator">TESTI E RICERCA</div>
+        
+        <div class="articles-grid">
+            
+            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
+                <div class="article-meta">2026 — PhilPapers</div>
+                <h3 class="article-title">Realismo melanconico: ereditare il vuoto tarkovskiano nel cinema digitale</h3>
+                <div class="article-excerpt">Un manifesto cinematografico e filosofico che esplora il "Realismo melanconico" come metodologia visiva dirompente nell'era del cinema sintetico e digitale. Tracciando profondi parallelismi fenomenologici con il capolavoro di Andrej Tarkovskij del 1983, 'Nostalghia', questo saggio esamina la strumentalizzazione dell'attrito fisico, del degrado ambientale e della durata agonizzante contro la perfezione iperreale contemporanea...</div>
+                <div class="article-link">[ LEGGI SU PHILPAPERS ]</div>
+            </a>
+
+            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
+                <div class="article-meta">2026 — PhilPapers</div>
+                <h3 class="article-title">Realtà simulate: Scorsese, la moderna macchina dei media e l'industria dell'illusione</h3>
+                <div class="article-excerpt">Questo articolo esamina la crisi epistemologica dell'epoca digitale, sostenendo che il moderno apparato dei media controlla la società non sopprimendo la verità, ma producendo in massa illusioni algoritmiche iper-personalizzate. Utilizzando Shutter Island (2010) di Martin Scorsese come metafora principale, il saggio traccia parallelismi con la realtà immersiva e prefabbricata dell'Ospedale Ashecliffe...</div>
+                <div class="article-link">[ LEGGI SU PHILPAPERS ]</div>
+            </a>
+            
+           <a href="https://zenodo.org/records/20748757" target="_blank" class="article-card">
+                <div class="article-meta">2026 — Zenodo</div>
+                <h3 class="article-title">L'industria dell'illusione: come le fake news plasmano l'opinione pubblica</h3>
+                <div class="article-excerpt">Questa ricerca affronta il fenomeno delle fake news come una pericolosa manifestazione di disinformazione nell'ambiente digitale contemporaneo, operando come un'industria consapevole dell'illusione basata su una complessa interazione tra algoritmi digitali e pregiudizi psicologici umani. Basandosi su un approccio descrittivo-analitico e sull'analisi semiotica...</div>
+                <div class="article-link">[ LEGGI SU ZENODO ]</div>
+            </a> 
+
+        </div>
+    </section>
+
+    <footer>
+        <a href="../gallery.html">[ ARCHIVI VISIVI ]</a>
     </footer>
 
 </body>
