@@ -240,8 +240,7 @@
         body {
             background-color: #050505;
             color: #e5e5e5;
-            /* تم التغيير من الخط أحادي المسافة إلى خطوط Serif لسهولة القراءة والجمالية السينمائية */
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
             display: flex;
@@ -251,8 +250,7 @@
             box-sizing: border-box;
         }
         .profile-container {
-            /* تمت زيادة العرض الأفقي من 650px إلى 900px */
-            max-width: 900px;
+            max-width: 650px;
             padding: 60px 20px 40px 20px;
             text-align: center;
             box-sizing: border-box;
@@ -273,11 +271,9 @@
             margin: 0 0 25px 0;
             color: #ffffff;
             font-weight: 300;
-            /* الحفاظ على الخطوط الحديثة للعناوين الرئيسية للتباين */
-            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
         .profile-bio {
-            font-size: 1rem;
+            font-size: 0.95rem;
             line-height: 1.9;
             color: #8c8c8c;
             margin: 0 0 45px 0;
@@ -286,8 +282,6 @@
         .global-links {
             display: block;
             margin-bottom: 40px;
-            /* الإبقاء على شكل القوائم بخط أحادي */
-            font-family: 'Courier New', Courier, monospace; 
         }
         .global-links a {
             color: #ffffff;
@@ -304,14 +298,13 @@
             border-bottom-color: #ffffff;
         }
         .director-manifesto {
-            /* تمت زيادة العرض الأفقي من 650px إلى 900px */
-            max-width: 900px;
+            max-width: 650px;
             margin: 0 auto 40px auto;
             padding: 20px 0;
             border-top: 1px dashed #222;
             border-bottom: 1px dashed #222;
-            color: #777777;
-            font-size: 1rem; /* تكبير الخط قليلاً ليتناسب مع الخط الجديد */
+            color: #555555;
+            font-size: 0.85rem;
             line-height: 1.8;
             text-align: justify;
             text-align-last: center;
@@ -320,14 +313,10 @@
             color: #888;
             letter-spacing: 2px;
             font-weight: normal;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            display: block;
-            margin-bottom: 15px;
         }
         .portfolio-section {
             width: 100%;
-            /* تمت زيادة العرض الأفقي للمجموعة من 800px إلى 1100px */
-            max-width: 1100px;
+            max-width: 800px;
             margin: 60px auto;
             padding: 0 20px;
             box-sizing: border-box;
@@ -355,14 +344,12 @@
             margin: 0 0 20px 0;
             font-weight: bold;
             text-transform: uppercase;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
         .film-statement {
             color: #888888;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
             line-height: 1.7;
-            /* تمت زيادة عرض النص الوصفي للفيلم من 620px إلى 850px */
-            max-width: 850px;
+            max-width: 620px;
             margin: 0 auto 35px auto;
             text-align: justify;
             text-align-last: center;
@@ -370,7 +357,6 @@
         .film-seals {
             margin-top: 25px;
             padding: 0;
-            font-family: 'Courier New', Courier, monospace; 
         }
         .film-seals a {
             color: #ffffff;
@@ -390,7 +376,6 @@
         }
         .research-section {
             width: 100%;
-            /* الحفاظ على العرض الكبير 1100px */
             max-width: 1100px;
             margin: 80px auto 40px auto;
             padding: 0 20px;
@@ -405,7 +390,6 @@
             margin-bottom: 40px;
             border-bottom: 1px solid #222; 
             padding-bottom: 15px;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
 
         .articles-grid {
@@ -437,11 +421,10 @@
             letter-spacing: 2px;
             margin-bottom: 12px;
             text-transform: uppercase;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
 
         .article-title {
-            font-size: 16px; /* تكبير حجم عنوان المقالة */
+            font-size: 13px;
             color: #ffffff;
             margin: 0 0 15px 0;
             line-height: 1.4;
@@ -453,7 +436,7 @@
         }
 
        .article-excerpt {
-            font-size: 14px; /* تكبير الخط للتناسب مع الخط الجديد */
+            font-size: 10px;
             color: #777777; 
             line-height: 1.8;
             margin-bottom: 15px;
@@ -461,19 +444,18 @@
         }
 
         .article-card:hover .article-excerpt {
-            color: #999999;
+            color: #555;
         }
 
         .article-link {
-            font-size: 10px;
+            font-size: 9px;
             color: #777777; 
             letter-spacing: 1px;
             margin-top: auto;
             transition: color 0.5s ease;
-            font-family: 'Courier New', Courier, monospace;
         }
 
-       .article-card:hover .article-link {
+       .article-card:hover .article-excerpt {
             color: #ffffff;
         }
     </style>
@@ -497,7 +479,7 @@
         </div>
 
         <div class="director-manifesto">
-            <strong>THE CINEMATIC EXCAVATION: A DIRECTOR'S MANIFESTO</strong>
+            <strong>THE CINEMATIC EXCAVATION: A DIRECTOR'S MANIFESTO</strong><br><br>
             Cinema, for me, is not merely a medium for storytelling; it is an act of spiritual and philosophical excavation. It is the pursuit of visualizing the unmanifested, capturing the silent struggles of existence before they take form.<br><br>
             My cinematic inquiry is deeply rooted in the search for the ontology of truth. Drawing upon the profound existential weight of Nietzschean philosophy and the meditative, melancholic stillness of the Tarkovskian tradition, I approach the screen not as a canvas, but as a mirror reflecting the ruins of the modern soul.<br><br>
             In my continuous journey—from dissecting the mechanics of reality in The Illusion Industry to exploring post-industrial alienation in The Great City—I have always sought to push the boundaries of visual expression. Today, we stand at the precipice of a new frontier: the synthetic image.<br><br>
