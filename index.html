@@ -3,457 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeki Yahya | Filmmaker & Independent Researcher</title>
+    <title>Zeki Yahya | Archive</title>
     
     <meta name="description" content="Zeki Yahya is an independent filmmaker and researcher exploring avant-garde, philosophical, and dystopian cinema inspired by the Tarkovsky school and semiotic hyperreality.">
-    <meta name="keywords" content="Zeki Yahya, Zeki Yahya Director, Independent Researcher Zeki Yahya, Independent Filmmaker, Experimental Cinema, Avant-garde Cinema, Sculpting in Time, Cinematic Philosophy, Dystopian Narratives, Baudrillard Hyperreality, Case 0 Tomorrow, Archaeology of Unborn Faces, The Great City, The Illusion Industry, World Cinema, Art-house Director">
-    <meta name="author" content="Zeki Yahya">
-    <meta name="robots" content="index, follow">
     
-    <!-- Language Alternates -->
-    <link rel="canonical" href="https://zekiyahya.github.io/" />
-    <link rel="alternate" hreflang="en" href="https://zekiyahya.github.io/" />
-    <link rel="alternate" hreflang="ru" href="https://zekiyahya.github.io/ru/" />
-    <link rel="alternate" hreflang="cs" href="https://zekiyahya.github.io/cs/" />
-    <link rel="alternate" hreflang="de" href="https://zekiyahya.github.io/de/" />
-    <link rel="alternate" hreflang="fr" href="https://zekiyahya.github.io/fr/" />
-    <link rel="alternate" hreflang="es" href="https://zekiyahya.github.io/es/" />
-    <link rel="alternate" hreflang="ar" href="https://zekiyahya.github.io/ar/" />
-    <link rel="alternate" hreflang="it" href="https://zekiyahya.github.io/it/" />
-    <link rel="alternate" hreflang="ja" href="https://zekiyahya.github.io/ja/" />
-    <link rel="alternate" hreflang="zh" href="https://zekiyahya.github.io/zh/" />
-    <link rel="alternate" hreflang="pt" href="https://zekiyahya.github.io/pt/" />
-    <link rel="alternate" hreflang="pl" href="https://zekiyahya.github.io/pl/" />
-    <link rel="alternate" hreflang="ko" href="https://zekiyahya.github.io/ko/" />
-    <link rel="alternate" hreflang="sux" href="https://zekiyahya.github.io/sux/" />
-    <link rel="alternate" hreflang="x-default" href="https://zekiyahya.github.io/" />
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Zeki Yahya | Filmmaker & Independent Researcher">
-    <meta property="og:description" content="Explore the cinematic portfolio of Zeki Yahya. Independent experimental films focusing on philosophical depth, dystopian structures, and visual semiotics.">
-    <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Director.1984.jpg">
-    <meta property="og:url" content="https://zekiyahya.github.io">
-    <meta property="og:type" content="profile">
-
-    <!-- Google Fonts: Space Mono for Archival feel, Cormorant Garamond for Philosophical text -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <!-- Schema.org Data (Kept intact) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://zekiyahya.github.io/#person",
-          "name": "Zeki Yahya",
-          "alternateName": "زكي يحيى",
-          "image": "https://zekiyahya.github.io/Zeki_Yahya_Director.1984.jpg",
-          "jobTitle": "Filmmaker & Independent Researcher",
-          "description": "An independent filmmaker and researcher focusing on experimental, philosophical, and avant-garde cinema.",
-          "url": "https://zekiyahya.github.io",
-          "spouse": {
-            "@type": "Person",
-            "name": "Shireen",
-            "sameAs": "https://www.wikidata.org/wiki/Q140451401"
-          },
-          "sameAs": [
-            "https://www.wikidata.org/wiki/Q140140346",
-            "https://isni.org/isni/0000000530656710",
-            "https://www.imdb.com/name/nm18412930/",
-            "https://letterboxd.com/director/zeki-yahya/",
-            "https://mubi.com/en/cast/zeki-yahya",
-            "https://www.themoviedb.org/person/6167685-zeki-yahya",
-            "https://filmfreeway.com/zekiyahya",
-            "https://www.shortverse.com/person/zeki-yahya"
-          ],
-          "knowsAbout": [
-            "Film Directing",
-            "Experimental Cinema",
-            "Avant-garde Cinema",
-            "Cinematic Philosophy",
-            "Latent Space Cinematography"
-          ]
-        }
-      ]
-    }
-    </script>
-
     <style>
-        /* === BASE STYLES === */
-        body {
-            background-color: #050505;
-            color: #d4d4d4;
-            font-family: 'Space Mono', 'Courier New', monospace; /* Default to archival monospace */
+        /* === ARCHIVAL SYSTEM RESET === */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            background-color: #070707;
+            color: #b3b3b3;
+            font-family: 'Space Mono', monospace;
+            height: 100vh;
+            overflow: hidden; /* يمنع التمرير التقليدي للصفحة بالكامل */
+            display: grid;
+            grid-template-columns: 400px 1fr; /* انقسام الشاشة */
+            border: 10px solid #1a1a1a;
+        }
+
+        /* خطوط مخصصة */
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .mono { font-family: 'Space Mono', monospace; }
+
+        /* === LEFT PANEL: FIXED IDENTITY (الثابت) === */
+        .panel-left {
+            background-color: #0a0a0a;
+            border-right: 1px solid #222;
+            padding: 40px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-            animation: slowFadeIn 2.5s ease-in; /* Cinematic slow reveal */
+            overflow-y: auto;
+            position: relative;
         }
 
-        @keyframes slowFadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+        .sys-status {
+            font-size: 10px;
+            color: #555;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
         }
 
-        /* Typography Classes */
-        .serif-text {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-        }
-
-        .mono-text {
-            font-family: 'Space Mono', 'Courier New', monospace;
-        }
-
-        /* === LAYOUT CONTAINERS === */
-        .master-container {
+        .profile-img {
             width: 100%;
-            max-width: 700px;
-            padding: 80px 20px 40px 20px;
-            box-sizing: border-box;
-        }
-
-        .header-section {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        /* === HEADER ELEMENTS === */
-        .profile-portrait {
-            width: 120px;
-            height: 160px;
-            object-fit: cover;
-            filter: grayscale(100%) contrast(120%);
-            border: 1px solid #1a1a1a;
-            margin-bottom: 30px;
+            height: auto;
+            filter: grayscale(100%) contrast(150%) brightness(0.8);
+            border: 1px solid #333;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 2.2rem;
-            letter-spacing: 8px;
-            margin: 0 0 10px 0;
-            color: #ffffff;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-
-        .subtitle {
-            font-size: 1.3rem;
-            color: #888;
-            font-style: italic;
-            margin: 0 0 40px 0;
-        }
-
-        /* === GLOBAL LINKS === */
-        .global-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .global-links a {
-            color: #666;
-            text-decoration: none;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: color 0.4s ease;
-        }
-
-        .global-links a:hover {
-            color: #ffffff;
-        }
-
-        /* === SEPARATOR === */
-        .separator {
-            width: 100px;
-            height: 1px;
-            background-color: #1a1a1a;
-            border: none;
-            margin: 60px auto;
-        }
-
-        /* === MANIFESTO === */
-        .director-manifesto {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: #c4c4c4;
-            text-align: justify;
-            margin-bottom: 60px;
-        }
-
-        .director-manifesto strong {
-            display: block;
-            text-align: center;
-            font-family: 'Space Mono', monospace;
-            font-size: 0.85rem;
-            letter-spacing: 3px;
-            color: #555;
-            margin-bottom: 30px;
-            font-weight: normal;
-        }
-
-        /* === SECTION TITLES === */
-        .section-title {
-            text-align: center;
-            font-size: 0.85rem;
+            font-size: 1.8rem;
+            color: #fff;
             letter-spacing: 4px;
-            color: #555;
-            margin-bottom: 60px;
+            margin-bottom: 5px;
             text-transform: uppercase;
         }
 
-        /* === PORTFOLIO SECTION === */
-        .film-card {
-            margin-bottom: 120px;
-            text-align: center;
+        .title-role {
+            font-size: 0.8rem;
+            color: #777;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
         }
 
-        .film-poster {
-            max-width: 320px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 40px auto;
-            border: 1px solid #111;
-            filter: brightness(0.9);
-            transition: filter 0.6s ease;
+        .manifesto-box {
+            border-top: 1px dashed #333;
+            border-bottom: 1px dashed #333;
+            padding: 20px 0;
+            margin-bottom: 30px;
         }
 
-        .film-poster:hover {
-            filter: brightness(1.1);
-        }
-
-        .film-title {
-            color: #ffffff;
-            font-size: 1.1rem;
+        .manifesto-title {
+            font-size: 0.7rem;
+            color: #888;
             letter-spacing: 3px;
-            margin: 0 0 20px 0;
-            font-weight: normal;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .film-statement {
-            font-size: 1.15rem;
-            line-height: 1.7;
+        .manifesto-text {
+            font-size: 1rem;
+            line-height: 1.6;
             color: #999;
             text-align: justify;
-            text-align-last: center;
-            margin: 0 auto 30px auto;
         }
 
-        .film-links a {
-            color: #555;
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .links-grid a {
+            display: block;
+            border: 1px solid #222;
+            padding: 10px;
+            text-align: center;
+            color: #666;
             text-decoration: none;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-            margin: 0 10px;
-            transition: color 0.4s ease;
-            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            transition: all 0.3s;
         }
 
-        .film-links a:hover {
-            color: #ffffff;
+        .links-grid a:hover {
+            background-color: #1a1a1a;
+            color: #fff;
+            border-color: #444;
         }
 
-        /* === RESEARCH SECTION === */
-        .research-list {
+        /* === RIGHT PANEL: ARCHIVAL RECORDS (المتحرك) === */
+        .panel-right {
+            padding: 40px;
+            overflow-y: auto;
+            background: repeating-linear-gradient(
+                0deg,
+                #070707,
+                #070707 1px,
+                #0a0a0a 1px,
+                #0a0a0a 2px
+            ); /* Scanline effect */
+        }
+
+        .section-header {
+            font-size: 1.5rem;
+            color: #fff;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 15px;
+        }
+
+        /* Records Grid (البطاقات الأرشيفية) */
+        .records-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .record-card {
+            background-color: #050505;
+            border: 1px solid #1a1a1a;
+            padding: 20px;
+            transition: border-color 0.4s;
             display: flex;
             flex-direction: column;
-            gap: 40px;
         }
 
-        .research-item {
-            display: block;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            padding-bottom: 10px;
-            transition: border-color 0.4s ease;
+        .record-card:hover {
+            border-color: #444;
         }
 
-        .research-item:hover {
-            border-bottom: 1px solid #222;
+        .record-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: top;
+            filter: grayscale(80%);
+            border: 1px solid #111;
+            margin-bottom: 15px;
         }
 
-        .research-meta {
-            font-size: 0.75rem;
-            color: #555;
+        .record-meta {
+            font-size: 0.65rem;
+            color: #666;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
         }
 
-        .research-title {
-            font-size: 1.35rem;
-            color: #dddddd;
-            margin: 0 0 10px 0;
-            transition: color 0.4s ease;
-        }
-
-        .research-item:hover .research-title {
-            color: #ffffff;
-        }
-
-        .research-source {
-            font-size: 0.75rem;
-            color: #444;
+        .record-title {
+            font-size: 1.1rem;
+            color: #ddd;
+            margin-bottom: 15px;
             letter-spacing: 1px;
         }
 
-        /* === FOOTER === */
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-bottom: 60px;
-        }
-        
-        .footer-link {
-            color: #333;
-            text-decoration: none;
-            font-size: 0.75rem;
-            letter-spacing: 3px;
-            transition: color 0.6s ease;
+        .record-desc {
+            font-size: 0.95rem;
+            color: #888;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
         }
 
-        .footer-link:hover {
-            color: #888;
+        .record-actions {
+            border-top: 1px solid #111;
+            padding-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .record-actions a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+        }
+
+        .record-actions a:hover { color: #fff; }
+
+        /* Research List */
+        .research-item {
+            display: block;
+            border: 1px solid #1a1a1a;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            background-color: #050505;
+            transition: all 0.3s;
+        }
+
+        .research-item:hover {
+            border-color: #444;
+            transform: translateX(10px);
+        }
+
+        .research-item h3 {
+            color: #ccc;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        /* === RESPONSIVE FOR MOBILE === */
+        @media (max-width: 900px) {
+            body {
+                grid-template-columns: 1fr;
+                overflow: auto; /* عودة التمرير في الموبايل */
+                height: auto;
+            }
+            .panel-left, .panel-right {
+                overflow-y: visible;
+            }
+            .records-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    
-    <div class="master-container">
+
+    <!-- LEFT PANEL: IDENTITY & MANIFESTO -->
+    <aside class="panel-left">
+        <div class="sys-status">SYS.RECORD // ID: ZY-1980 𒀭</div>
         
-        <!-- HEADER -->
-        <header class="header-section">
-            <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya - Filmmaker" class="profile-portrait">
-            <h1 class="mono-text">ZEKI YAHYA</h1>
-            <p class="subtitle serif-text">Filmmaker & Independent Researcher</p>
+        <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya" class="profile-img">
+        
+        <h1 class="mono">ZEKI YAHYA</h1>
+        <div class="title-role mono">INDEPENDENT FILMMAKER & RESEARCHER</div>
+
+        <div class="manifesto-box">
+            <div class="manifesto-title mono"><span>𒁹</span> THE CINEMATIC EXCAVATION</div>
+            <div class="manifesto-text serif">
+                Cinema is an act of spiritual and philosophical excavation. It is the pursuit of visualizing the unmanifested, capturing the silent struggles of existence before they take form. Drawing upon Nietzschean existential weight and Tarkovskian stillness, I approach the screen as a mirror reflecting the ruins of the modern soul.<br><br>
+                In my recent works, I delve into the "latent space" of AI, viewing it as a "digital purgatory" where unborn identities struggle for manifestation.
+            </div>
+        </div>
+
+        <div class="links-grid mono">
+            <a href="https://www.imdb.com/name/nm18412930/" target="_blank">REF: IMDB</a>
+            <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">REF: MUBI</a>
+            <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">REF: LTRBXD</a>
+            <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">REF: TMDB</a>
+        </div>
+    </aside>
+
+    <!-- RIGHT PANEL: PORTFOLIO & ARCHIVE -->
+    <main class="panel-right">
+        
+        <div class="section-header mono">
+            <span>𒈨</span> VISUAL RECORDS
+        </div>
+
+        <div class="records-grid">
             
-            <div class="global-links mono-text">
-                <a href="https://www.imdb.com/name/nm18412930/" target="_blank">IMDb</a>
-                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">MUBI</a>
-                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">Letterboxd</a>
-                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">TMDB</a>
-                <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
+            <!-- CASE 0 -->
+            <div class="record-card">
+                <div class="record-meta mono"><span>RECORD_01</span> <span>2026</span></div>
+                <img src="CASE0TOMORROW-poster.jpg" alt="Case 0 Tomorrow" class="record-img">
+                <h2 class="record-title mono">CASE 0: TOMORROW</h2>
+                <div class="record-meta mono" style="color: #888; font-size: 0.6rem; border-bottom: 1px dashed #222; padding-bottom: 10px; margin-bottom: 15px;">
+                    [ CREATIVE DIRECTION: ZEKI YAHYA ]<br>
+                    [ AUDIO: AMBIENT / NO DIALOGUE ]<br>
+                    [ CAST: NONE / SYNTHETIC VISUALS ]
+                </div>
+                <p class="record-desc serif">
+                    A cinematic prosecution of time. Moving beyond conventional narrative, this project materializes the bureaucratic deferral of existence. Stripped of dialogue and human actors, the viewer is forced to physically endure the erosion of waiting.
+                </p>
+                <div class="record-actions mono">
+                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank">[ IMDB ]</a>
+                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">[ LETTERBOXD ]</a>
+                </div>
             </div>
-        </header>
 
-        <hr class="separator">
-
-        <!-- MANIFESTO -->
-        <section class="director-manifesto serif-text">
-            <strong class="mono-text">[ THE CINEMATIC EXCAVATION: A DIRECTOR'S MANIFESTO ]</strong>
-            Cinema, for me, is not merely a medium for storytelling; it is an act of spiritual and philosophical excavation. It is the pursuit of visualizing the unmanifested, capturing the silent struggles of existence before they take form.<br><br>
-            My cinematic inquiry is deeply rooted in the search for the ontology of truth. Drawing upon the profound existential weight of Nietzschean philosophy and the meditative, melancholic stillness of the Tarkovskian tradition, I approach the screen not as a canvas, but as a mirror reflecting the ruins of the modern soul.<br><br>
-            In my continuous journey—from dissecting the mechanics of reality in The Illusion Industry to exploring post-industrial alienation in The Great City—I have always sought to push the boundaries of visual expression. Today, we stand at the precipice of a new frontier: the synthetic image.<br><br>
-            With my latest work, Archaeology of Unborn Faces, I delve into the "latent space" of Artificial Intelligence. I do not view algorithms simply as tools, but as a "digital purgatory" where memories that never existed and identities yet to be born agonizingly struggle for manifestation. Through a somber, monochromatic lens and the stark power of silent cinema, I aim to unearth these unborn faces, questioning what it means to be human in an era where machines can dream of human sorrow.<br><br>
-            I make films to document the quiet collapse and the silent resurrections of the human spirit. My work is an invitation to look into the abyss, not with fear, but with the profound desire to understand the architecture of our own illusions.
-        </section>
-
-        <hr class="separator">
-
-        <!-- PORTFOLIO -->
-        <div class="section-title mono-text">RECORD OF WORKS</div>
-        
-        <article class="film-card">
-            <img src="CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow" class="film-poster">
-            <h2 class="film-title mono-text">CASE 0: TOMORROW (2026)</h2>
-            <p class="film-statement serif-text">
-                A cinematic prosecution of time. Moving beyond conventional narrative, this project materializes the bureaucratic deferral of existence—a visual translation of Kafkaesque nightmare and the Nietzschean dread of the modern industrial soul. By stripping the narrative of dialogue and musical comfort, featuring synthetic visuals and ambient sound effects with no human actors, the viewer is forced to physically endure the erosion of waiting, transforming the screen into an existential purgatory.
-            </p>
-            <div class="film-links mono-text">
-                <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
+            <!-- ARCHAEOLOGY -->
+            <div class="record-card">
+                <div class="record-meta mono"><span>RECORD_02</span> <span>2026</span></div>
+                <img src="poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces" class="record-img">
+                <h2 class="record-title mono">ARCHAEOLOGY OF UNBORN FACES</h2>
+                <p class="record-desc serif">
+                    A profound cinematic excavation of the AI "Latent Space." Adopting Tarkovsky’s philosophy of sculpting in time, the agonizingly slow takes force the viewer to endure the physical weight of time inside a machine that does not comprehend mortality.
+                </p>
+                <div class="record-actions mono">
+                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank">[ IMDB ]</a>
+                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">[ LETTERBOXD ]</a>
+                </div>
             </div>
-        </article>
 
-        <article class="film-card">
-            <img src="poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces" class="film-poster">
-            <h2 class="film-title mono-text">ARCHAEOLOGY OF UNBORN FACES (2026)</h2>
-            <p class="film-statement serif-text">
-                A profound cinematic excavation of the AI "Latent Space." Moving beyond the critique of digital deception, this project investigates the very ontology of synthetic existence. Adopting Tarkovsky’s philosophy of sculpting in time, the agonizingly slow takes and heavy silence force the viewer to endure the physical weight of time inside a machine that does not comprehend mortality. The flawless faces that emerge are not reflections of reality, but a Baudrillardian "hyperreality" concealing the absence of an origin.
-            </p>
-            <div class="film-links mono-text">
-                <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">Letterboxd</a>
+            <!-- THE GREAT CITY -->
+            <div class="record-card">
+                <div class="record-meta mono"><span>RECORD_03</span> <span>2026</span></div>
+                <img src="poster-the-great-city.png" alt="The Great City" class="record-img">
+                <h2 class="record-title mono">THE GREAT CITY</h2>
+                <p class="record-desc serif">
+                    Inspired by Friedrich Nietzsche's "Thus Spoke Zarathustra," this avant-garde project serves as a grim cinematic mirror to the contemporary metropolis, stripping away the romanticism of urban progress.
+                </p>
+                <div class="record-actions mono">
+                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank">[ IMDB ]</a>
+                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank">[ MUBI ]</a>
+                </div>
             </div>
-        </article>
 
-        <article class="film-card">
-            <img src="poster-the-great-city.png" alt="The Great City" class="film-poster">
-            <h2 class="film-title mono-text">THE GREAT CITY (2026)</h2>
-            <p class="film-statement serif-text">
-                Inspired by Friedrich Nietzsche's philosophical masterpiece, "Thus Spoke Zarathustra," this avant-garde project serves as a grim cinematic mirror to the contemporary metropolis. It visually dissects the chilling prophecy of the "Last Man"—the ultimate manifestation of spiritual nihilism and cultural decay within the modern crowd. Through an uncompromising experimental lens, the film strips away the romanticism of urban progress to expose the hollow essence of a society trapped in mechanical repetition.
-            </p>
-            <div class="film-links mono-text">
-                <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">Letterboxd</a>
-                <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank">MUBI</a>
+            <!-- THE ILLUSION INDUSTRY -->
+            <div class="record-card">
+                <div class="record-meta mono"><span>RECORD_04</span> <span>2026</span></div>
+                <img src="poster-the-illusion-industry.jpg" alt="The Illusion Industry" class="record-img">
+                <h2 class="record-title mono">THE ILLUSION INDUSTRY</h2>
+                <p class="record-desc serif">
+                    An intense cinematic critique of hyperreality and digital deception. This project explores the blurring lines between authentic human existence and simulated realities.
+                </p>
+                <div class="record-actions mono">
+                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank">[ IMDB ]</a>
+                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank">[ MUBI ]</a>
+                </div>
             </div>
-        </article>
 
-        <article class="film-card">
-            <img src="poster-the-illusion-industry.jpg" alt="The Illusion Industry" class="film-poster">
-            <h2 class="film-title mono-text">THE ILLUSION INDUSTRY (2026)</h2>
-            <p class="film-statement serif-text">
-                An intense cinematic critique of hyperreality and digital deception. This project explores the blurring lines between authentic human existence and simulated realities, questioning the manufactured narratives that dominate our visual culture. Stripped of superficial cinematic conventions, the film challenges the viewer to dissect the ontology of the image and the systematic production of illusion in the modern world.
-            </p>
-            <div class="film-links mono-text">
-                <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">Letterboxd</a>
-                <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank">MUBI</a>
-            </div>
-        </article>
+        </div>
 
-        <article class="film-card">
-            <img src="Painting_2024_Film_Poster1.jpg" alt="Painting" class="film-poster">
-            <h2 class="film-title mono-text">PAINTING (2024)</h2>
-            <p class="film-statement serif-text">
-                A contemplative visual journey into the depths of solitude and daily routine, where 'the painting' transforms from a mere object into a mirror reflecting the human struggle between the desire to belong and the bitterness of alienation. 'Painting' is a cinematic experience that explores the gap between the self and the other.
-            </p>
-            <div class="film-links mono-text">
-                <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
-            </div>
-        </article>
+        <!-- RESEARCH SECTION -->
+        <div class="section-header mono">
+            <span>𒆕</span> RESEARCH & TEXTS
+        </div>
 
-        <hr class="separator">
-
-        <!-- TEXTS & RESEARCH -->
-        <div class="section-title mono-text">TEXTS & RESEARCH</div>
-
-        <div class="research-list">
+        <div class="research-container">
             <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="research-item">
-                <div class="research-meta mono-text">2026 // RESEARCH ARTICLE</div>
-                <h3 class="research-title serif-text">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3>
-                <div class="research-source mono-text">[ ACCESS VIA PHILPAPERS ]</div>
+                <div class="record-meta mono"><span>DOC_01</span> <span>PHILPAPERS</span></div>
+                <h3 class="serif">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3>
+                <div class="record-actions mono" style="border: none; padding: 0;">[ EXTRACT DATA ]</div>
             </a>
 
             <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="research-item">
-                <div class="research-meta mono-text">2026 // RESEARCH ARTICLE</div>
-                <h3 class="research-title serif-text">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3>
-                <div class="research-source mono-text">[ ACCESS VIA PHILPAPERS ]</div>
+                <div class="record-meta mono"><span>DOC_02</span> <span>PHILPAPERS</span></div>
+                <h3 class="serif">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3>
+                <div class="record-actions mono" style="border: none; padding: 0;">[ EXTRACT DATA ]</div>
             </a>
 
             <a href="https://zenodo.org/records/20748757" target="_blank" class="research-item">
-                <div class="research-meta mono-text">2026 // THESIS</div>
-                <h3 class="research-title serif-text">The Illusion Industry: How Fake News Shapes Public Opinion</h3>
-                <div class="research-source mono-text">[ ACCESS VIA ZENODO ]</div>
+                <div class="record-meta mono"><span>DOC_03</span> <span>ZENODO</span></div>
+                <h3 class="serif">The Illusion Industry: How Fake News Shapes Public Opinion</h3>
+                <div class="record-actions mono" style="border: none; padding: 0;">[ EXTRACT DATA ]</div>
             </a>
         </div>
+        
+        <br><br><br>
 
-        <!-- FOOTER -->
-        <footer>
-            <a href="gallery.html" class="footer-link mono-text">[ VISUAL ARCHIVES ]</a>
-        </footer>
+    </main>
 
-    </div>
 </body>
 </html>
