@@ -32,7 +32,6 @@
     <meta property="og:url" content="https://zekiyahya.github.io/ar/">
     <meta property="og:type" content="profile">
 
-    <!-- Google Fonts Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
@@ -359,13 +358,11 @@
             justify-content: space-between;
             gap: 60px;
             margin-bottom: 120px;
-            /* In RTL, row makes text right, image left */
             flex-direction: row; 
         }
 
         /* Alternating Layout for RTL */
         .film-card:nth-child(even) {
-            /* In RTL, row-reverse makes text left, image right */
             flex-direction: row-reverse;
         }
 
@@ -453,10 +450,81 @@
 
         /* --- RESEARCH SECTION --- */
         .research-section {
-            /* Hidden section in this provided content, but keeping styles for consistency */
             max-width: 1400px;
             margin: 120px auto 60px auto;
             padding: 0 40px;
+        }
+
+        .section-separator {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 6px;
+            color: #555; 
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--accent); 
+            padding-bottom: 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .article-card {
+            border: 1px solid #111;
+            background: #020202;
+            padding: 35px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s ease;
+        }
+
+        .article-card:hover {
+            border-color: #333;
+            transform: translateY(-5px);
+        }
+
+        .article-meta {
+            font-size: 10px;
+            color: #666; 
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-family: monospace;
+            direction: ltr;
+            text-align: right;
+        }
+
+        .article-title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 0 0 20px 0;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            font-size: 0.9rem;
+            color: var(--text-dim); 
+            line-height: 1.8;
+            margin-bottom: 25px;
+            flex-grow: 1;
+            text-align: justify;
+        }
+
+        .article-link {
+            font-size: 10px;
+            color: #555; 
+            letter-spacing: 1px;
+            font-family: monospace;
+            transition: color 0.3s ease;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .article-card:hover .article-link {
+            color: #fff;
         }
 
         /* --- FOOTER --- */
@@ -532,7 +600,6 @@
 
     <section class="portfolio-section">
 
-        <!-- FILM 1 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film Directed by Zeki Yahya" class="film-poster">
@@ -549,7 +616,6 @@
             </div>
         </article>
 
-        <!-- FILM 2 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema by Director Zeki Yahya" class="film-poster">
@@ -566,7 +632,6 @@
             </div>
         </article>
 
-        <!-- FILM 3 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project Directed by Zeki Yahya" class="film-poster">
@@ -585,7 +650,6 @@
             </div>
         </article>
 
-        <!-- FILM 4 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film Directed by Zeki Yahya" class="film-poster">
@@ -604,7 +668,6 @@
             </div>
         </article>
 
-        <!-- FILM 5 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - فيلم تجريبي للمخرج زكي يحيى" class="film-poster">
@@ -623,8 +686,37 @@
 
     </section> 
 
+    <section class="research-section">
+        <div class="section-separator">نصوص وأبحاث</div>
+        
+        <div class="articles-grid">
+            
+            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
+                <div class="article-meta">2026 — PhilPapers</div>
+                <h3 class="article-title">الواقعية السوداوية: وراثة الفراغ التاركوفسكي في السينما الرقمية</h3>
+                <div class="article-excerpt">بيان سينمائي وفلسفي يستكشف "الواقعية السوداوية" كمنهجية بصرية تخريبية في عصر السينما الرقمية والتخليقية. من خلال عقد مقارنات فينومينولوجية عميقة مع تحفة أندريه تاركوفسكي "نوستالجيا" (1983)، تبحث هذه الورقة في توظيف الاحتكاك المادي، والتحلل البيئي، والمدة الزمنية المؤلمة كسلاح ضد الكمال المعاصر للواقع الفائق...</div>
+                <div class="article-link">[ اقرأ على PHILPAPERS ]</div>
+            </a>
+
+            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
+                <div class="article-meta">2026 — PhilPapers</div>
+                <h3 class="article-title">الوقائع المحاكاة: سكورسيزي، آلة الإعلام الحديثة، وصناعة الوهم</h3>
+                <div class="article-excerpt">يبحث هذا المقال في الأزمة المعرفية للحقبة الرقمية، مجادلاً بأن جهاز الإعلام الحديث يسيطر على المجتمع ليس عبر قمع الحقيقة، بل من خلال الإنتاج الضخم لأوهام خوارزمية شديدة الشخصنة. باستخدام فيلم "جزيرة شاتر" (2010) لمارتن سكورسيزي كاستعارة أساسية، تقارن المقالة بين الواقع الغامر والمصطنع لمستشفى آشكليف...</div>
+                <div class="article-link">[ اقرأ على PHILPAPERS ]</div>
+            </a>
+            
+           <a href="https://zenodo.org/records/20748757" target="_blank" class="article-card">
+                <div class="article-meta">2026 — Zenodo</div>
+                <h3 class="article-title">صناعة الوهم: كيف تشكل الأخبار الزائفة الرأي العام</h3>
+                <div class="article-excerpt">يتناول هذا البحث ظاهرة الأخبار الزائفة كتجلٍ خطير للتضليل في البيئة الرقمية المعاصرة، حيث تعمل كصناعة واعية للوهم تعتمد على تفاعل معقد بين الخوارزميات الرقمية والتحيزات النفسية البشرية. بالاعتماد على المنهج الوصفي التحليلي والتحليل السيميائي...</div>
+                <div class="article-link">[ اقرأ على ZENODO ]</div>
+            </a> 
+
+        </div>
+    </section>
+
     <footer>
-        <a href="../gallery.html">[ VISUAL ARCHIVES ]</a>
+        <a href="../gallery.html">[ الأرشيف البصري ]</a>
     </footer>
 
 </body>
