@@ -366,15 +366,20 @@
         .film-image-container {
             flex: 1;
             max-width: 45%;
+            display: flex;
+            justify-content: center; /* Center poster in container */
         }
 
         .film-poster {
-            width: 100%;
+            max-width: 100%;
+            max-height: 75vh; /* Prevents poster from exceeding screen height */
+            width: auto;
             height: auto;
             display: block;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
             border: 1px solid #111;
             transition: transform 0.5s ease;
+            object-fit: contain;
         }
 
         .film-poster:hover {
@@ -384,11 +389,9 @@
         .film-content {
             flex: 1;
             max-width: 50%;
-            text-align: left;
-        }
-
-        .film-card:nth-child(even) .film-content {
-            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers title and seals within the column */
         }
 
         .film-title {
@@ -397,6 +400,7 @@
             letter-spacing: 4px;
             margin: 0 0 25px 0;
             font-weight: normal;
+            text-align: center; /* Explicitly center the title text */
         }
 
         .film-statement {
@@ -404,21 +408,15 @@
             font-size: 1rem;
             line-height: 1.9;
             margin: 0 0 30px 0;
-            text-align: justify;
-        }
-
-        .film-card:nth-child(even) .film-statement {
-            text-align: justify;
-            /* text-align-last: right; */
+            text-align: justify; /* Keeps the paragraph justified */
+            width: 100%;
         }
 
         .film-seals {
             display: flex;
             gap: 20px;
-        }
-
-        .film-card:nth-child(even) .film-seals {
-            justify-content: flex-end;
+            justify-content: center; /* Centers the links under the text */
+            flex-wrap: wrap;
         }
 
         .film-seals a {
@@ -544,22 +542,17 @@
         @media (max-width: 900px) {
             .film-card, .film-card:nth-child(even) {
                 flex-direction: column;
-                gap: 30px;
+                gap: 40px;
                 margin-bottom: 80px;
             }
             .film-image-container, .film-content {
                 max-width: 100%;
-                text-align: center !important;
             }
-            .film-card:nth-child(even) .film-statement {
-                text-align: justify;
-                text-align-last: center;
+            .film-poster {
+                max-height: 60vh; /* Slightly smaller maximum height for mobile screens */
             }
             .film-statement {
                 text-align-last: center;
-            }
-            .film-seals, .film-card:nth-child(even) .film-seals {
-                justify-content: center;
             }
             h1 {
                 font-size: 2.2rem;
