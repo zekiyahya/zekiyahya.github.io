@@ -28,9 +28,13 @@
 
     <meta property="og:title" content="제키 야히아 | 독립 영화 감독 및 연구자">
     <meta property="og:description" content="제키 야히아의 영화 포트폴리오를 탐색해보세요. 철학적 깊이, 디스토피아적 구조, 시각적 기호학에 초점을 맞춘 독립 실험 영화입니다.">
-    <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Director.1984.jpg">
+    <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
     <meta property="og:url" content="https://zekiyahya.github.io/ko/">
     <meta property="og:type" content="profile">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
 {
@@ -41,7 +45,7 @@
       "@id": "https://zekiyahya.github.io/#person",
       "name": "Zeki Yahya",
       "alternateName": "زكي يحيى",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Director.1984.jpg",
+      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
       "jobTitle": "독립 영화 감독 및 연구자",
       "description": "실험적, 철학적, 아방가르드 영화에 중점을 둔 독립 영화 감독 및 연구자.",
       "url": "https://zekiyahya.github.io",
@@ -234,155 +238,336 @@
     }
   ]
 }
-</script>
+    </script>
 
     <style>
+        :root {
+            --bg-color: #030303;
+            --text-main: #e5e5e5;
+            --text-dim: #888888;
+            --accent: #222222;
+        }
+        
         body {
-            background-color: #050505;
-            color: #e5e5e5;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            /* Updated font-family for Korean readability */
+            font-family: 'Noto Sans KR', 'IBM Plex Sans Arabic', sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+            line-height: 1.8; /* Increased line-height slightly for CJK characters */
+        }
+
+        h1, h2, h3, .section-separator, .director-manifesto strong {
+            font-family: 'Amiri', 'Noto Sans KR', serif;
+        }
+
+        /* --- HEADER & HERO --- */
+        .header-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-        .profile-container {
-            max-width: 650px;
-            padding: 60px 20px 40px 20px;
+            justify-content: flex-start;
+            min-height: auto;
             text-align: center;
-            box-sizing: border-box;
+            padding: 0 0 40px 0;
+            border-bottom: 1px solid var(--accent);
         }
-        .profile-portrait {
-            width: 160px;
-            height: 240px;
-            border-radius: 4px;
-            object-fit: cover;
-            filter: grayscale(100%) contrast(115%);
-            border: 1px solid #222;
-            display: inline-block;
-            margin-bottom: 25px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 6px;
-            margin: 0 0 25px 0;
-            color: #ffffff;
-            font-weight: 300;
-        }
-        .profile-bio {
-            font-size: 0.95rem;
-            line-height: 1.9;
-            color: #8c8c8c;
-            margin: 0 0 45px 0;
-            letter-spacing: 0.5px;
-        }
-        .global-links {
-            display: block;
-            margin-bottom: 40px;
-        }
-        .global-links a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 12px 10px 12px;
-            font-size: 0.85rem;
-            letter-spacing: 1.5px;
-            border-bottom: 1px dashed #333;
-            transition: color 0.3s ease, border-color 0.3s ease;
-            display: inline-block;
-        }
-        .global-links a:hover {
-            color: #8c8c8c;
-            border-bottom-color: #ffffff;
-        }
-        .director-manifesto {
-            max-width: 650px;
-            margin: 0 auto 40px auto;
-            padding: 20px 0;
-            border-top: 1px dashed #222;
-            border-bottom: 1px dashed #222;
-            color: #555555;
-            font-size: 0.85rem;
-            line-height: 1.8;
-            text-align: justify;
-            text-align-last: center;
-        }
-        .director-manifesto strong {
-            color: #888;
-            letter-spacing: 2px;
-            font-weight: normal;
-        }
-        .portfolio-section {
-            width: 100%;
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        .film-card {
-            border-top: 1px solid #161616;
-            padding-top: 60px;
-            margin-bottom: 80px;
-            text-align: center;
-            width: 100%;
-        }
-        .film-poster {
-            max-width: 280px;
+
+        .hero-banner {
             width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto 35px auto;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
-            border: 1px solid #111;
+            margin: 0 auto 40px auto;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
         }
-        .film-title {
-            color: #ffffff;
-            font-size: 1.4rem;
-            letter-spacing: 3px;
-            margin: 0 0 20px 0;
-            font-weight: bold;
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 8px; /* Letters pacing works differently in KR, but kept for stylistic choice */
+            margin: 0 0 15px 0;
+            font-weight: 400;
             text-transform: uppercase;
         }
-        .film-statement {
-            color: #888888;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            max-width: 620px;
-            margin: 0 auto 35px auto;
-            text-align: justify;
-            text-align-last: center;
+
+        .profile-bio {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
         }
-        .film-seals {
-            margin-top: 25px;
-            padding: 0;
+
+        .global-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-        .film-seals a {
-            color: #ffffff;
+
+        .global-links a {
+            color: var(--text-main);
             text-decoration: none;
             font-size: 0.85rem;
             letter-spacing: 2px;
-            margin: 0 15px;
-            opacity: 0.5;
-            transition: opacity 0.3s ease, border-color 0.3s ease;
-            border-bottom: 1px dashed #333;
-            padding-bottom: 3px;
-            display: inline-block;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
         }
+
+        .global-links a:hover {
+            color: var(--text-dim);
+            border-bottom: 1px solid var(--text-dim);
+        }
+
+        /* --- MANIFESTO --- */
+        .manifesto-section {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        .director-manifesto {
+            color: #999;
+            font-size: 1.05rem;
+            line-height: 2.2;
+            text-align: justify; /* Justify works well in Korean */
+            text-align-last: center;
+        }
+
+        .director-manifesto strong {
+            display: block;
+            color: #fff;
+            letter-spacing: 3px;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        /* --- PORTFOLIO ZIG-ZAG LAYOUT --- */
+        .portfolio-section {
+            max-width: 1400px;
+            margin: 100px auto;
+            padding: 0 40px;
+        }
+
+        .film-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            margin-bottom: 120px;
+            flex-direction: row;
+        }
+
+        /* Alternating Layout */
+        .film-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .film-image-container {
+            flex: 1;
+            max-width: 45%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .film-poster {
+            max-width: 100%;
+            max-height: 75vh;
+            width: auto;
+            height: auto;
+            display: block;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+            border: 1px solid #111;
+            transition: transform 0.5s ease;
+            object-fit: contain;
+        }
+
+        .film-poster:hover {
+            transform: scale(1.02);
+        }
+
+        .film-content {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .film-title {
+            color: #ffffff;
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin: 0 0 25px 0;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .film-statement {
+            color: var(--text-dim);
+            font-size: 1rem;
+            line-height: 1.9;
+            margin: 0 0 30px 0;
+            text-align: justify;
+            width: 100%;
+        }
+
+        .film-seals {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .film-seals a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+
         .film-seals a:hover {
             opacity: 1;
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #fff;
+        }
+
+        .film-seals span {
+            color: #666;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            align-self: flex-end;
+        }
+
+        /* --- RESEARCH SECTION --- */
+        .research-section {
+            max-width: 1400px;
+            margin: 120px auto 60px auto;
+            padding: 0 40px;
+        }
+
+        .section-separator {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 6px;
+            color: #555; 
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--accent); 
+            padding-bottom: 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .article-card {
+            border: 1px solid #111;
+            background: #020202;
+            padding: 35px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s ease;
+        }
+
+        .article-card:hover {
+            border-color: #333;
+            transform: translateY(-5px);
+        }
+
+        .article-meta {
+            font-size: 10px;
+            color: #666; 
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-family: monospace;
+        }
+
+        .article-title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 0 0 20px 0;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            font-size: 0.9rem;
+            color: var(--text-dim); 
+            line-height: 1.8;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .article-link {
+            font-size: 10px;
+            color: #555; 
+            letter-spacing: 1px;
+            font-family: monospace;
+            transition: color 0.3s ease;
+        }
+
+        .article-card:hover .article-link {
+            color: #fff;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid var(--accent);
+            margin-top: 80px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 11px;
+            letter-spacing: 4px;
+            transition: color 0.5s ease;
+        }
+
+        footer a:hover {
+            color: #888;
+        }
+
+        /* --- RESPONSIVE MOBILE --- */
+        @media (max-width: 900px) {
+            .film-card, .film-card:nth-child(even) {
+                flex-direction: column;
+                gap: 40px;
+                margin-bottom: 80px;
+            }
+            .film-image-container, .film-content {
+                max-width: 100%;
+            }
+            .film-poster {
+                max-height: 60vh;
+            }
+            .film-statement {
+                text-align-last: center;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
 <body>
-
-    <div class="profile-container">
-        <div style="text-align: center;">
-            <img src="../Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya - Filmmaker and Independent Researcher" class="profile-portrait">
-        </div>
-        <h1>제키 야히야</h1>
+    
+    <header class="header-section">
+        <img src="../Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - 독립 영화 감독 및 연구자" class="hero-banner">
+        <h1>제키 야히아</h1>
         <p class="profile-bio">독립 영화 감독 및 연구자.<br>철학적, 디스토피아적, 아방가르드 영화에 중점을 둡니다.</p>
         
         <div class="global-links">
@@ -393,7 +578,9 @@
             <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
             <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
         </div>
+    </header>
 
+    <section class="manifesto-section">
         <div class="director-manifesto">
             <strong>영화적 발굴: 감독의 선언</strong><br><br>
             저에게 영화는 단순히 이야기를 전달하는 매체가 아니라 영적, 철학적 발굴의 행위입니다. 이는 형상을 갖추기 전 존재의 조용한 투쟁을 포착하여, 아직 발현되지 않은 것을 시각화하려는 탐구입니다.<br><br>
@@ -402,78 +589,127 @@
             최신작 "Archaeology of Unborn Faces"를 통해 저는 인공지능의 «잠재 공간»으로 뛰어듭니다. 저는 알고리즘을 단순한 도구가 아니라, 존재한 적 없는 기억과 아직 태어나지 않은 정체성들이 발현되기 위해 처절하게 투쟁하는 «디지털 연옥»으로 봅니다. 적막한 흑백 렌즈와 무성 영화의 원초적인 힘을 통해, 저는 이 태어나지 않은 얼굴들을 발굴하고자 하며, 기계가 인간의 슬픔을 꿈꿀 수 있는 시대에 인간이라는 것이 무엇을 의미하는지 질문합니다.<br><br>
             저는 인간 정신의 조용한 붕괴와 무언의 부활을 기록하기 위해 영화를 만듭니다. 제 작품은 두려움이 아니라 우리 자신의 환영의 구조를 이해하려는 깊은 열망을 가지고 심연을 들여다보라는 초대장입니다.
         </div>
-    </div>
+    </section>
 
     <section class="portfolio-section">
 
         <article class="film-card">
-            <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film Directed by Zeki Yahya" class="film-poster">
-            <h2 class="film-title">CASE 0: TOMORROW (2026)</h2>
-            <p class="film-statement">
-                시간에 대한 영화적 추적. 전통적인 스토리텔링을 넘어, 이 프로젝트는 존재의 관료주의적 유예를 실체화하며, 카프카적 악몽과 현대 산업 영혼의 니체적 불안을 시각적으로 번역합니다. 서사에서 대화와 음악적 위안을 벗겨냄으로써, 관객은 기다림의 마모를 육체적으로 견디도록 강요받고, 스크린은 실존적 연옥으로 변모합니다.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
+            <div class="film-image-container">
+                <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film Directed by Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">CASE 0: TOMORROW (2026)</h2>
+                <p class="film-statement">
+                    시간에 대한 영화적 추적. 전통적인 스토리텔링을 넘어, 이 프로젝트는 존재의 관료주의적 유예를 실체화하며, 카프카적 악몽과 현대 산업 영혼의 니체적 불안을 시각적으로 번역합니다. 서사에서 대화와 음악적 위안을 벗겨냄으로써, 관객은 기다림의 마모를 육체적으로 견디도록 강요받고, 스크린은 실존적 연옥으로 변모합니다.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema by Director Zeki Yahya" class="film-poster">
-            <h2 class="film-title">ARCHAEOLOGY OF UNBORN FACES (2026)</h2>
-            <p class="film-statement">
-                AI의 «잠재 공간»에 대한 심오한 영화적 발굴. 디지털 기만에 대한 비판을 넘어, 이 프로젝트는 합성된 존재의 존재론 자체를 조사합니다. 시간을 조각하는 타르코프스키의 철학을 수용하여, 고통스러울 정도로 느린 숏과 무거운 침묵은 죽음을 이해하지 못하는 기계 내부에서 관객이 시간의 물리적 무게를 견디게 만듭니다. 떠오르는 결점 없는 얼굴들은 현실의 반영이 아니라, 기원의 부재를 은폐하는 보드리야르적 «파생실재»입니다.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">Letterboxd</a>
+            <div class="film-image-container">
+                <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema by Director Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">ARCHAEOLOGY OF UNBORN FACES (2026)</h2>
+                <p class="film-statement">
+                    AI의 «잠재 공간»에 대한 심오한 영화적 발굴. 디지털 기만에 대한 비판을 넘어, 이 프로젝트는 합성된 존재의 존재론 자체를 조사합니다. 시간을 조각하는 타르코프스키의 철학을 수용하여, 고통스러울 정도로 느린 숏과 무거운 침묵은 죽음을 이해하지 못하는 기계 내부에서 관객이 시간의 물리적 무게를 견디게 만듭니다. 떠오르는 결점 없는 얼굴들은 현실의 반영이 아니라, 기원의 부재를 은폐하는 보드리야르적 «파생실재»입니다.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">Letterboxd</a>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project Directed by Zeki Yahya" class="film-poster">
-            <h2 class="film-title">THE GREAT CITY (2026)</h2>
-           <p class="film-statement">
-                프리드리히 니체의 철학적 걸작 "차라투스트라는 이렇게 말했다"에서 영감을 받은 이 아방가르드 프로젝트는 현대 대도시의 어두운 영화적 거울 역할을 합니다. 이 작품은 현대 군중 속에서 영적 허무주의와 문화적 쇠퇴의 궁극적인 발현인 «최후의 인간»에 대한 오싹한 예언을 시각적으로 해부합니다. 타협 없는 실험적 프리즘을 통해, 이 영화는 도시 진보의 낭만주의를 벗겨내고 기계적 반복에 갇힌 사회의 공허한 본질을 폭로합니다.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">Letterboxd</a>
-                <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank" style="color: #ffffff; text-decoration: none; border-bottom: 1px dashed #333;">MUBI</a>
-                <span style="color: #8c8c8c; font-family: monospace; font-size: 10px; letter-spacing: 1px; margin-left: 10px;">[ Lift-Off 2026 — Official Selection ]</span>
+            <div class="film-image-container">
+                <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project Directed by Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">THE GREAT CITY (2026)</h2>
+                <p class="film-statement">
+                    프리드리히 니체의 철학적 걸작 "차라투스트라는 이렇게 말했다"에서 영감을 받은 이 아방가르드 프로젝트는 현대 대도시의 어두운 영화적 거울 역할을 합니다. 이 작품은 현대 군중 속에서 영적 허무주의와 문화적 쇠퇴의 궁극적인 발현인 «최후의 인간»에 대한 오싹한 예언을 시각적으로 해부합니다. 타협 없는 실험적 프리즘을 통해, 이 영화는 도시 진보의 낭만주의를 벗겨내고 기계적 반복에 갇힌 사회의 공허한 본질을 폭로합니다.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">Letterboxd</a>
+                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank">MUBI</a>
+                    <span>[ Lift-Off 2026 — Official Selection ]</span>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film Directed by Zeki Yahya" class="film-poster">
-            <h2 class="film-title">THE ILLUSION INDUSTRY (2026)</h2>
-           <p class="film-statement">
-                파생실재와 디지털 기만에 대한 강렬한 영화적 비판. 이 프로젝트는 진정한 인간 존재와 시뮬레이션된 현실 사이의 모호한 경계를 탐구하며, 우리의 시각 문화를 지배하는 조작된 서사에 의문을 제기합니다. 피상적인 영화적 관습을 벗어던진 이 영화는 관객으로 하여금 이미지의 존재론과 현대 사회에서 체계적으로 생산되는 환영을 해부하도록 도전합니다.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">Letterboxd</a>
-                <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank" style="color: #ffffff; text-decoration: none; border-bottom: 1px dashed #333;">MUBI</a>
-                <span style="color: #8c8c8c; font-family: monospace; font-size: 10px; letter-spacing: 1px; margin-left: 10px;">[ Lift-Off 2026 — Official Selection ]</span>
+            <div class="film-image-container">
+                <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film Directed by Zeki Yahya" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">THE ILLUSION INDUSTRY (2026)</h2>
+                <p class="film-statement">
+                    파생실재와 디지털 기만에 대한 강렬한 영화적 비판. 이 프로젝트는 진정한 인간 존재와 시뮬레이션된 현실 사이의 모호한 경계를 탐구하며, 우리의 시각 문화를 지배하는 조작된 서사에 의문을 제기합니다. 피상적인 영화적 관습을 벗어던진 이 영화는 관객으로 하여금 이미지의 존재론과 현대 사회에서 체계적으로 생산되는 환영을 해부하도록 도전합니다.
+                </p>
+                <div class="film-seals">
+                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">Letterboxd</a>
+                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank">MUBI</a>
+                    <span>[ Lift-Off 2026 — Official Selection ]</span>
+                </div>
             </div>
         </article>
 
         <article class="film-card">
-            <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - 제키 야히아 감독의 실험 영화" class="film-poster">
-            <h2 class="film-title">PAINTING (2024)</h2>
-            <p class="film-statement">
-                고독과 일상의 깊은 곳으로 향하는 관조적인 시각적 여정. 그곳에서 '그림'은 단순한 사물에서 소속되고자 하는 욕망과 소외의 씁쓸함 사이에서 벌어지는 인간의 고뇌를 비추는 거울로 변모한다. 'Painting'은 자아와 타자 사이의 간극을 탐구하는 영화적 경험이다.
-            </p>
-            <div class="film-seals">
-                <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
-                <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
+            <div class="film-image-container">
+                <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - 제키 야히아 감독의 실험 영화" class="film-poster">
+            </div>
+            <div class="film-content">
+                <h2 class="film-title">PAINTING (2024)</h2>
+                <p class="film-statement">
+                    고독과 일상의 깊은 곳으로 향하는 관조적인 시각적 여정. 그곳에서 '그림'은 단순한 사물에서 소속되고자 하는 욕망과 소외의 씁쓸함 사이에서 벌어지는 인간의 고뇌를 비추는 거울로 변모한다. 'Painting'은 자아와 타자 사이의 간극을 탐구하는 영화적 경험이다.
+                </p>
+                <div class="film-seals"> 
+                    <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
+                    <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
+                </div>
             </div>
         </article>
 
     </section> 
 
-    <footer style="text-align: center; margin-top: 80px; padding-bottom: 40px;">
-        <a href="../gallery.html" style="color: #151515; text-decoration: none; font-family: monospace; font-size: 10px; letter-spacing: 3px; transition: color 0.6s ease;" onmouseover="this.style.color='#444'" onmouseout="this.style.color='#151515'">[ VISUAL ARCHIVES ]</a>
+    <section class="research-section">
+        <div class="section-separator">텍스트 및 연구</div>
+        
+        <div class="articles-grid">
+            
+            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
+                <div class="article-meta">2026 — PhilPapers</div>
+                <h3 class="article-title">우울한 리얼리즘: 디지털 영화에서 타르코프스키적 공백의 계승</h3>
+                <div class="article-excerpt">합성 영화 및 디지털 영화 시대에 파괴적인 시각적 방법론으로서 "우울한 리얼리즘"을 탐구하는 영화적, 철학적 선언문. 안드레이 타르코프스키의 1983년 걸작 '노스탤지아'와 깊은 현상학적 유사성을 도출하며, 본 논문은 현대의 하이퍼리얼한 완벽함에 맞서는 무기로서 물리적 마찰, 환경의 쇠락, 그리고 고통스러운 지속 시간의 활용을 검토한다...</div>
+                <div class="article-link">[ PHILPAPERS에서 읽기 ]</div>
+            </a>
+
+            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
+                <div class="article-meta">2026 — PhilPapers</div>
+                <h3 class="article-title">시뮬레이션된 현실: 스콜세지, 현대 미디어 기계, 그리고 환영 산업</h3>
+                <div class="article-excerpt">이 논문은 현대 미디어 장치가 진실을 억압함으로써가 아니라 초개인화된 알고리즘의 환영을 대량 생산함으로써 사회를 통제한다고 주장하며 디지털 시대의 인식론적 위기를 고찰한다. 마틴 스콜세지의 '셔터 아일랜드'(2010)를 주요 은유로 활용하여, 이 에세이는 애쉬클리프 병원의 몰입형 조작 현실과 현대의 디지털 에코 체임버를 비교한다...</div>
+                <div class="article-link">[ PHILPAPERS에서 읽기 ]</div>
+            </a>
+            
+           <a href="https://zenodo.org/records/20748757" target="_blank" class="article-card">
+                <div class="article-meta">2026 — Zenodo</div>
+                <h3 class="article-title">환영 산업: 가짜 뉴스는 어떻게 여론을 형성하는가</h3>
+                <div class="article-excerpt">이 연구는 디지털 알고리즘과 인간의 심리적 편향 사이의 복잡한 상호작용에 기반을 둔 의식적인 환영 산업으로 기능하는 현대 디지털 환경의 위험한 허위 정보 현상인 가짜 뉴스를 다룬다. 기술-분석적 접근법과 기호학적 분석에 의존하여...</div>
+                <div class="article-link">[ ZENODO에서 읽기 ]</div>
+            </a> 
+
+        </div>
+    </section>
+
+    <footer>
+        <a href="../gallery.html">[ 시각적 아카이브 ]</a>
     </footer>
 
 </body>
