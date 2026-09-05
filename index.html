@@ -276,17 +276,13 @@
         }
 
         .hero-banner {
-            width: 100vw; /* تمتد على العرض الكامل للشاشة */
-            max-width: 100%;
-            height: auto;
-            max-height: 85vh; /* تمنع الصورة من أن تكون طويلة جداً وتدفع النص لأسفل */
-            object-fit: cover; /* تحافظ على جودة الصورة وتملأ المساحة بدون تشويه */
-            object-position: top center;
+            width: 100%; /* العرض الكامل بدون تفعيل التمرير الأفقي */
+            height: auto; /* يحافظ على الأبعاد الأصلية للصورة بالكامل دون قص */
             display: block;
             margin: 0 auto 40px auto;
-            /* تأثير التلاشي للأسفل */
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+            /* التلاشي يبدأ من 90% للحفاظ على ملامح الصورة وإخفاء الحافة السفلية فقط */
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
         }
 
         h1 {
