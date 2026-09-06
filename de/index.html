@@ -32,6 +32,7 @@
     <meta property="og:url" content="https://zekiyahya.github.io/de/">
     <meta property="og:type" content="profile">
 
+    <!-- Google Fonts Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
@@ -262,40 +263,58 @@
             font-family: 'Amiri', serif;
         }
 
-        /* --- HEADER & HERO --- */
+        /* --- HERO OVERLAY --- */
         .header-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
-            justify-content: flex-start;
-            min-height: auto;
             text-align: center;
-            padding: 0 0 40px 0;
-            border-bottom: 1px solid var(--accent);
+            box-sizing: border-box;
+            padding-bottom: 25px;
+            overflow: hidden;
         }
 
         .hero-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 40px auto;
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            z-index: 1;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            padding: 0 20px;
+            margin-bottom: 5px;
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             letter-spacing: 8px;
-            margin: 0 0 15px 0;
+            margin: 0 0 8px 0;
             font-weight: 400;
             text-transform: uppercase;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95);
         }
 
         .profile-bio {
-            font-size: 1.1rem;
-            color: var(--text-dim);
-            max-width: 600px;
-            margin: 0 auto 40px auto;
+            font-size: 0.95rem;
+            color: #a5a5a5;
+            max-width: 650px;
+            margin: 0 auto 20px auto;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+            line-height: 1.8;
         }
 
         .global-links {
@@ -312,6 +331,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             border-bottom: 1px solid transparent;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
             transition: all 0.3s ease;
         }
 
@@ -323,7 +343,7 @@
         /* --- MANIFESTO --- */
         .manifesto-section {
             max-width: 800px;
-            margin: 80px auto;
+            margin: 90px auto 70px auto;
             padding: 0 30px;
             text-align: center;
         }
@@ -347,7 +367,7 @@
         /* --- PORTFOLIO ZIG-ZAG LAYOUT --- */
         .portfolio-section {
             max-width: 1400px;
-            margin: 100px auto;
+            margin: 80px auto;
             padding: 0 40px;
         }
 
@@ -360,7 +380,6 @@
             flex-direction: row;
         }
 
-        /* Alternating Layout */
         .film-card:nth-child(even) {
             flex-direction: row-reverse;
         }
@@ -542,6 +561,10 @@
 
         /* --- RESPONSIVE MOBILE --- */
         @media (max-width: 900px) {
+            .header-section {
+                height: 90vh;
+                padding-bottom: 30px;
+            }
             .film-card, .film-card:nth-child(even) {
                 flex-direction: column;
                 gap: 40px;
@@ -566,16 +589,19 @@
     
     <header class="header-section">
         <img src="../Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - Filmemacher und Unabhängiger Forscher" class="hero-banner">
-        <h1>ZEKI YAHYA</h1>
-        <p class="profile-bio">Filmemacher & Unabhängiger Forscher.<br>Fokus auf philosophisches, dystopisches und avantgardistisches Kino.</p>
         
-        <div class="global-links">
-            <a href="https://www.imdb.com/name/nm18412930/" target="_blank">IMDb</a>
-            <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">MUBI</a>
-            <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">Letterboxd</a>
-            <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">TMDB</a>
-            <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
-            <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
+        <div class="hero-content">
+            <h1>ZEKI YAHYA</h1>
+            <p class="profile-bio">Filmemacher & Unabhängiger Forscher.<br>Fokus auf philosophisches, dystopisches und avantgardistisches Kino.</p>
+            
+            <div class="global-links">
+                <a href="https://www.imdb.com/name/nm18412930/" target="_blank">IMDb</a>
+                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">MUBI</a>
+                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">Letterboxd</a>
+                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">TMDB</a>
+                <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
+                <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
+            </div>
         </div>
     </header>
 
@@ -585,13 +611,14 @@
             Kino ist für mich nicht nur ein Medium des Geschichtenerzählens; es ist ein Akt der spirituellen und philosophischen Ausgrabung. Es ist das Streben, das Unmanifestierte zu visualisieren und die stillen Kämpfe der Existenz einzufangen, bevor sie Form annehmen.<br><br>
             Meine kinematografische Untersuchung ist tief verwurzelt in der Suche nach der Ontologie der Wahrheit. Gestützt auf die tiefe existenzielle Schwere der Philosophie Nietzsches und die meditative, melancholische Stille der Tarkowskij-Tradition, betrachte ich die Leinwand nicht als Leinwand, sondern als Spiegel, der die Ruinen der modernen Seele reflektiert.<br><br>
             Auf meiner ständigen Reise – von der Sezierung der Mechanik der Realität in "The Illusion Industry" bis hin zur Erforschung der postindustriellen Entfremdung in "The Great City" – habe ich stets versucht, die Grenzen des visuellen Ausdrucks zu erweitern. Heute stehen wir an einem neuen Abgrund: dem synthetischen Bild.<br><br>
-            In meiner neuesten Arbeit "Archaeology of Unborn Faces" tauche ich in den "latenten Raum" der Künstlichen Intelligenz ein. Ich betrachte Algorithmen nicht einfach als Werkzeuge, sondern als "digitales Fegefeuer", in dem Erinnerungen, die nie existierten, und Identitäten, die erst noch geboren werden müssen, qualvoll um ihre Manifestation ringen. Durch eine düstere, monochromatische Linse und die rohe Kraft des Stummfilms versuche ich, diese ungeborenen Gesichter auszugraben und die Frage zu stellen, was es bedeutet, menschlich zu sein in einer Ära, in der Maschinen von menschlicher Trauer träumen können.<br><br>
+            In meiner neuesten Arbeit "Archaeology of Unborn Faces" tauche ich in den "latenten Raum" der Künstlichen Intelligenz. Ich betrachte Algorithmen nicht einfach als Werkzeuge, sondern als "digitales Fegefeuer", in dem Erinnerungen, die nie existierten, und Identitäten, die erst noch geboren werden müssen, qualvoll um ihre Manifestation ringen. Durch eine düstere, monochromatische Linse und die rohe Kraft des Stummfilms versuche ich, diese ungeborenen Gesichter auszugraben und die Frage zu stellen, was es bedeutet, menschlich zu sein in einer Ära, in der Maschinen von menschlicher Trauer träumen können.<br><br>
             Ich mache Filme, um den stillen Zusammenbruch und die lautlosen Wiederauferstehungen des menschlichen Geistes zu dokumentieren. Meine Arbeit ist eine Einladung, in den Abgrund zu blicken – nicht mit Angst, sondern mit dem tiefen Wunsch, die Architektur unserer eigenen Illusionen zu verstehen.
         </div>
     </section>
 
     <section class="portfolio-section">
 
+        <!-- FILM 1 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film Directed by Zeki Yahya" class="film-poster">
@@ -608,6 +635,7 @@
             </div>
         </article>
 
+        <!-- FILM 2 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema by Director Zeki Yahya" class="film-poster">
@@ -624,6 +652,7 @@
             </div>
         </article>
 
+        <!-- FILM 3 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project Directed by Zeki Yahya" class="film-poster">
@@ -642,6 +671,7 @@
             </div>
         </article>
 
+        <!-- FILM 4 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film Directed by Zeki Yahya" class="film-poster">
@@ -660,6 +690,7 @@
             </div>
         </article>
 
+        <!-- FILM 5 -->
         <article class="film-card">
             <div class="film-image-container">
                 <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - Experimentalfilm unter der Regie von Zeki Yahya" class="film-poster">
