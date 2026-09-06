@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeki Yahya | Filmmaker & Independent Researcher</title>
-    
+
     <meta name="description" content="Zeki Yahya is an independent filmmaker and researcher exploring avant-garde, philosophical, and dystopian cinema inspired by the Tarkovsky school and semiotic hyperreality.">
-    <meta name="keywords" content="Zeki Yahya, Zeki Yahya Director, Independent Researcher Zeki Yahya, Independent Filmmaker, Experimental Cinema, Avant-garde Cinema, Sculpting in Time, Cinematic Philosophy, Dystopian Narratives, Baudrillard Hyperreality, Case 0 Tomorrow, Archaeology of Unborn Faces, The Great City, The Illusion Industry, World Cinema, Art-house Director">
+    <meta name="keywords" content="Zeki Yahya, Zeki Yahya Director, Independent Researcher Zeki Yahya, Independent Filmmaker, Experimental Cinema, Avant-garde Cinema, Sculpting in Time, Cinematic Philosophy, Dystopian Narratives, Baudrillard Hyperreality, Case 0 Tomorrow, Archaeology of Unborn Faces, The Great City, The Illusion Industry, World Cinema, Arthouse Director">
     <meta name="author" content="Zeki Yahya">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zekiyahya.github.io/" />
@@ -27,12 +27,11 @@
     <link rel="alternate" hreflang="x-default" href="https://zekiyahya.github.io/" />
 
     <meta property="og:title" content="Zeki Yahya | Filmmaker & Independent Researcher">
-    <meta property="og:description" content="Explore the cinematic portfolio of Zeki Yahya. Independent experimental films focusing on philosophical depth, dystopian structures, and visual semiotics.">
+    <meta property="og:description" content="Explore the cinematic portfolio of Zeki Yahya. Independent experimental films focused on philosophical depth, dystopian structures, and visual semiotics.">
     <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
-    <meta property="og:url" content="https://zekiyahya.github.io">
+    <meta property="og:url" content="https://zekiyahya.github.io/">
     <meta property="og:type" content="profile">
 
-    <!-- Google Fonts Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
@@ -48,7 +47,7 @@
       "alternateName": "زكي يحيى",
       "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
       "jobTitle": "Filmmaker & Independent Researcher",
-      "description": "An independent filmmaker and researcher focusing on experimental, philosophical, and avant-garde cinema.",
+      "description": "Independent filmmaker and researcher focusing on experimental, philosophical, and avant-garde cinema.",
       "url": "https://zekiyahya.github.io",
       "spouse": {
         "@type": "Person",
@@ -263,41 +262,57 @@
             font-family: 'Amiri', serif;
         }
 
-        /* --- HEADER & HERO --- */
+        /* --- HERO OVERLAY (Шاشة كاملة 100vh مدمجة) --- */
         .header-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
-            justify-content: flex-start;
-            min-height: auto;
             text-align: center;
-            padding: 0 0 40px 0;
-            border-bottom: 1px solid var(--accent);
+            box-sizing: border-box;
+            padding-bottom: 50px;
+            overflow: hidden;
         }
 
         .hero-banner {
-            width: 100%; /* العرض الكامل بدون تفعيل التمرير الأفقي */
-            height: auto; /* يحافظ على الأبعاد الأصلية للصورة بالكامل دون قص */
-            display: block;
-            margin: 0 auto 40px auto;
-            /* التلاشي يبدأ من 90% للحفاظ على ملامح الصورة وإخفاء الحافة السفلية فقط */
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            z-index: 1;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0.85) 65%, rgba(0,0,0,0) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            padding: 0 20px;
         }
 
         h1 {
             font-size: 3.5rem;
             letter-spacing: 8px;
-            margin: 0 0 15px 0;
+            margin: 0 0 12px 0;
             font-weight: 400;
             text-transform: uppercase;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95);
         }
 
         .profile-bio {
-            font-size: 1.1rem;
-            color: var(--text-dim);
-            max-width: 600px;
-            margin: 0 auto 40px auto;
+            font-size: 1.05rem;
+            color: #b0b0b0;
+            max-width: 650px;
+            margin: 0 auto 30px auto;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+            line-height: 1.8;
         }
 
         .global-links {
@@ -314,6 +329,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             border-bottom: 1px solid transparent;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
             transition: all 0.3s ease;
         }
 
@@ -325,7 +341,7 @@
         /* --- MANIFESTO --- */
         .manifesto-section {
             max-width: 800px;
-            margin: 80px auto;
+            margin: 90px auto 70px auto;
             padding: 0 30px;
             text-align: center;
         }
@@ -349,7 +365,7 @@
         /* --- PORTFOLIO ZIG-ZAG LAYOUT --- */
         .portfolio-section {
             max-width: 1400px;
-            margin: 100px auto;
+            margin: 80px auto;
             padding: 0 40px;
         }
 
@@ -359,9 +375,9 @@
             justify-content: space-between;
             gap: 60px;
             margin-bottom: 120px;
+            flex-direction: row;
         }
 
-        /* Alternating Layout */
         .film-card:nth-child(even) {
             flex-direction: row-reverse;
         }
@@ -370,12 +386,12 @@
             flex: 1;
             max-width: 45%;
             display: flex;
-            justify-content: center; /* Center poster in container */
+            justify-content: center;
         }
 
         .film-poster {
             max-width: 100%;
-            max-height: 75vh; /* Prevents poster from exceeding screen height */
+            max-height: 75vh;
             width: auto;
             height: auto;
             display: block;
@@ -394,7 +410,7 @@
             max-width: 50%;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centers title and seals within the column */
+            align-items: center;
         }
 
         .film-title {
@@ -403,7 +419,7 @@
             letter-spacing: 4px;
             margin: 0 0 25px 0;
             font-weight: normal;
-            text-align: center; /* Explicitly center the title text */
+            text-align: center;
         }
 
         .film-statement {
@@ -411,14 +427,14 @@
             font-size: 1rem;
             line-height: 1.9;
             margin: 0 0 30px 0;
-            text-align: justify; /* Keeps the paragraph justified */
+            text-align: justify;
             width: 100%;
         }
 
         .film-seals {
             display: flex;
             gap: 20px;
-            justify-content: center; /* Centers the links under the text */
+            justify-content: center;
             flex-wrap: wrap;
         }
 
@@ -543,6 +559,10 @@
 
         /* --- RESPONSIVE MOBILE --- */
         @media (max-width: 900px) {
+            .header-section {
+                height: 90vh;
+                padding-bottom: 35px;
+            }
             .film-card, .film-card:nth-child(even) {
                 flex-direction: column;
                 gap: 40px;
@@ -552,13 +572,14 @@
                 max-width: 100%;
             }
             .film-poster {
-                max-height: 60vh; /* Slightly smaller maximum height for mobile screens */
+                max-height: 60vh;
             }
             .film-statement {
                 text-align-last: center;
             }
             h1 {
                 font-size: 2.2rem;
+                letter-spacing: 5px;
             }
         }
     </style>
@@ -567,27 +588,30 @@
     
     <header class="header-section">
         <img src="Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - Filmmaker and Independent Researcher" class="hero-banner">
-        <h1>ZEKI YAHYA</h1>
-        <p class="profile-bio">Filmmaker & Independent Researcher.<br>Focusing on philosophical, dystopian, Experimental, and avant-garde cinema.</p>
         
-        <div class="global-links">
-            <a href="https://www.imdb.com/name/nm18412930/" target="_blank">IMDb</a>
-            <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">MUBI</a>
-            <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">Letterboxd</a>
-            <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">TMDB</a>
-            <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
-            <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
+        <div class="hero-content">
+            <h1>ZEKI YAHYA</h1>
+            <p class="profile-bio">Filmmaker & Independent Researcher.<br>Focusing on philosophical, dystopian, Experimental, and avant-garde cinema.</p>
+            
+            <div class="global-links">
+                <a href="https://www.imdb.com/name/nm18412930/" target="_blank">IMDb</a>
+                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">MUBI</a>
+                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">Letterboxd</a>
+                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">TMDB</a>
+                <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
+                <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
+            </div>
         </div>
     </header>
 
     <section class="manifesto-section">
         <div class="director-manifesto">
-            <strong>THE CINEMATIC EXCAVATION: A DIRECTOR'S MANIFESTO</strong>
+            <strong>THE CINEMATIC EXCAVATION: A DIRECTOR'S MANIFESTO</strong><br><br>
             Cinema, for me, is not merely a medium for storytelling; it is an act of spiritual and philosophical excavation. It is the pursuit of visualizing the unmanifested, capturing the silent struggles of existence before they take form.<br><br>
-            My cinematic inquiry is deeply rooted in the search for the ontology of truth. Drawing upon the profound existential weight of Nietzschean philosophy and the meditative, melancholic stillness of the Tarkovskian tradition, I approach the screen not as a canvas, but as a mirror reflecting the ruins of the modern soul.<br><br>
-            In my continuous journey—from dissecting the mechanics of reality in The Illusion Industry to exploring post-industrial alienation in The Great City—I have always sought to push the boundaries of visual expression. Today, we stand at the precipice of a new frontier: the synthetic image.<br><br>
-            With my latest work, Archaeology of Unborn Faces, I delve into the "latent space" of Artificial Intelligence. I do not view algorithms simply as tools, but as a "digital purgatory" where memories that never existed and identities yet to be born agonizingly struggle for manifestation. Through a somber, monochromatic lens and the stark power of silent cinema, I aim to unearth these unborn faces, questioning what it means to be human in an era where machines can dream of human sorrow.<br><br>
-            I make films to document the quiet collapse and the silent resurrections of the human spirit. My work is an invitation to look into the abyss, not with fear, but with the profound desire to understand the architecture of our own illusions.
+            My cinematic inquiry is deeply rooted in the search for the ontology of truth. Drawing from the profound existential weight of Nietzschean philosophy and the meditative, melancholic stillness of the Tarkovskian tradition, I approach the screen not as a canvas, but as a mirror reflecting the ruins of the modern soul.<br><br>
+            In my ongoing journey—from dissecting the mechanics of reality in "The Illusion Industry" to exploring post-industrial alienation in "The Great City"—I have always sought to push the boundaries of visual expression. Today, we stand on the precipice of a new frontier: the synthetic image.<br><br>
+            With my latest work, "Archaeology of Unborn Faces," I plunge into the "latent space" of Artificial Intelligence. I view algorithms not merely as tools, but as a "digital purgatory" where memories that never existed and identities yet to be born struggle agonizingly for manifestation. Through a somber, monochromatic lens and the raw power of silent cinema, I seek to unearth these unborn faces, questioning what it means to be human in an era where machines can dream of human grief.<br><br>
+            I make films to document the silent collapse and mute resurrections of the human spirit. My work is an invitation to look into the abyss, not with fear, but with a profound desire to understand the architecture of our own illusions.
         </div>
     </section>
 
@@ -601,7 +625,7 @@
             <div class="film-content">
                 <h2 class="film-title">CASE 0: TOMORROW (2026)</h2>
                 <p class="film-statement">
-                    A cinematic prosecution of time. Moving beyond conventional narrative, this project materializes the bureaucratic deferral of existence—a visual translation of Kafkaesque nightmare and the Nietzschean dread of the modern industrial soul. By stripping the narrative of dialogue and musical comfort, the viewer is forced to physically endure the erosion of waiting, transforming the screen into an existential purgatory.
+                    A cinematic prosecution of time. Moving beyond conventional narrative, this project materializes the bureaucratic postponement of existence—a visual translation of Kafkaesque nightmare and the Nietzschean dread of the modern industrial soul. By stripping the narrative of dialogue and musical comfort, the viewer is forced to physically endure the erosion of waiting, turning the screen into an existential purgatory.
                 </p>
                 <div class="film-seals">
                     <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
@@ -618,7 +642,7 @@
             <div class="film-content">
                 <h2 class="film-title">ARCHAEOLOGY OF UNBORN FACES (2026)</h2>
                 <p class="film-statement">
-                    A profound cinematic excavation of the AI "Latent Space." Moving beyond the critique of digital deception, this project investigates the very ontology of synthetic existence. Adopting Tarkovsky’s philosophy of sculpting in time, the agonizingly slow takes and heavy silence force the viewer to endure the physical weight of time inside a machine that does not comprehend mortality. The flawless faces that emerge are not reflections of reality, but a Baudrillardian "hyperreality" concealing the absence of an origin.
+                    A profound cinematic excavation of AI's "latent space." Moving beyond the critique of digital deception, this project investigates the ontology of synthetic existence itself. Embracing Tarkovsky’s philosophy of sculpting in time, the agonizingly slow takes and heavy silence force the viewer to endure the physical weight of time inside a machine that does not comprehend mortality. The flawless faces that emerge are not reflections of reality, but a Baudrillardian "hyperreality" concealing the absence of an origin.
                 </p>
                 <div class="film-seals">
                     <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
@@ -635,7 +659,7 @@
             <div class="film-content">
                 <h2 class="film-title">THE GREAT CITY (2026)</h2>
                 <p class="film-statement">
-                    Inspired by Friedrich Nietzsche's philosophical masterpiece, "Thus Spoke Zarathustra," this avant-garde project serves as a grim cinematic mirror to the contemporary metropolis. It visually dissects the chilling prophecy of the "Last Man"—the ultimate manifestation of spiritual nihilism and cultural decay within the modern crowd. Through an uncompromising experimental lens, the film strips away the romanticism of urban progress to expose the hollow essence of a society trapped in mechanical repetition.
+                    Inspired by Friedrich Nietzsche's philosophical masterpiece "Thus Spoke Zarathustra," this avant-garde project serves as a grim cinematic mirror to the contemporary metropolis. It visually dissects the chilling prophecy of the "Last Man"—the ultimate manifestation of spiritual nihilism and cultural decay within the modern crowd. Through an uncompromising experimental lens, the film strips away the romanticism of urban progress to expose the hollow essence of a society trapped in mechanical repetition.
                 </p>
                 <div class="film-seals">
                     <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
@@ -654,7 +678,7 @@
             <div class="film-content">
                 <h2 class="film-title">THE ILLUSION INDUSTRY (2026)</h2>
                 <p class="film-statement">
-                    An intense cinematic critique of hyperreality and digital deception. This project explores the blurring lines between authentic human existence and simulated realities, questioning the manufactured narratives that dominate our visual culture. Stripped of superficial cinematic conventions, the film challenges the viewer to dissect the ontology of the image and the systematic production of illusion in the modern world.
+                    An intense cinematic critique of hyperreality and digital deception. This project explores the blurred lines between authentic human existence and simulated realities, questioning the manufactured narratives that dominate our visual culture. Stripped of superficial cinematic conventions, the film challenges the viewer to dissect the ontology of the image and the systematic production of illusion in the modern world.
                 </p>
                 <div class="film-seals">
                     <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
@@ -673,7 +697,7 @@
             <div class="film-content">
                 <h2 class="film-title">PAINTING (2024)</h2>
                 <p class="film-statement">
-                    A contemplative visual journey into the depths of solitude and daily routine, where 'the painting' transforms from a mere object into a mirror reflecting the human struggle between the desire to belong and the bitterness of alienation. 'Painting' is a cinematic experience that explores the gap between the self and the other.
+                    A contemplative visual journey into the depths of loneliness and everyday routine, where 'the painting' transforms from a mere object into a mirror reflecting the human struggle between the desire to belong and the bitterness of alienation. 'Painting' is a cinematic experience that explores the gap between the self and the other.
                 </p>
                 <div class="film-seals"> 
                     <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
@@ -685,28 +709,28 @@
     </section> 
 
     <section class="research-section">
-        <div class="section-separator">TEXTS & RESEARCH</div>
+        <div class="section-separator">WRITINGS & RESEARCH</div>
         
         <div class="articles-grid">
             
             <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
                 <div class="article-meta">2026 — PhilPapers</div>
                 <h3 class="article-title">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3>
-                <div class="article-excerpt">A cinematic and philosophical manifesto exploring "Melancholic Realism" as a disruptive visual methodology in the age of synthetic and digital cinema. Drawing deep phenomenological parallels to Andrei Tarkovsky’s 1983 masterpiece 'Nostalghia', this paper examines the weaponization of physical friction, environmental decay, and agonizing duration against contemporary hyperreal perfection...</div>
+                <div class="article-excerpt">A cinematic and philosophical manifesto exploring "Melancholic Realism" as a disruptive visual methodology in the age of synthetic and digital cinema. Drawing deep phenomenological parallels with Andrei Tarkovsky’s 1983 masterpiece Nostalghia, this paper examines the weaponization of physical friction, environmental decay, and agonizing duration against contemporary hyperreal perfection...</div>
                 <div class="article-link">[ READ ON PHILPAPERS ]</div>
             </a>
 
             <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
                 <div class="article-meta">2026 — PhilPapers</div>
                 <h3 class="article-title">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3>
-                <div class="article-excerpt">This article examines the epistemological crisis of the digital epoch, arguing that the modern media apparatus controls society not by suppressing truth, but by mass-producing hyper-personalized algorithmic illusions. Utilizing Martin Scorsese’s Shutter Island (2010) as a primary metaphor, the essay parallels the immersive, manufactured reality of Ashecliffe Hospital...</div>
+                <div class="article-excerpt">This paper examines the epistemological crisis of the digital epoch, arguing that the modern media apparatus controls society not by suppressing truth, but by mass-producing hyper-personalized algorithmic illusions. Utilizing Martin Scorsese’s Shutter Island (2010) as a primary metaphor, the essay parallels the immersive, manufactured reality of Ashecliffe Hospital...</div>
                 <div class="article-link">[ READ ON PHILPAPERS ]</div>
             </a>
             
            <a href="https://zenodo.org/records/20748757" target="_blank" class="article-card">
                 <div class="article-meta">2026 — Zenodo</div>
                 <h3 class="article-title">The Illusion Industry: How Fake News Shapes Public Opinion</h3>
-                <div class="article-excerpt">This research addresses the phenomenon of fake news as a dangerous manifestation of misinformation in the contemporary digital environment, operating as a conscious industry of illusion based on a complex interaction between digital algorithms and human psychological biases. Relying on a descriptive-analytical approach and semiotic analysis...</div>
+                <div class="article-excerpt">This research tackles the phenomenon of fake news as a dangerous manifestation of misinformation in the contemporary digital environment, operating as a conscious industry of illusion based on a complex interaction between digital algorithms and human psychological biases. Relying on a descriptive-analytical approach and semiotic analysis...</div>
                 <div class="article-link">[ READ ON ZENODO ]</div>
             </a> 
 
