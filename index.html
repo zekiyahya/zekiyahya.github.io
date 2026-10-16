@@ -41,11 +41,22 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
+      "@type": ["Person", "Organization"],
       "@id": "https://zekiyahya.github.io/#person",
       "name": "Zeki Yahya",
       "alternateName": "زكي يحيى",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "image": {
+    "@id": "https://zekiyahya.github.io/#logo"
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://zekiyahya.github.io/#logo",
+    "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "caption": "Zeki Yahya",
+    "width": "2731",
+    "height": "1536"
+  },
       "jobTitle": "Filmmaker & Independent Researcher",
       "description": "Independent filmmaker and researcher focusing on experimental, philosophical, and avant-garde cinema.",
       "url": "https://zekiyahya.github.io",
@@ -111,6 +122,18 @@
         "Decayed Aesthetic Color Grading"
       ]
     },
+    ,
+{
+  "@type": "WebSite",
+  "@id": "https://zekiyahya.github.io/#website",
+  "url": "https://zekiyahya.github.io",
+  "name": "Zeki Yahya",
+  "alternateName": "المخرج زكي يحيى",
+  "publisher": {
+    "@id": "https://zekiyahya.github.io/#person"
+  },
+  "inLanguage": "en-US"
+}    
     {
       "@type": "Movie",
       "@id": "https://zekiyahya.github.io/#archaeology-of-unborn-faces",
