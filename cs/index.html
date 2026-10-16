@@ -42,11 +42,22 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
+      "@type": ["Person", "Organization"],
       "@id": "https://zekiyahya.github.io/#person",
       "name": "Zeki Yahya",
       "alternateName": "زكي يحيى",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+       "image": {
+    "@id": "https://zekiyahya.github.io/#logo"
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://zekiyahya.github.io/#logo",
+    "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "caption": "Zeki Yahya",
+    "width": "2731",
+    "height": "1536"
+  },
       "jobTitle": "Filmový tvůrce & Nezávislý výzkumník",
       "description": "Nezávislý filmový tvůrce a výzkumník se zaměřením na experimentální, filozofickou a avantgardní kinematografii.",
       "url": "https://zekiyahya.github.io",
@@ -111,7 +122,19 @@
         "Sémiotika digitálních dezinformací",
         "Barevná korekce s estetikou rozpadu"
       ]
-    },
+      },
+    ,
+{
+  "@type": "WebSite",
+  "@id": "https://zekiyahya.github.io/#website",
+  "url": "https://zekiyahya.github.io",
+  "name": "Zeki Yahya",
+  "alternateName": "زكي يحيى",
+  "publisher": {
+    "@id": "https://zekiyahya.github.io/#person"
+  },
+  "inLanguage": "cs"
+}      
     {
       "@type": "Movie",
       "@id": "https://zekiyahya.github.io/#archaeology-of-unborn-faces",
