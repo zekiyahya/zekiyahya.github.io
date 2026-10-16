@@ -8,7 +8,7 @@
     <meta name="description" content="The experimental Sumerian cuneiform edition of Zeki Yahya's cinematic portfolio. An avant-garde web experience bridging ancient semiotics with philosophical and dystopian cinema.">
     <meta name="keywords" content="Zeki Yahya, Sumerian, Cuneiform Web, Independent Researcher Zeki Yahya, Independent Filmmaker, Experimental Cinema, Avant-garde Cinema, Sculpting in Time, Cinematic Philosophy, Semiotic Hyperreality, Case 0 Tomorrow, Archaeology of Unborn Faces, The Great City, The Illusion Industry">
     <meta name="author" content="Zeki Yahya">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://zekiyahya.github.io/sux/" />
     <link rel="alternate" hreflang="en" href="https://zekiyahya.github.io/" />
     <link rel="alternate" hreflang="ru" href="https://zekiyahya.github.io/ru/" />
@@ -29,8 +29,15 @@
     <meta property="og:title" content="Zeki Yahya | Experimental Sumerian Edition">
     <meta property="og:description" content="Enter the experimental Sumerian cuneiform edition of Zeki Yahya's cinematic portfolio. An avant-garde exploration bridging ancient visual semiotics with modern philosophical filmmaking.">
     <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
+    <meta property="og:image:secure_url" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="2731">
+    <meta property="og:image:height" content="1536">
+    <meta property="og:image:alt" content="Zeki Yahya">
     <meta property="og:url" content="https://zekiyahya.github.io/sux/">
     <meta property="og:type" content="profile">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,14 +48,57 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "ImageObject",
+      "@id": "https://zekiyahya.github.io/sux/#primaryimage",
+      "inLanguage": "sux",
+      "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "width": 2731,
+      "height": 1536,
+      "caption": "Zeki Yahya - Experimental Sumerian Edition",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://zekiyahya.github.io/sux/#webpage",
+      "url": "https://zekiyahya.github.io/sux/",
+      "name": "Zeki Yahya | Experimental Sumerian Edition",
+      "isPartOf": {
+        "@id": "https://zekiyahya.github.io/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://zekiyahya.github.io/sux/#primaryimage"
+      },
+      "mainEntity": {
+        "@id": "https://zekiyahya.github.io/#person"
+      },
+      "inLanguage": "sux"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zekiyahya.github.io/#website",
+      "url": "https://zekiyahya.github.io/",
+      "name": "Zeki Yahya",
+      "alternateName": "زكي يحيى",
+      "publisher": {
+        "@id": "https://zekiyahya.github.io/#person"
+      },
+      "inLanguage": "sux"
+    },
+    {
       "@type": "Person",
       "@id": "https://zekiyahya.github.io/#person",
       "name": "Zeki Yahya",
       "alternateName": "زكي يحيى",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "url": "https://zekiyahya.github.io/",
+      "mainEntityOfPage": {
+        "@id": "https://zekiyahya.github.io/sux/#webpage"
+      },
+      "image": {
+        "@id": "https://zekiyahya.github.io/sux/#primaryimage"
+      },
       "jobTitle": "Filmmaker & Independent Researcher",
       "description": "An independent filmmaker and researcher focusing on experimental, philosophical, and avant-garde cinema.",
-      "url": "https://zekiyahya.github.io",
       "spouse": {
         "@type": "Person",
         "name": "Shireen",
@@ -85,9 +135,30 @@
         "https://www.filmaffinity.com/en/name.php?name-id=919730223",
         "https://www.moviemeter.nl/personen/6167685",
         "https://thetvdb.com/people/9158036-zeki-yahya",
-        "https://africultures.com/personnes/?no=58214", 
+        "https://africultures.com/personnes/?no=58214",
         "https://philpeople.org/profiles/zeki-yahya",
         "https://muckrack.com/zeki-yahya-1"
+      ],
+      "knowsAbout": [
+        "Film Directing",
+        "Experimental Cinema",
+        "Avant-garde Cinema",
+        "Screenwriting",
+        "Film Research",
+        "Cinematic Philosophy",
+        "Sculpting in Time",
+        "Tarkovsky School of Cinematography",
+        "Dystopian Narratives",
+        "Hyperreality and Semiotic Analysis",
+        "Visual Direction",
+        "Cinematic Ontological Inquiry",
+        "Post-Industrial Nihilism in Cinema",
+        "Latent Space Cinematography",
+        "Baudrillardian Hyperreality in Film",
+        "Kafkaesque Bureaucratic Dread",
+        "Media Manipulation and Public Opinion",
+        "Digital Disinformation Semiotics",
+        "Decayed Aesthetic Color Grading"
       ]
     },
     {
@@ -97,7 +168,19 @@
       "sameAs": "https://www.wikidata.org/wiki/Q140161194",
       "genre": ["Avant-garde", "Experimental Film"],
       "director": { "@id": "https://zekiyahya.github.io/#person" },
-      "image": "https://zekiyahya.github.io/poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg"
+      "contributor": { 
+        "@type": "Person", 
+        "name": "Shireen",
+        "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+      },
+      "image": "https://zekiyahya.github.io/poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg",
+      "about": [
+        {
+          "@type": "Person",
+          "name": "Andrei Tarkovsky",
+          "sameAs": "https://www.wikidata.org/wiki/Q853"
+        }
+      ]
     },
     {
       "@type": "Movie",
@@ -106,7 +189,24 @@
       "sameAs": "https://www.wikidata.org/wiki/Q140164231",
       "genre": ["Avant-garde", "Experimental Film"],
       "director": { "@id": "https://zekiyahya.github.io/#person" },
-      "image": "https://zekiyahya.github.io/CASE0TOMORROW-poster.jpg"
+      "contributor": { 
+        "@type": "Person", 
+        "name": "Shireen",
+        "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+      },
+      "image": "https://zekiyahya.github.io/CASE0TOMORROW-poster.jpg",
+      "about": [
+        {
+          "@type": "Person",
+          "name": "Franz Kafka",
+          "sameAs": "https://www.wikidata.org/wiki/Q905"
+        },
+        {
+          "@type": "Person",
+          "name": "Friedrich Nietzsche",
+          "sameAs": "https://www.wikidata.org/wiki/Q9358"
+        }
+      ]
     },
     {
       "@type": "Movie",
@@ -115,7 +215,19 @@
       "sameAs": "https://www.wikidata.org/wiki/Q140162744",
       "genre": ["Philosophical Experimental Film"],
       "director": { "@id": "https://zekiyahya.github.io/#person" },
-      "image": "https://zekiyahya.github.io/poster-the-great-city.png"
+      "contributor": { 
+        "@type": "Person", 
+        "name": "Shireen",
+        "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+      },
+      "image": "https://zekiyahya.github.io/poster-the-great-city.png",
+      "about": [
+        {
+          "@type": "Person",
+          "name": "Friedrich Nietzsche",
+          "sameAs": "https://www.wikidata.org/wiki/Q9358"
+        }
+      ]
     },
     {
       "@type": "Movie",
@@ -124,6 +236,11 @@
       "sameAs": "https://www.wikidata.org/wiki/Q140163279",
       "genre": ["Analytical Documentary Film"],
       "director": { "@id": "https://zekiyahya.github.io/#person" },
+      "contributor": { 
+        "@type": "Person", 
+        "name": "Shireen",
+        "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+      },
       "image": "https://zekiyahya.github.io/poster-the-illusion-industry.jpg"
     },
     {
@@ -133,7 +250,54 @@
       "sameAs": "https://www.wikidata.org/wiki/Q140442263",
       "genre": ["Drama", "Experimental Film"],
       "director": { "@id": "https://zekiyahya.github.io/#person" },
+      "contributor": { 
+        "@type": "Person", 
+        "name": "Shireen",
+        "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+      },
       "image": "https://zekiyahya.github.io/Painting_2024_Film_Poster1.jpg"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://zekiyahya.github.io/#thesis-fake-news",
+      "name": "The Illusion Industry: How Fake News Shapes Public Opinion",
+      "sameAs": "https://www.wikidata.org/wiki/Q140284075",
+      "author": { "@id": "https://zekiyahya.github.io/#person" },
+      "contributor": [
+        { 
+          "@type": "Person", 
+          "name": "Shireen",
+          "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+        },
+        { 
+          "@type": "Person", 
+          "name": "Ekbal Al Mumen",
+          "sameAs": "https://www.wikidata.org/wiki/Q140325264",
+          "jobTitle": "Academic Supervisor"
+        }
+      ],
+      "description": "Thesis on fake news and media disinformation."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://zekiyahya.github.io/#essay-melancholic-realism",
+      "name": "Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema",
+      "sameAs": "https://www.wikidata.org/wiki/Q140580053",
+      "author": { "@id": "https://zekiyahya.github.io/#person" },
+      "about": [
+        {
+          "@type": "Person",
+          "name": "Andrei Tarkovsky",
+          "sameAs": "https://www.wikidata.org/wiki/Q853"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://zekiyahya.github.io/#essay-simulated-realities",
+      "name": "Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry",
+      "url": "https://philpapers.org/rec/YAHSRS",
+      "author": { "@id": "https://zekiyahya.github.io/#person" }
     }
   ]
 }
@@ -270,7 +434,7 @@
 
         .film-card {
             display: flex;
-            align-items: center; /* التوسيط العمودي الصارم */
+            align-items: center;
             justify-content: space-between;
             gap: 60px;
             margin-bottom: 120px;
@@ -310,12 +474,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* ضمان توسيط النصوص داخل الكتلة */
+            justify-content: center;
         }
 
         .film-title {
             color: #ffffff;
-            font-size: 2.5rem; /* تكبير الخط للرموز السومرية */
+            font-size: 2.5rem;
             letter-spacing: 10px;
             margin: 0 0 25px 0;
             font-weight: normal;
@@ -325,8 +489,8 @@
         .film-statement {
             color: var(--text-dim);
             font-size: 1.1rem;
-            line-height: 2.2; /* زيادة تباعد الأسطر */
-            word-spacing: 10px; /* تباعد كبير للكلمات المسمارية */
+            line-height: 2.2;
+            word-spacing: 10px;
             margin: 0 0 30px 0;
             text-align: center;
             width: 100%;
@@ -482,19 +646,19 @@
 <body>
     
     <header class="header-section">
-        <img src="../Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - Experimental Sumerian Edition" class="hero-banner">
+        <img src="../Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - Experimental Sumerian Edition" class="hero-banner" fetchpriority="high" width="2731" height="1536">
         
         <div class="hero-content">
             <h1 style="font-family: serif;">𒍣 𒆠 𒅀 𒄴 𒅀</h1>
             <p class="profile-bio">𒇽 𒆕 𒈪 𒌓 𒁾 𒊬 𒌝 𒈪 𒀀</p>
             
             <div class="global-links">
-                <a href="https://www.imdb.com/name/nm18412930/" target="_blank">𒂍 𒁾 𒈪 𒌓</a>
-                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">𒅆 𒆬 𒀭</a>
-                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">𒁾 𒅗 𒅆</a>
-                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">𒂍 𒃲 𒈪 𒌓</a>
-                <a href="https://filmfreeway.com/zekiyahya" target="_blank">𒆜 𒆷</a>
-                <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">𒅆 𒌉 𒌓</a>
+                <a href="https://www.imdb.com/name/nm18412930/" target="_blank" rel="noopener noreferrer">𒂍 𒁾 𒈪 𒌓</a>
+                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank" rel="noopener noreferrer">𒅆 𒆬 𒀭</a>
+                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank" rel="noopener noreferrer">𒁾 𒅗 𒅆</a>
+                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank" rel="noopener noreferrer">𒂍 𒃲 𒈪 𒌓</a>
+                <a href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer">𒆜 𒆷</a>
+                <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank" rel="noopener noreferrer">𒅆 𒌉 𒌓</a>
             </div>
         </div>
     </header>
@@ -515,7 +679,7 @@
         <!-- FILM 1 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film" class="film-poster">
+                <img src="../CASE0TOMORROW-poster.jpg" alt="Case 0: Tomorrow - Experimental Film" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">𒅗 𒉡 𒌓 𒁺 𒀀</h2>
@@ -523,8 +687,8 @@
                     𒌓 𒆜 𒀭 𒆠 𒋫 𒇽 𒉡 𒋾 𒆷 𒈪 𒌓 𒆕 𒃲 𒀭
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank">𒂍 𒁾 𒈪 𒌓</a>
-                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">𒁾 𒅗 𒅆</a>
+                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank" rel="noopener noreferrer">𒂍 𒁾 𒈪 𒌓</a>
+                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank" rel="noopener noreferrer">𒁾 𒅗 𒅆</a>
                 </div>
             </div>
         </article>
@@ -532,7 +696,7 @@
         <!-- FILM 2 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema" class="film-poster">
+                <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces - AI Avant-garde Cinema" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">𒆠 𒁀 𒀠 𒉡 𒌅 𒌓 𒅆</h2>
@@ -540,8 +704,8 @@
                     𒆠 𒍏 𒉡 𒋾 𒆷 𒈪 𒌓 𒆕 𒇽 𒉡 𒌅 𒌓 𒅆
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank">𒂍 𒁾 𒈪 𒌓</a>
-                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">𒁾 𒅗 𒅆</a>
+                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank" rel="noopener noreferrer">𒂍 𒁾 𒈪 𒌓</a>
+                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank" rel="noopener noreferrer">𒁾 𒅗 𒅆</a>
                 </div>
             </div>
         </article>
@@ -549,7 +713,7 @@
         <!-- FILM 3 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project" class="film-poster">
+                <img src="../poster-the-great-city.png" alt="The Great City - Dystopian Cinematic Project" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">𒌷 𒃲</h2>
@@ -557,9 +721,9 @@
                     𒌷 𒃲 𒈪 𒀭 𒆠 𒇽 𒃲 𒀭 𒂗 𒌷 𒈜 𒋾 𒌓 𒆜
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank">𒂍 𒁾 𒈪 𒌓</a>
-                    <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">𒁾 𒅗 𒅆</a>
-                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank">𒅆 𒆬 𒀭</a>
+                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank" rel="noopener noreferrer">𒂍 𒁾 𒈪 𒌓</a>
+                    <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank" rel="noopener noreferrer">𒁾 𒅗 𒅆</a>
+                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank" rel="noopener noreferrer">𒅆 𒆬 𒀭</a>
                     <span>[ 𒀭 𒆠 𒋫 — 𒈗 𒈪 ]</span>
                 </div>
             </div>
@@ -568,7 +732,7 @@
         <!-- FILM 4 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film" class="film-poster">
+                <img src="../poster-the-illusion-industry.jpg" alt="The Illusion Industry - Hyperreality Film" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">𒈜 𒆕</h2>
@@ -576,9 +740,9 @@
                     𒈜 𒈪 𒌓 𒀭 𒆠 𒋫 𒆕 𒇽 𒃲 𒀭 𒂗 𒅆 𒉡 𒍏
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank">𒂍 𒁾 𒈪 𒌓</a>
-                    <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">𒁾 𒅗 𒅆</a>
-                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank">𒅆 𒆬 𒀭</a>
+                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank" rel="noopener noreferrer">𒂍 𒁾 𒈪 𒌓</a>
+                    <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank" rel="noopener noreferrer">𒁾 𒅗 𒅆</a>
+                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank" rel="noopener noreferrer">𒅆 𒆬 𒀭</a>
                     <span>[ 𒀭 𒆠 𒋫 — 𒈗 𒈪 ]</span>
                 </div>
             </div>
@@ -587,7 +751,7 @@
         <!-- FILM 5 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - Experimental Film" class="film-poster">
+                <img src="../Painting_2024_Film_Poster1.jpg" alt="Painting - Experimental Film" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">𒀀 𒇴</h2>
@@ -595,8 +759,8 @@
                     𒅆 𒁺 𒆠 𒀸 𒈨 𒂗 𒃻 𒄯 𒇽 𒋾 𒆷 𒇽 𒆠 𒀀 𒈾 𒈨 𒂗 𒀸 𒁺
                 </p>
                 <div class="film-seals"> 
-                    <a href="https://www.imdb.com/title/tt43709953/" target="_blank">𒂍 𒁾 𒈪 𒌓</a>
-                    <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">𒁾 𒅗 𒅆</a>
+                    <a href="https://www.imdb.com/title/tt43709953/" target="_blank" rel="noopener noreferrer">𒂍 𒁾 𒈪 𒌓</a>
+                    <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank" rel="noopener noreferrer">𒁾 𒅗 𒅆</a>
                 </div>
             </div>
         </article>
@@ -608,7 +772,7 @@
         
         <div class="articles-grid">
             
-            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
+            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer" class="article-card">
                 <div class="article-meta">2026 — PHILPAPERS</div>
                 <h3 class="article-title">𒁾 𒊬 𒈪 𒌓 𒀭 𒆠 𒋫</h3>
                 <div class="article-excerpt">
@@ -617,7 +781,7 @@
                 <div class="article-link">[ 𒁾 𒊬 ]</div>
             </a>
 
-            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
+            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer" class="article-card">
                 <div class="article-meta">2026 — PHILPAPERS</div>
                 <h3 class="article-title">𒇽 𒆕 𒈪 𒌓 𒁾 𒊬 𒌝 𒈪 𒀀</h3>
                 <div class="article-excerpt">
@@ -626,7 +790,7 @@
                 <div class="article-link">[ 𒁾 𒊬 ]</div>
             </a>
             
-           <a href="https://zenodo.org/records/20748757" target="_blank" class="article-card">
+           <a href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer" class="article-card">
                 <div class="article-meta">2026 — ZENODO</div>
                 <h3 class="article-title">𒌝 𒈪 𒀀 𒁾 𒊬 𒈪 𒌓</h3>
                 <div class="article-excerpt">
