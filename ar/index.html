@@ -41,11 +41,22 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
+      "@type": ["Person", "Organization"],
       "@id": "https://zekiyahya.github.io/#person",
       "name": "زكي يحيى",
       "alternateName": "Zeki Yahya",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+       "image": {
+    "@id": "https://zekiyahya.github.io/#logo"
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://zekiyahya.github.io/#logo",
+    "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "caption": "Zeki Yahya",
+    "width": "2731",
+    "height": "1536"
+  },
       "jobTitle": "صانع أفلام وباحث مستقل",
       "description": "صانع أفلام وباحث مستقل يركز على السينما التجريبية، الفلسفية، والطليعية.",
       "url": "https://zekiyahya.github.io",
@@ -110,6 +121,19 @@
         "سيميائية التضليل الرقمي",
         "تصحيح الألوان بجماليات التلاشي"
       ]
+         },
+    ,
+{
+  "@type": "WebSite",
+  "@id": "https://zekiyahya.github.io/#website",
+  "url": "https://zekiyahya.github.io",
+  "name": "Zeki Yahya",
+  "alternateName": "زكي يحيى",
+  "publisher": {
+    "@id": "https://zekiyahya.github.io/#person"
+  },
+  "inLanguage": "ar"
+}   
     },
     {
       "@type": "Movie",
