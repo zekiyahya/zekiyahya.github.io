@@ -42,11 +42,22 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
+      "@type": ["Person", "Organization"],
       "@id": "https://zekiyahya.github.io/#person",
       "name": "Zeki Yahya",
       "alternateName": "زكي يحيى",
-      "image": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "image": {
+    "@id": "https://zekiyahya.github.io/#logo"
+  },
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://zekiyahya.github.io/#logo",
+    "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+    "caption": "Zeki Yahya",
+    "width": "2731",
+    "height": "1536"
+  },
       "jobTitle": "Cinéaste & Chercheur Indépendant",
       "description": "Cinéaste et chercheur indépendant axé sur le cinéma expérimental, philosophique et d'avant-garde.",
       "url": "https://zekiyahya.github.io",
@@ -111,7 +122,19 @@
         "Sémiotique de la désinformation numérique",
         "Étalonnage colorimétrique à l'esthétique décadente"
       ]
-    },
+       },
+    ,
+{
+  "@type": "WebSite",
+  "@id": "https://zekiyahya.github.io/#website",
+  "url": "https://zekiyahya.github.io",
+  "name": "Zeki Yahya",
+  "alternateName": "زكي يحيى",
+  "publisher": {
+    "@id": "https://zekiyahya.github.io/#person"
+  },
+  "inLanguage": "en-US"
+}      
     {
       "@type": "Movie",
       "@id": "https://zekiyahya.github.io/#archaeology-of-unborn-faces",
