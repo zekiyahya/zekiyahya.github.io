@@ -8,7 +8,7 @@
     <meta name="description" content="زكي يحيى صانع أفلام وباحث مستقل يستكشف السينما الطليعية، الفلسفية، والديستوبية المستوحاة من مدرسة تاركوفسكي والواقع الفائق السيميائي.">
     <meta name="keywords" content="زكي يحيى, المخرج زكي يحيى, الباحث زكي يحيى, سينما تجريبية, سينما طليعية, نحت الوقت, فلسفة السينما, سينما ديستوبية, بودريار, الواقع الفائق">
     <meta name="author" content="زكي يحيى">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://zekiyahya.github.io/ar/" />
     <link rel="alternate" hreflang="en" href="https://zekiyahya.github.io/" />
     <link rel="alternate" hreflang="ru" href="https://zekiyahya.github.io/ru/" />
@@ -29,8 +29,15 @@
     <meta property="og:title" content="زكي يحيى | صانع أفلام وباحث مستقل">
     <meta property="og:description" content="استكشف المعرض السينمائي للمخرج زكي يحيى. أعمال تجريبية تبحث في الوجودية والواقع الفائق.">
     <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
+    <meta property="og:image:secure_url" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="2731">
+    <meta property="og:image:height" content="1536">
+    <meta property="og:image:alt" content="زكي يحيى">
     <meta property="og:url" content="https://zekiyahya.github.io/ar/">
     <meta property="og:type" content="profile">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,25 +48,57 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Person", "Organization"],
+      "@type": "ImageObject",
+      "@id": "https://zekiyahya.github.io/ar/#primaryimage",
+      "inLanguage": "ar",
+      "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
+      "width": 2731,
+      "height": 1536,
+      "caption": "زكي يحيى - صانع أفلام وباحث مستقل",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://zekiyahya.github.io/ar/#webpage",
+      "url": "https://zekiyahya.github.io/ar/",
+      "name": "زكي يحيى | صانع أفلام وباحث مستقل",
+      "isPartOf": {
+        "@id": "https://zekiyahya.github.io/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://zekiyahya.github.io/ar/#primaryimage"
+      },
+      "mainEntity": {
+        "@id": "https://zekiyahya.github.io/#person"
+      },
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zekiyahya.github.io/#website",
+      "url": "https://zekiyahya.github.io/",
+      "name": "Zeki Yahya",
+      "alternateName": "زكي يحيى",
+      "publisher": {
+        "@id": "https://zekiyahya.github.io/#person"
+      },
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "Person",
       "@id": "https://zekiyahya.github.io/#person",
       "name": "زكي يحيى",
       "alternateName": "Zeki Yahya",
-       "image": {
-    "@id": "https://zekiyahya.github.io/#logo"
-  },
-  "logo": {
-    "@type": "ImageObject",
-    "@id": "https://zekiyahya.github.io/#logo",
-    "url": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
-    "contentUrl": "https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg",
-    "caption": "Zeki Yahya",
-    "width": "2731",
-    "height": "1536"
-  },
+      "url": "https://zekiyahya.github.io/",
+      "mainEntityOfPage": {
+        "@id": "https://zekiyahya.github.io/ar/#webpage"
+      },
+      "image": {
+        "@id": "https://zekiyahya.github.io/ar/#primaryimage"
+      },
       "jobTitle": "صانع أفلام وباحث مستقل",
       "description": "صانع أفلام وباحث مستقل يركز على السينما التجريبية، الفلسفية، والطليعية.",
-      "url": "https://zekiyahya.github.io",
       "spouse": {
         "@type": "Person",
         "name": "Shireen",
@@ -120,18 +159,7 @@
         "التلاعب الإعلامي والرأي العام",
         "سيميائية التضليل الرقمي",
         "تصحيح الألوان بجماليات التلاشي"
-     ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://zekiyahya.github.io/#website",
-      "url": "https://zekiyahya.github.io",
-      "name": "Zeki Yahya",
-      "alternateName": "زكي يحيى",
-      "publisher": {
-        "@id": "https://zekiyahya.github.io/#person"
-      },
-      "inLanguage": "ar"
+      ]
     },
     {
       "@type": "Movie",
@@ -263,6 +291,13 @@
           "sameAs": "https://www.wikidata.org/wiki/Q853"
         }
       ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://zekiyahya.github.io/#essay-simulated-realities",
+      "name": "عوالم محاكاة: سكورسيزي، الماكينة الإعلامية الحديثة، وصناعة الوهم",
+      "url": "https://philpapers.org/rec/YAHSRS",
+      "author": { "@id": "https://zekiyahya.github.io/#person" }
     }
   ]
 }
@@ -290,7 +325,7 @@
             font-family: 'Amiri', serif;
         }
 
-        /* --- HERO OVERLAY (الشاشة الأولى المدمجة) --- */
+        /* --- HERO OVERLAY --- */
         .header-section {
             position: relative;
             width: 100%;
@@ -532,6 +567,7 @@
             color: #666; 
             letter-spacing: 2px;
             margin-bottom: 15px;
+            text-transform: uppercase;
             font-family: monospace;
         }
 
@@ -612,19 +648,19 @@
 <body>
     
     <header class="header-section">
-        <img src="../Zeki_Yahya_Cinematography.jpg" alt="زكي يحيى - صانع أفلام وباحث مستقل" class="hero-banner">
+        <img src="../Zeki_Yahya_Cinematography.jpg" alt="زكي يحيى" class="hero-banner" fetchpriority="high" width="2731" height="1536">
         
         <div class="hero-content">
             <h1>زكي يحيى</h1>
             <p class="profile-bio">صانع أفلام وباحث مستقل.<br>تركيز على السينما الفلسفية، الديستوبية، والتجريبية الطليعية.</p>
             
             <div class="global-links">
-                <a href="https://www.imdb.com/name/nm18412930/" target="_blank">IMDb</a>
-                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank">MUBI</a>
-                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank">Letterboxd</a>
-                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank">TMDB</a>
-                <a href="https://filmfreeway.com/zekiyahya" target="_blank">FilmFreeway</a>
-                <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank">Shortverse</a>
+                <a href="https://www.imdb.com/name/nm18412930/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank" rel="noopener noreferrer">MUBI</a>
+                <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank" rel="noopener noreferrer">TMDB</a>
+                <a href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer">FilmFreeway</a>
+                <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank" rel="noopener noreferrer">Shortverse</a>
             </div>
         </div>
     </header>
@@ -645,7 +681,7 @@
         <!-- FILM 1 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../CASE0TOMORROW-poster.jpg" alt="الحالة 0: غداً - فيلم تجريبي إخراج زكي يحيى" class="film-poster">
+                <img src="../CASE0TOMORROW-poster.jpg" alt="الحالة 0: غداً - فيلم تجريبي إخراج زكي يحيى" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">الحالة 0: غداً (2026)</h2>
@@ -653,8 +689,8 @@
                     محاكمة سينمائية صارمة للزمن. متجاوزاً السرد التقليدي، يجسد هذا المشروع الإرجاء البيروقراطي للوجود — ترجمة بصرية للكابوس الكافكاوي والقلق النيتشوي للروح الصناعية الحديثة. من خلال تجريد السرد من الحوار والتعزية الموسيقية، يُجبر المشاهد على تحمل التآكل الجسدي للانتظار، مما يحول الشاشة إلى مطهر وجودي حقيقي.
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank">IMDb</a>
-                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank">Letterboxd</a>
+                    <a href="https://www.imdb.com/title/tt43374418/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
                 </div>
             </div>
         </article>
@@ -662,7 +698,7 @@
         <!-- FILM 2 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="أركيولوجيا الوجوه التي لم تولد - سينما طليعية إخراج زكي يحيى" class="film-poster">
+                <img src="../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="أركيولوجيا الوجوه التي لم تولد - سينما طليعية إخراج زكي يحيى" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">أركيولوجيا الوجوه التي لم تولد (2026)</h2>
@@ -670,8 +706,8 @@
                     حفر سينمائي عميق داخل «الفضاء الكامن» للذكاء الاصطناعي. متجاوزاً نقد الخداع الرقمي، يبحث المشروع في أنطولوجيا الوجود التوليدي ذاته. بتبني فلسفة تاركوفسكي في نحت الزمن، تجبر اللقطات الممتدة ببطء قاسٍ والصمت الثقيل المشاهد على معايشة الثقل الفيزيائي للزمن داخل آلة لا تدرك الفناء البشري. الوجوه المكتملة التي تنبثق ليست انعكاساً للواقع، بل «واقع فائق» بودرياري يحجب غياب الأصل.
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank">IMDb</a>
-                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank">Letterboxd</a>
+                    <a href="https://www.imdb.com/title/tt42460845/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
                 </div>
             </div>
         </article>
@@ -679,7 +715,7 @@
         <!-- FILM 3 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../poster-the-great-city.png" alt="المدينة العظمى - مشروع ديستوبي إخراج زكي يحيى" class="film-poster">
+                <img src="../poster-the-great-city.png" alt="المدينة العظمى - مشروع ديستوبي إخراج زكي يحيى" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">المدينة العظمى (2026)</h2>
@@ -687,9 +723,9 @@
                     مستوحى من رائعة فريدريك نيتشه الفلسفية "هكذا تكلم زرادشت"، يقف هذا المشروع الطليعي كمرآة سينمائية مظلمة للمدينة المعاصرة. إنه يشرح بصرياً النبوءة المقلقة حول «الإنسان الأخير» — التجسد المطلق للعدمية الروحية والانحدار الثقافي وسط الحشود الحديثة. عبر رؤية تجريبية صارمة، يجرد الفيلم التقدم الحضري من رومنسيته الزائفة ليكشف الجوهر الخاوي لمجتمع واقع في أسر التكرار الميكانيكي.
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank">IMDb</a>
-                    <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank">Letterboxd</a>
-                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank">MUBI</a>
+                    <a href="https://www.imdb.com/title/tt41841538/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/the-great-city-2026/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                    <a href="https://mubi.com/en/iq/films/the-great-city" target="_blank" rel="noopener noreferrer">MUBI</a>
                     <span>[ Lift-Off 2026 — الاختيار الرسمي ]</span>
                 </div>
             </div>
@@ -698,7 +734,7 @@
         <!-- FILM 4 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../poster-the-illusion-industry.jpg" alt="صناعة الوهم - سينما الواقع الفائق إخراج زكي يحيى" class="film-poster">
+                <img src="../poster-the-illusion-industry.jpg" alt="صناعة الوهم - سينما الواقع الفائق إخراج زكي يحيى" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">صناعة الوهم (2026)</h2>
@@ -706,9 +742,9 @@
                     نقد سينمائي مكثف للواقع الفائق والتزييف الرقمي. يستكشف المشروع الحدود المتلاشية بين الوجود البشري الأصيل والواقع المصطنع، متسائلاً عن السرديات الجاهزة التي تهيمن على ثقافتنا البصرية. بعد تجريده من الأعراف السينمائية السطحية، يتحدى الفيلم المشاهد لتفكيك أنطولوجيا الصورة والإنتاج الممنهج للوهم في العالم الحديث.
                 </p>
                 <div class="film-seals">
-                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank">IMDb</a>
-                    <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank">Letterboxd</a>
-                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank">MUBI</a>
+                    <a href="https://www.imdb.com/title/tt41890484/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/the-illusion-industry/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                    <a href="https://mubi.com/en/iq/films/the-illusion-industry" target="_blank" rel="noopener noreferrer">MUBI</a>
                     <span>[ Lift-Off 2026 — الاختيار الرسمي ]</span>
                 </div>
             </div>
@@ -717,7 +753,7 @@
         <!-- FILM 5 -->
         <article class="film-card">
             <div class="film-image-container">
-                <img src="../Painting_2024_Film_Poster1.jpg" alt="لوحة - فيلم تجريبي إخراج زكي يحيى" class="film-poster">
+                <img src="../Painting_2024_Film_Poster1.jpg" alt="لوحة - فيلم تجريبي إخراج زكي يحيى" class="film-poster" loading="lazy">
             </div>
             <div class="film-content">
                 <h2 class="film-title">لوحة (2024)</h2>
@@ -725,8 +761,8 @@
                     رحلة بصرية تأملية في أعماق العزلة والروتين اليومي، حيث تتحول «اللوحة» من مجرد غرض جامد إلى مرآة حية تعكس الصراع الإنساني بين الرغبة في الانتماء ومرارة الاغتراب. تجربة سينمائية تسبر الفجوة القائمة بين الأنا والآخر.
                 </p>
                 <div class="film-seals"> 
-                    <a href="https://www.imdb.com/title/tt43709953/" target="_blank">IMDb</a>
-                    <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank">Letterboxd</a>
+                    <a href="https://www.imdb.com/title/tt43709953/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/painting-2024-1/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
                 </div>
             </div>
         </article>
@@ -738,21 +774,21 @@
         
         <div class="articles-grid">
             
-            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" class="article-card">
+            <a href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer" class="article-card">
                 <div class="article-meta">2026 — PhilPapers</div>
                 <h3 class="article-title">الواقعية السوداوية: وراثة الفراغ التاركوفسكي في السينما الرقمية</h3>
                 <div class="article-excerpt">بيان سينمائي وفلسفي يستكشف «الواقعية السوداوية» كمنهجية بصرية مقلقة في عصر السينما الرقمية والتركيبية. يقيم البحث موازيات فينومينولوجية عميقة مع تحفة أندريه تاركوفسكي (Nostalghia - 1983)، متناولاً توظيف الاحتكاك المادي، والتداعي البيئي، والمدة الزمنية المضنية كسلاح في مواجهة الكمال الرقمي المصطنع...</div>
                 <div class="article-link">[ قراءة البحث على PHILPAPERS ]</div>
             </a>
 
-            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" class="article-card">
+            <a href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer" class="article-card">
                 <div class="article-meta">2026 — PhilPapers</div>
                 <h3 class="article-title">عوالم محاكاة: سكورسيزي، الماكينة الإعلامية الحديثة، وصناعة الوهم</h3>
                 <div class="article-excerpt">تبحث هذه المقالة في الأزمة المعرفية للعصر الرقمي، مؤكدة أن الأجهزة الإعلامية المعاصرة لم تعد تسيطر على المجتمع بقمع الحقيقة، بل بإنتاج كمي لأوهام خوارزمية فائقة التخصيص. انطلاقاً من فيلم Shutter Island (2010) لسكورسيزي كاستعارة مركزية، تقارن الورقة بين الواقع المصنوع لمستشفى آشكليف وغرف الصدى الرقمية المعاصرة...</div>
                 <div class="article-link">[ قراءة البحث على PHILPAPERS ]</div>
             </a>
             
-           <a href="https://zenodo.org/records/20748757" target="_blank" class="article-card">
+           <a href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer" class="article-card">
                 <div class="article-meta">2026 — Zenodo</div>
                 <h3 class="article-title">صناعة الوهم: كيف تشكل الأخبار الكاذبة الرأي العام</h3>
                 <div class="article-excerpt">تتناول هذه الدراسة ظاهرة الأخبار الكاذبة كمظهر خطير للتضليل في البيئة الرقمية الحديثة، حيث تعمل كصناعة وهم واعية تعتمد على التفاعل المعقد بين الخوارزميات والتحيزات النفسية البشرية. بالاعتماد على المنهج الوصفي التحليلي والتحليل السيميائي...</div>
