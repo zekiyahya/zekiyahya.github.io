@@ -815,7 +815,7 @@
   .authority-control-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #cccccc; /* لون متناسق مع نصوص موقعك */
+    color: #cccccc;
     margin-bottom: 24px;
   }
 
@@ -835,16 +835,17 @@
     height: 36px;
     padding: 6px;
     border-radius: 6px;
-    /* لون رمادي خافت جداً يطابق لون بطاقات والنصوص في الأعلى */
-    background-color: #1c1c1c; 
-    border: 1px solid #2a2a2a;
+    /* زيادة درجة الأبيض خلف الأيقونة إلى النصف (50% الشفافية) */
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
     transition: all 0.2s ease-in-out;
     text-decoration: none;
   }
 
   .ac-card:hover {
-    background-color: #282828;
-    border-color: #444444;
+    background-color: rgba(255, 255, 255, 0.8); /* إضاءة أعلى عند تمرير المؤشر */
+    border-color: #ffffff;
     transform: translateY(-2px);
   }
 
