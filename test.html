@@ -803,7 +803,7 @@
     <footer>
         <a href="gallery.html">[ VISUAL ARCHIVES ]</a>
     </footer>
-  <!-- Authority Control Section -->
+ <!-- Authority Control Section -->
 <style>
   .authority-control-container {
     max-width: 900px;
@@ -816,7 +816,7 @@
   .authority-control-title {
     font-size: 1.6rem;
     font-weight: 600;
-    color: #e0e0e0; /* لون فاتح ليتناسب مع الخلفية السوداء لديك */
+    color: #e0e0e0;
     margin-bottom: 24px;
     letter-spacing: -0.02em;
   }
@@ -826,28 +826,27 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
   }
 
   .authority-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
-    padding: 6px;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
     border-radius: 8px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background-color: transparent; /* إزالة الخلفية البيضاء تماماً لتكون شفافة */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* إطار خفيف جداً يتماشى مع الخلفية الداكنة */
     transition: all 0.2s ease-in-out;
     text-decoration: none;
   }
 
   .authority-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.08); /* إضاءة خفيفة عند تمرير الماوس */
+    border-color: rgba(255, 255, 255, 0.3);
   }
 
   .authority-item img {
@@ -855,6 +854,7 @@
     height: 100%;
     object-fit: contain;
     border-radius: 4px;
+    filter: brightness(0.95); /* موازنة الإضاءة للأيقونات على الخلفية السوداء */
   }
 </style>
 
