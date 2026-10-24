@@ -831,22 +831,22 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     padding: 6px;
-    border-radius: 6px;
-    /* زيادة درجة الأبيض خلف الأيقونة إلى النصف (50% الشفافية) */
-    background-color: rgba(255, 255, 255, 0.5); 
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(4px);
-    transition: all 0.2s ease-in-out;
+    border: none; /* إزالة الحدود الصلبة تماماً */
+
+    /* تدرج شعاعي يجعل اللون الأبيض يتلاشى تدريجياً نحو الأطراف */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 80%);
+    
+    transition: all 0.25 ease-in-out;
     text-decoration: none;
   }
 
   .ac-card:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* إضاءة أعلى عند تمرير المؤشر */
-    border-color: #ffffff;
-    transform: translateY(-2px);
+    /* زيادة التوهج الناعم عند التمرير */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.35) 55%, rgba(255, 255, 255, 0) 85%);
+    transform: scale(1.08);
   }
 
   .ac-card img {
