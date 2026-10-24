@@ -803,7 +803,7 @@
     <footer>
         <a href="gallery.html">[ VISUAL ARCHIVES ]</a>
     </footer>
- <!-- Authority Control Section -->
+<!-- Authority Control Section -->
 <style>
   .authority-control-container {
     max-width: 900px;
@@ -826,27 +826,30 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
   }
 
   .authority-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 4px;
+    width: 42px;
+    height: 42px;
+    padding: 6px;
     border-radius: 8px;
-    background-color: transparent; /* إزالة الخلفية البيضاء تماماً لتكون شفافة */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* إطار خفيف جداً يتماشى مع الخلفية الداكنة */
+    /* أبيض بدرجة خفيفة وشفافة */
+    background-color: rgba(255, 255, 255, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     transition: all 0.2s ease-in-out;
     text-decoration: none;
   }
 
   .authority-item:hover {
     transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.08); /* إضاءة خفيفة عند تمرير الماوس */
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.18); /* إضاءة خفيفة عند التمرير */
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   }
 
   .authority-item img {
@@ -854,7 +857,6 @@
     height: 100%;
     object-fit: contain;
     border-radius: 4px;
-    filter: brightness(0.95); /* موازنة الإضاءة للأيقونات على الخلفية السوداء */
   }
 </style>
 
@@ -889,12 +891,12 @@
 
     <!-- FilmFreeway -->
     <a href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer" class="authority-item" title="FilmFreeway">
-      <img src="https://images.ctfassets.net/y2ske730sjqp/5QQ9SV6o1tm1vtrG3d5Cpy/40d4b809111cc2500f4f9f77f3e82b7b/FilmFreeway_Logo_Square.png" alt="FilmFreeway" />
+      <img src="https://filmfreeway.com/assets/logo-icon-1fefd8e7e3e9d8e52e00e405e3b5e468.png" alt="FilmFreeway" />
     </a>
 
     <!-- Shortverse -->
     <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank" rel="noopener noreferrer" class="authority-item" title="Shortverse">
-      <img src="https://cdn.prod.website-files.com/60f78235e16543261a8435d8/60f850d99bc2d861dcf3445e_favicon-32x32.png" alt="Shortverse" />
+      <img src="https://www.google.com/s2/favicons?domain=shortverse.com&sz=128" alt="Shortverse" />
     </a>
 
     <!-- Instagram -->
