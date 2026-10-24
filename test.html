@@ -803,28 +803,24 @@
     <footer>
         <a href="gallery.html">[ VISUAL ARCHIVES ]</a>
     </footer>
-<!-- Authority Control Section -->
+<!-- Authority Control Section CSS -->
 <style>
-  /* تخصيص حجم الأيقونات بدقة مثل النموذج الأصلي */
   .acImage {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: transform 0.2s ease;
+    vertical-align: middle;
   }
-  
-  /* تأثير خفيف عند تمرير الفأرة */
   .acImage:hover {
     transform: scale(1.15);
   }
-
-  .authority-section {
+  .authority-container {
     max-width: 900px;
     margin: 40px auto;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
-
   .authority-title {
     font-size: 1.5rem;
     font-weight: 600;
@@ -833,70 +829,69 @@
   }
 </style>
 
-<div class="authority-section">
+<div class="authority-container">
   <h3 class="authority-title">Authority control</h3>
   
-  <!-- حاوية الأيقونات المرنة -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;">
+  <div class="d-flex justify-content-center flex-wrap" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
     
     <!-- IMDb -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://www.imdb.com/name/nm18412930/" title="IMDb" rel="noopener noreferrer">
         <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" class="acImage" alt="IMDb">
       </a>
     </span>
 
     <!-- Wikidata -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://www.wikidata.org/wiki/Q140140346" title="Wikidata" rel="noopener noreferrer">
         <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" class="acImage" alt="Wikidata">
       </a>
     </span>
 
     <!-- MUBI -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://mubi.com/en/cast/zeki-yahya" title="MUBI" rel="noopener noreferrer">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mubi-logo.svg" class="acImage" alt="MUBI">
+        <img loading="lazy" src="https://images.weserv.nl/?url=https://mubi.com/favicon.ico" class="acImage" alt="MUBI">
       </a>
     </span>
 
     <!-- Letterboxd -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://letterboxd.com/director/zeki-yahya/" title="Letterboxd" rel="noopener noreferrer">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Letterboxd_logo_%282018%29.svg" class="acImage" alt="Letterboxd">
+        <img loading="lazy" src="https://images.weserv.nl/?url=https://letterboxd.com/favicon.ico" class="acImage" alt="Letterboxd">
       </a>
     </span>
 
     <!-- TMDB -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://www.themoviedb.org/person/6167685-zeki-yahya" title="TMDB" rel="noopener noreferrer">
         <img loading="lazy" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" class="acImage" alt="TMDB">
       </a>
     </span>
 
     <!-- FilmFreeway -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://filmfreeway.com/zekiyahya" title="FilmFreeway" rel="noopener noreferrer">
-        <img loading="lazy" src="https://assets.mubicdn.net/images/favicon.ico" class="acImage" alt="FilmFreeway">
+        <img loading="lazy" src="https://images.weserv.nl/?url=https://filmfreeway.com/favicon.ico" class="acImage" alt="FilmFreeway">
       </a>
     </span>
 
     <!-- Shortverse -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://www.shortverse.com/person/zeki-yahya" title="Shortverse" rel="noopener noreferrer">
-        <img loading="lazy" src="https://www.shortverse.com/favicon.ico" class="acImage" alt="Shortverse">
+        <img loading="lazy" src="https://images.weserv.nl/?url=https://www.shortverse.com/favicon.ico" class="acImage" alt="Shortverse">
       </a>
     </span>
 
     <!-- Instagram -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://www.instagram.com/zekiyahya_/" title="Instagram" rel="noopener noreferrer">
         <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="acImage" alt="Instagram">
       </a>
     </span>
 
     <!-- X (Twitter) -->
-    <span style="margin: 6px;">
+    <span class="m-2" style="margin: 8px;">
       <a target="_blank" href="https://x.com/yahya_zeki" title="X (Twitter)" rel="noopener noreferrer">
         <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" class="acImage" alt="X">
       </a>
