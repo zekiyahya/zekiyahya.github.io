@@ -805,109 +805,102 @@
     </footer>
 <!-- Authority Control Section -->
 <style>
-  .authority-control-container {
+  /* تخصيص حجم الأيقونات بدقة مثل النموذج الأصلي */
+  .acImage {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+  
+  /* تأثير خفيف عند تمرير الفأرة */
+  .acImage:hover {
+    transform: scale(1.15);
+  }
+
+  .authority-section {
     max-width: 900px;
     margin: 40px auto;
-    padding: 25px 20px;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
-  .authority-control-title {
-    font-size: 1.6rem;
+  .authority-title {
+    font-size: 1.5rem;
     font-weight: 600;
     color: #e0e0e0;
-    margin-bottom: 24px;
-    letter-spacing: -0.02em;
-  }
-
-  .authority-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .authority-item {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    padding: 6px;
-    border-radius: 8px;
-    /* أبيض بدرجة خفيفة وشفافة */
-    background-color: rgba(255, 255, 255, 0.08); 
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-  }
-
-  .authority-item:hover {
-    transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.18); /* إضاءة خفيفة عند التمرير */
-    border-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  }
-
-  .authority-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 4px;
+    margin-bottom: 20px;
   }
 </style>
 
-<div class="authority-control-container">
-  <h2 class="authority-control-title">Authority control</h2>
-  <div class="authority-grid">
-
+<div class="authority-section">
+  <h3 class="authority-title">Authority control</h3>
+  
+  <!-- حاوية الأيقونات المرنة -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;">
+    
     <!-- IMDb -->
-    <a href="https://www.imdb.com/name/nm18412930/" target="_blank" rel="noopener noreferrer" class="authority-item" title="IMDb">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://www.imdb.com/name/nm18412930/" title="IMDb" rel="noopener noreferrer">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" class="acImage" alt="IMDb">
+      </a>
+    </span>
 
     <!-- Wikidata -->
-    <a href="https://www.wikidata.org/wiki/Q140140346" target="_blank" rel="noopener noreferrer" class="authority-item" title="Wikidata">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://www.wikidata.org/wiki/Q140140346" title="Wikidata" rel="noopener noreferrer">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" class="acImage" alt="Wikidata">
+      </a>
+    </span>
 
     <!-- MUBI -->
-    <a href="https://mubi.com/en/cast/zeki-yahya" target="_blank" rel="noopener noreferrer" class="authority-item" title="MUBI">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mubi-logo.svg" alt="MUBI" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://mubi.com/en/cast/zeki-yahya" title="MUBI" rel="noopener noreferrer">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mubi-logo.svg" class="acImage" alt="MUBI">
+      </a>
+    </span>
 
     <!-- Letterboxd -->
-    <a href="https://letterboxd.com/director/zeki-yahya/" target="_blank" rel="noopener noreferrer" class="authority-item" title="Letterboxd">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Letterboxd_logo_%282018%29.svg" alt="Letterboxd" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://letterboxd.com/director/zeki-yahya/" title="Letterboxd" rel="noopener noreferrer">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Letterboxd_logo_%282018%29.svg" class="acImage" alt="Letterboxd">
+      </a>
+    </span>
 
     <!-- TMDB -->
-    <a href="https://www.themoviedb.org/person/6167685-zeki-yahya" target="_blank" rel="noopener noreferrer" class="authority-item" title="TMDB">
-      <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="TMDB" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://www.themoviedb.org/person/6167685-zeki-yahya" title="TMDB" rel="noopener noreferrer">
+        <img loading="lazy" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" class="acImage" alt="TMDB">
+      </a>
+    </span>
 
     <!-- FilmFreeway -->
-    <a href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer" class="authority-item" title="FilmFreeway">
-      <img src="https://filmfreeway.com/assets/logo-icon-1fefd8e7e3e9d8e52e00e405e3b5e468.png" alt="FilmFreeway" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://filmfreeway.com/zekiyahya" title="FilmFreeway" rel="noopener noreferrer">
+        <img loading="lazy" src="https://assets.mubicdn.net/images/favicon.ico" class="acImage" alt="FilmFreeway">
+      </a>
+    </span>
 
     <!-- Shortverse -->
-    <a href="https://www.shortverse.com/person/zeki-yahya" target="_blank" rel="noopener noreferrer" class="authority-item" title="Shortverse">
-      <img src="https://www.google.com/s2/favicons?domain=shortverse.com&sz=128" alt="Shortverse" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://www.shortverse.com/person/zeki-yahya" title="Shortverse" rel="noopener noreferrer">
+        <img loading="lazy" src="https://www.shortverse.com/favicon.ico" class="acImage" alt="Shortverse">
+      </a>
+    </span>
 
     <!-- Instagram -->
-    <a href="https://www.instagram.com/zekiyahya_/" target="_blank" rel="noopener noreferrer" class="authority-item" title="Instagram">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://www.instagram.com/zekiyahya_/" title="Instagram" rel="noopener noreferrer">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="acImage" alt="Instagram">
+      </a>
+    </span>
 
     <!-- X (Twitter) -->
-    <a href="https://x.com/yahya_zeki" target="_blank" rel="noopener noreferrer" class="authority-item" title="X (Twitter)">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X" />
-    </a>
+    <span style="margin: 6px;">
+      <a target="_blank" href="https://x.com/yahya_zeki" title="X (Twitter)" rel="noopener noreferrer">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" class="acImage" alt="X">
+      </a>
+    </span>
 
   </div>
 </div>
