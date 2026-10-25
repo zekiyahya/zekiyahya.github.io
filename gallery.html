@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeki Yahya — Visual Archives</title>
+    <title>Zeki Yahya — Visual Archives | الأرشيف البصري</title>
     
-    <meta name="description" content="Explore the cinematic visual archives, photography, and campaign directions by independent filmmaker and researcher Zeki Yahya.">
-    <meta name="keywords" content="Zeki Yahya, Visual Archives, Cinematic Photography, Director Zeki Yahya, Experimental Cinema, Location Scouting, Cinematic Stills, Visual Direction">
+    <meta name="description" content="Explore the cinematic visual archives, photography, and campaign directions by independent filmmaker and researcher Zeki Yahya. استكشف الأرشيف البصري والسينمائي للمخرج زكي يحيى.">
+    <meta name="keywords" content="Zeki Yahya, Visual Archives, Cinematic Photography, Director Zeki Yahya, Experimental Cinema, Location Scouting, Cinematic Stills, Visual Direction, زكي يحيى, أرشيف بصري, سينما">
     <meta name="author" content="Zeki Yahya">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://zekiyahya.github.io/gallery.html" />
 
-    <!-- Open Graph for Social Media Sharing -->
-    <meta property="og:title" content="Zeki Yahya — Visual Archives">
-    <meta property="og:description" content="Cinematic visual archives, photography, and visual directions by independent filmmaker Zeki Yahya.">
+    <!-- Open Graph for Social Media Sharing & Knowledge Graph (Bilingual Support) -->
+    <meta property="og:title" content="Zeki Yahya — Visual Archives | الأرشيف البصري">
+    <meta property="og:description" content="Cinematic visual archives, photography, and visual directions by independent filmmaker Zeki Yahya. الأرشيف البصري والسينمائي للمخرج زكي يحيى.">
     <meta property="og:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
     <meta property="og:image:secure_url" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -24,22 +24,24 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zeki Yahya — Visual Archives">
-    <meta name="twitter:description" content="Cinematic visual archives, photography, and visual directions by independent filmmaker Zeki Yahya.">
+    <meta name="twitter:title" content="Zeki Yahya — Visual Archives | الأرشيف البصري">
+    <meta name="twitter:description" content="Cinematic visual archives, photography, and visual directions by independent filmmaker Zeki Yahya. الأرشيف البصري والسينمائي للمخرج زكي يحيى.">
     <meta name="twitter:image" content="https://zekiyahya.github.io/Zeki_Yahya_Cinematography.jpg">
 
-    <!-- JSON-LD for ImageGallery -->
+    <!-- JSON-LD for ImageGallery (Bilingual Schema) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ImageGallery",
       "name": "Zeki Yahya — Visual Archives",
+      "alternateName": "الأرشيف البصري - زكي يحيى",
       "description": "A collection of cinematic visual archives, experimental film posters, location scouting photography, and campaign visual directions by Zeki Yahya.",
       "url": "https://zekiyahya.github.io/gallery.html",
       "creator": {
         "@type": "Person",
         "@id": "https://zekiyahya.github.io/#person",
         "name": "Zeki Yahya",
+        "alternateName": "زكي يحيى",
         "url": "https://zekiyahya.github.io/"
       }
     }
@@ -294,7 +296,6 @@
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div> 
 
-        <!-- تم تصحيح مسار الصورة وتعديلها لتصبح آمنة -->
         <div class="gallery-item" data-search="filmmaker zeki yahya arabic portrait بورتريه زكي يحيى باللغة العربية">
             <img src="zeki-yahya-dir.jpg" alt="Zeki Yahya - Filmmaker Portrait" loading="lazy">
             <div class="img-caption">Filmmaker Zeki Yahya</div>
@@ -309,8 +310,6 @@
 
         searchInput.addEventListener('input', function(e) {
             const query = e.target.value.toLowerCase().trim();
-
-            galleryItems.getElementById = function() {}; // Safe guard
 
             galleryItems.forEach(item => {
                 const searchKeywords = item.getAttribute('data-search') ? item.getAttribute('data-search').toLowerCase() : '';
