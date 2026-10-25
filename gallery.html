@@ -59,7 +59,7 @@
         }
 
         header {
-            margin-bottom: 80px;
+            margin-bottom: 50px;
             text-align: center;
         }
 
@@ -79,6 +79,28 @@
             transition: color 0.4s;
         }
         header a:hover { color: #555; }
+
+        /* Search Bar Styling */
+        .search-container {
+            margin-top: 25px;
+        }
+        #gallery-search {
+            background: #030303;
+            border: 1px solid #1a1a1a;
+            color: #ccc;
+            padding: 10px 18px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10px;
+            letter-spacing: 2px;
+            width: 260px;
+            outline: none;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        #gallery-search:focus {
+            border-color: #555;
+            color: #fff;
+        }
 
         /* Experimental Film Grid */
         .gallery-grid {
@@ -105,7 +127,6 @@
             transition: all 0.8s ease;
         }
 
-        /* Tarkovskian atmosphere: revealing contrast slowly on hover */
         .gallery-item:hover img {
             filter: grayscale(50%) contrast(100%);
             opacity: 0.7;
@@ -129,152 +150,180 @@
     <header>
         <h1>Visual Archives</h1>
         <a href="index.html">[ RETURN TO SILENCE ]</a>
+        
+        <!-- Search Input for Arabic & English -->
+        <div class="search-container">
+            <input type="text" id="gallery-search" placeholder="SEARCH ARCHIVES / ابحث..." autocomplete="off">
+        </div>
     </header>
 
     <main class="gallery-grid">
         
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="case 0 tomorrow poster فيلم كيس زيرو غلاف">
             <img src="CASE0TOMORROW-poster.jpg" alt="Zeki Yahya - CASE 0 : TOMORROW - Official Movie Poster" fetchpriority="high">
             <div class="img-caption">CASE 0 : TOMORROW (2026) — Poster</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="archaeology of unborn faces experimental silent cinema آثار الوجوه غير المولودة سينما صامتة">
             <img src="poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Zeki Yahya - Archaeology of Unborn Faces - Experimental Silent Cinema" fetchpriority="high">
             <div class="img-caption">Archaeology of Unborn Faces — Frame</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="the great city ontology of truth المدينة العظمى الحقيقة">
             <img src="poster-the-great-city.png" alt="Zeki Yahya - The Great City - Cinematic Inquiry">
             <div class="img-caption">The Great City — Ontology of Truth</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="the illusion industry documentary archive صناعة الوهم وثائقي أرشيف">
             <img src="poster-the-illusion-industry.jpg" alt="Zeki Yahya - The Illusion Industry - Documentary Film Structure">
             <div class="img-caption">The Illusion Industry — Archive</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="director portrait personal archive بورتريه المخرج زكي يحيى شخصي">
             <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya - Independent Film Director & Creative Director Portrait" loading="lazy">
             <div class="img-caption">Director Portrait — Personal Archive</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="cinematography still perspective i سينما تصوير سينمائي منظور">
             <img src="Zeki_Yahya_Cinematography.jpg" alt="Zeki Yahya - Cinematic Visual Vision and Composition" loading="lazy">
             <div class="img-caption">Cinematography Still — Perspective I</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="location scouting perspective ii استكشاف مواقع التصوير">
             <img src="Zeki_Yahya_Filmmaker_Location_Scouting.jpg" alt="Zeki Yahya - Filmmaker Location Scouting" loading="lazy">
             <div class="img-caption">Location Scouting — Perspective II</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="my soul dedication frame شيرين إهداء روحي">
             <img src="my_soul_shireen_zeki_yahya.jpg" alt="Zeki Yahya - TO SHIREEN... ALWAYS - Dedication Frame" loading="lazy">
             <div class="img-caption">My Soul — Dedication Frame</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="filmmaker zeki yahya cinematic مخرج زكي يحيى سينمائي">
             <img src="filmmaker-zeki-yahya-cinematic.jpg" alt="Zeki Yahya - Cinematic Portrait" loading="lazy">
             <div class="img-caption">Filmmaker Zeki Yahya - Cinematic</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="filmmaker zeki yahya مخرج زكي يحيى">
             <img src="filmmaker-zeki-yahya.jpg" alt="Zeki Yahya - Filmmaker Portrait" loading="lazy">
             <div class="img-caption">Filmmaker Zeki Yahya</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="filmmaker zeki yahya onset في كواليس التصوير موقع العمل">
             <img src="Zeki-Yahya-filmmaker-onset.jpg" alt="Zeki Yahya - Filmmaker onset" loading="lazy">
             <div class="img-caption">Filmmaker Zeki Yahya</div>
         </div> 
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="cinematography still perspective 2 تصوير سينمائي ألمانيا">
             <img src="filmmaker-zeki-yahya-germany.jpg" alt="Zeki Yahya - Cinematic Visual Vision and Composition" loading="lazy">
             <div class="img-caption">Cinematography Still — Perspective 2</div> 
         </div>    
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="cinematography still perspective 3 تصوير سينمائي">
             <img src="filmmaker-zeki-yahya-cinematic-sh.jpeg" alt="Zeki Yahya - Cinematic Visual Vision and Composition" loading="lazy">
-            <div class="img-caption">Cinematography Still — Perspective 3</div> 
+            <div class="img-caption">Cinematography Still — Perspective 3</div>  
         </div>  
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-18.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-15.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div>  
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-22.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div>  
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-20.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div> 
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-23.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div> 
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-21.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div> 
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-16.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
-        </div>   
+        </div>    
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-24.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
-        </div>   
+        </div>    
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-17.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div>  
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-19.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
-        </div>    
+        </div>     
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-06.jpeg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
-        </div>    
+        </div>     
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-04.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
-        </div>    
+        </div>     
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="director german portrait بورتريه ألمانيا زكي يحيى">
             <img src="director-zeki-yahya-in-german.jpg" alt="Zeki Yahya - Cinematic Visual Vision and Composition" loading="lazy">
             <div class="img-caption">Cinematography Still — Perspective 2</div> 
-        </div>   
+        </div>    
 
-        <div class="gallery-item">
+        <div class="gallery-item" data-search="healthy society campaign concept direction حملة المجتمع الصحي وعي وطني تصميم توجيه زكي يحيى">
             <img src="artistic-visual-direction-by-zeki-yahya-77.jpg" alt="Zeki Yahya - National Awareness Campaign towards a Healthy Iraqi Society - Idea, Design, and Direction by Zeki Yahya" loading="lazy">
             <div class="img-caption">Healthy Society Campaign — Concept & Direction</div>
         </div> 
 
-        <div class="gallery-item">
-            <img src="zeki-yahya-dir.jpg" alt="Zeki Yahya - Filmmaker Portrait" loading="lazy">
+        <!-- تم تصحيح مسار الصورة وتعديلها لتصبح آمنة -->
+        <div class="gallery-item" data-search="filmmaker zeki yahya arabic portrait بورتريه زكي يحيى باللغة العربية">
+            <img src="filmmaker-zeki-yahya-portrait.jpg" alt="Zeki Yahya - Filmmaker Portrait" loading="lazy">
             <div class="img-caption">Filmmaker Zeki Yahya</div>
         </div>
 
-        
     </main>
+
+    <!-- JavaScript for Instant Arabic & English Search -->
+    <script>
+        const searchInput = document.getElementById('gallery-search');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+
+            galleryItems.getElementById = function() {}; // Safe guard
+
+            galleryItems.forEach(item => {
+                const searchKeywords = item.getAttribute('data-search') ? item.getAttribute('data-search').toLowerCase() : '';
+                const captionText = item.querySelector('.img-caption') ? item.querySelector('.img-caption').textContent.toLowerCase() : '';
+
+                if (query === '' || searchKeywords.includes(query) || captionText.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
