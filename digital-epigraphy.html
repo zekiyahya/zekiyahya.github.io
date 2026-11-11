@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Epigraphy: Sumerian as Conceptual Art | Zeki Yahya</title>
-    <meta name="description" content="A conceptual art and media archaeology project embedding extinct Sumerian cuneiform into HTML5 Web Architecture. Created by Zeki Yahya.">
+    <title>Cuneiform on the Surface, Metadata Beneath | Digital Epigraphy | Zeki Yahya</title>
+    <meta name="description" content="Digital Epigraphy: a two-layer web artwork in which the visible text is set in cuneiform characters while the machine-readable layer stays in English, with SUX Markup, an allegorical notation mapping four cuneiform signs to four HTML elements. Created by Zeki Yahya.">
     <meta name="author" content="Zeki Yahya">
 
-    <!-- Schema.org JSON-LD for Intellectual Property & Art Ownership -->
+    <!-- Schema.org JSON-LD: artwork and accompanying research article -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
-      "name": "Digital Epigraphy: Implementing Sumerian as Conceptual Art in Modern Web Architecture",
+      "name": "Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance",
+      "alternateName": "Digital Epigraphy",
       "artist": {
         "@type": "Person",
         "name": "Zeki Yahya",
         "url": "https://zekiyahya.github.io/"
       },
-      "description": "An architectural and conceptual intervention embedding Sumerian cuneiform into the HTML5 Document Object Model to construct digital monuments resistant to algorithmic surveillance.",
-      "artMedium": "Digital Code, HTML5, Sumerian Language (ISO 639-3 sux)",
+      "description": "A conceptual art and media archaeology project. Its Sumerian-script edition sets the visible text of a website in Unicode cuneiform characters while the machine-readable layer remains in English; SUX Markup is an allegorical notation that maps four cuneiform signs to four HTML elements.",
+      "artMedium": "HTML5; Unicode cuneiform characters (script code Xsux)",
       "genre": "Conceptual Art / Media Archaeology",
-      "dateCreated": "2026"
+      "dateCreated": "2026",
+      "inLanguage": "en",
+      "workExample": {
+        "@type": "WebPage",
+        "name": "Sumerian-script edition",
+        "url": "https://zekiyahya.github.io/sux/"
+      },
+      "subjectOf": {
+        "@type": "ScholarlyArticle",
+        "name": "Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance",
+        "author": { "@type": "Person", "name": "Zeki Yahya" },
+        "datePublished": "2026",
+        "creativeWorkStatus": "Manuscript"
+      }
     }
     </script>
 
@@ -67,7 +81,7 @@
 
         h1 {
             color: var(--accent-color);
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             font-weight: 300;
             line-height: 1.3;
             margin: 0 0 20px 0;
@@ -96,9 +110,27 @@
             padding-left: 15px;
         }
 
+        h3 {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
         p {
             margin-bottom: 25px;
             font-weight: 300;
+        }
+
+        ul {
+            margin: 0 0 25px 0;
+            padding-left: 22px;
+            font-weight: 300;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         blockquote {
@@ -108,6 +140,24 @@
             background-color: #121212;
             font-style: italic;
             color: var(--accent-color);
+        }
+
+        .abstract {
+            background-color: #121212;
+            border: 1px solid var(--border-color);
+            padding: 25px 30px;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .abstract p {
+            margin-bottom: 15px;
+        }
+
+        .keywords {
+            font-size: 0.85rem;
+            color: var(--muted-color);
+            margin: 0;
         }
 
         .cuneiform-block {
@@ -120,6 +170,7 @@
             letter-spacing: 5px;
             margin: 40px 0;
             border-radius: 4px;
+            font-family: "Noto Sans Cuneiform", "Segoe UI Historic", "Noto Sans", serif;
         }
 
         .cuneiform-caption {
@@ -129,6 +180,60 @@
             margin-top: 10px;
             font-style: normal;
             letter-spacing: normal;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .sign {
+            font-family: "Noto Sans Cuneiform", "Segoe UI Historic", "Noto Sans", serif;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 25px 0 30px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 10px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            color: var(--accent-color);
+            font-weight: 400;
+            background-color: #121212;
+        }
+
+        pre {
+            background-color: #121212;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            overflow-x: auto;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 25px 0 30px 0;
+        }
+
+        code {
+            font-family: "Courier New", Courier, "Noto Sans Cuneiform", "Segoe UI Historic", monospace;
+            color: var(--accent-color);
+        }
+
+        .cite {
+            background-color: #121212;
+            border: 1px solid var(--border-color);
+            padding: 20px 25px;
+            font-size: 0.9rem;
         }
 
         footer {
@@ -156,72 +261,153 @@
 
     <div class="container">
         <header>
-            <div class="subtitle">Conceptual Project & Media Archaeology</div>
-            <h1>Digital Epigraphy: Implementing Sumerian as Conceptual Art in Modern Web Architecture</h1>
+            <div class="subtitle">Digital Epigraphy &middot; Conceptual Project &amp; Media Archaeology</div>
+            <h1>Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance</h1>
             <div class="meta">
-                <span><strong>Creative Direction:</strong> Zeki Yahya</span>
+                <span><strong>Author:</strong> Zeki Yahya</span>
                 <span><strong>Year:</strong> 2026</span>
-                <span><strong>Medium:</strong> Web DOM / HTML5</span>
+                <span><strong>Medium:</strong> HTML5 / Unicode cuneiform</span>
             </div>
         </header>
 
         <main>
             <section>
-                <h2>Project Overview</h2>
-                <p>
-                    The contemporary architecture of the World Wide Web is predominantly optimized for living languages, rapid data consumption, and algorithmic monetization. Modern platforms treat text merely as transparent data streams to be parsed, index-mapped, and targeted. <em>Digital Epigraphy</em> challenges this paradigm by introducing an ancient, extinct linguistic system—Sumerian (ISO 639-3 <code>sux</code>)—directly into the foundational markup of modern HTML5 architecture.
-                </p>
-                <p>
-                    Conceived as a theoretical and visual extension of cinematic stillness and existential philosophy, this project transforms the volatile Document Object Model (DOM) into "Digital Clay," establishing heavy, opaque monuments on a network built for ephemeral consumption.
-                </p>
+                <div class="abstract">
+                    <p>
+                        <strong>Abstract.</strong> <em>Digital Epigraphy</em> is an experimental web artwork. Its Sumerian-script edition presents Unicode cuneiform characters to human visitors while declaring the language code <code>sux</code> (ISO 639-3) in its markup. The accompanying research article inventories the page into a visible cuneiform surface and a machine-readable substrate, examines SUX Markup, an allegorical notation inspired by the Cylinders of Gudea, and reports descriptive Google Search Console data (47 clicks and 277 impressions over three months). It finds that the substrate is written in English and enriched with structured data linking the author to more than thirty external identifiers, that Google does not use the language declaration to detect page language, and that the page therefore cannot be said to resist algorithmic data capture. The work is best understood as a <em>double address</em>: a surface that estranges human readers and a substrate that remains fully legible to machines.
+                    </p>
+                    <p class="keywords"><strong>Keywords:</strong> digital epigraphy; Sumerian; cuneiform; media archaeology; critical code studies; esoteric markup; structured data; surveillance capitalism; web art</p>
+                </div>
             </section>
 
             <div class="cuneiform-block">
-                𒀀 𒈠 𒊒 𒅗 𒂗 𒆤 𒇲
-                <span class="cuneiform-caption">Sumerian cuneiform embedded as functional structural nodes within modern web architecture.</span>
+                <span lang="sux-Xsux">𒀀 𒈠 𒊒 𒅗 𒂗 𒆤 𒇲</span>
+                <span class="cuneiform-caption">A string of cuneiform signs set as a visual element. It is presented as script and image, not as a verified Sumerian text.</span>
             </div>
 
             <section>
-                <h2>Conceptual Framework</h2>
-                
-                <h3>1. The DOM as Digital Clay</h3>
+                <h2>1. The project in brief</h2>
                 <p>
-                    In ancient Mesopotamia, clay tablets served as enduring media carrying human memory across millennia. By mapping Sumerian cuneiform glyphs directly onto structural HTML elements, the code ceases to function purely as hidden technical utility. Instead, the code itself becomes a tangible artifact—an architectural medium where digital syntax meets ancient epigraphy.
-                </p>
-
-                <h3>2. Resistance to Algorithmic Surveillance</h3>
-                <p>
-                    Commercial algorithms thrive on decipherable, real-time linguistic input to build behavioral profiles. Embedding an extinct language—devoid of modern commercial metadata—starves tracking scripts of monetizable data. It introduces a calculated friction into the User Experience (UX), subverting the seamlessness of surveillance capitalism through opaque, un-indexable artifacts.
-                </p>
-
-                <blockquote>
-                    "Transferring the melancholic stillness of human transience from the screen to the digital canvas: code re-imagined not as script, but as a monument carved in digital stone."
-                </blockquote>
-
-                <h3>3. Cinematic Stillness in Code</h3>
-                <p>
-                    Drawing from a visual tradition rooted in existential depth and meditative stillness, <em>Digital Epigraphy</em> approaches web structure not as a commercial interface, but as a cinematic frame. The presence of silent, extinct glyphs forces a contemplative pause, turning the act of web browsing into an archaeology of digital time.
+                    The web is organised around legibility: pages are written to be parsed, indexed and linked by machines. <em>Digital Epigraphy</em> asks what happens when the visible text of a page is withdrawn from ordinary reading while the page itself stays fully legible to machines. It has two parts: the <a href="sux/">Sumerian-script edition</a> of the author&rsquo;s portfolio website, in which headings, statements and film titles appear as strings of Unicode cuneiform characters, and <em>SUX Markup</em>, an allegorical notation in which four cuneiform signs stand for four HTML elements.
                 </p>
             </section>
 
             <section>
-                <h2>Project Manifestation</h2>
+                <h2>2. Surface and substrate</h2>
                 <p>
-                    This conceptual architecture manifests through live web implementations where layout structures, metadata tags, and visible content are bound together through ancient script integration.
+                    The edition has two layers. Its <em>surface</em> is what a human visitor sees: cuneiform characters laid over a photographic portrait, in a dark, widely spaced layout meant to slow reading. Its <em>substrate</em> is what machines read. The table summarises the principal elements.
                 </p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Element</th><th>Content</th><th>Layer</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Language declaration</td><td><code>lang="sux"</code>; <code>inLanguage</code> in structured data</td><td>Substrate</td></tr>
+                            <tr><td>Title, headings, manifesto, film titles and statements</td><td>Strings of cuneiform characters</td><td>Surface</td></tr>
+                            <tr><td>Meta description and keywords</td><td>English; author&rsquo;s name, profession, film titles</td><td>Substrate</td></tr>
+                            <tr><td>Canonical and hreflang links</td><td>Self-canonical; twelve other language versions, the English root site, and the <code>sux</code> alternate</td><td>Substrate</td></tr>
+                            <tr><td>Social-card metadata and image alt text</td><td>English; portrait image</td><td>Substrate</td></tr>
+                            <tr><td>Structured data (JSON-LD)</td><td>Person, ProfilePage, WebSite, eight Movie entities, articles; more than thirty <code>sameAs</code> identifiers</td><td>Substrate</td></tr>
+                            <tr><td>External links</td><td>Film and research databases (Latin-script addresses)</td><td>Both</td></tr>
+                            <tr><td>Typeface and scripts</td><td>Stylesheet from Google Fonts; no analytics or advertising scripts</td><td>Substrate</td></tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p>
-    ← <a href="sux/">Experience the Live Conceptual Implementation (Sumerian Architecture)</a>
-</p>
+                    A visitor sees one page; a crawler reads another. The visible layer is not a cipher: a cipher hides a message, while this page hides nothing and ornaments the place where a message would ordinarily be read.
+                </p>
+            </section>
+
+            <section>
+                <h2>3. SUX Markup: a paper architecture</h2>
+                <p>
+                    SUX Markup proposes a vocabulary of four signs for the skeleton of a document. The allegory is inspired by the temple-building narrative of the Cylinders of Gudea, which describe the construction of a temple to the god Ningirsu from its foundation upward: a document, like a temple, has a foundation, a head, a house and bricks.
+                </p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Sign</th><th>Unicode</th><th>HTML element</th><th>Role in the allegory</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><span class="sign" lang="sux-Xsux">𒋼</span> TE</td><td>U+122FC</td><td><code>html</code></td><td>Foundation</td><td>Symbolic; relation to the lexeme <em>temen</em> unverified</td></tr>
+                            <tr><td><span class="sign" lang="sux-Xsux">𒊕</span> SAG</td><td>U+12295</td><td><code>head</code></td><td>Head, metadata</td><td>Well-attested sign value</td></tr>
+                            <tr><td><span class="sign" lang="sux-Xsux">𒂍</span> E2</td><td>U+1208D</td><td><code>body</code></td><td>House, main structure</td><td>Well-attested sign value</td></tr>
+                            <tr><td><span class="sign" lang="sux-Xsux">𒋞</span> SIG4</td><td>U+122DE</td><td><code>div</code></td><td>Brick, structural block</td><td>Well-attested sign value</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+<pre><code>&lt;𒋼&gt;
+    &lt;𒊕&gt;
+        &lt;!-- metadata --&gt;
+    &lt;/𒊕&gt;
+    &lt;𒂍&gt;
+        &lt;𒋞&gt;&lt;!-- content block 1 --&gt;&lt;/𒋞&gt;
+        &lt;𒋞&gt;&lt;!-- content block 2 --&gt;&lt;/𒋞&gt;
+    &lt;/𒂍&gt;
+&lt;/𒋼&gt;</code></pre>
+                <p>
+                    This is a notation, not a working language of the web. Browsers parse HTML and do not recognise cuneiform characters as element names. As XML the example is well-formed under libxml2-based parsers, which implement XML 1.0 (Fifth Edition) and allow supplementary-plane characters in element names, although Python&rsquo;s built-in <code>expat</code> parser rejects it. A SUX Markup document could therefore be transformed into HTML by a script or stylesheet; no converter is part of the project at present. The live edition is ordinary HTML5 with cuneiform text content.
+                </p>
+            </section>
+
+            <section>
+                <h2>4. Findings</h2>
+                <h3>Search visibility</h3>
+                <p>
+                    For the three months to 10 November 2026, Google Search Console reports for the <code>/sux</code> page (search type Web) 47 clicks, 277 impressions, an average click-through rate of 17 percent and an average position of 14. Clicks and impressions were concentrated in August and September and fell to near zero by October. There is no control page and no query-level data, so the figures are descriptive only: they show a page that is indexed and occasionally shown, and they neither support nor contradict any claim that the language declaration attracts or repels a system.
+                </p>
+                <h3>The resistance claim, tested</h3>
+                <ul>
+                    <li>Google determines page language from visible content and does not use the HTML <code>lang</code> attribute; its hreflang guidance specifies two-letter ISO 639-1 codes, which <code>sux</code> is not.</li>
+                    <li>The substrate is English and richly structured, and links the author to more than thirty external identifiers.</li>
+                    <li>Tracking depends on identifiers and behaviour, not on the language of the text. The page requests a font stylesheet from a third party and is hosted on a centralised service.</li>
+                </ul>
+                <p>
+                    The work therefore does not resist algorithmic data capture in any technically meaningful sense. It does the opposite of obfuscation: it adds precise, cross-referenced identifiers, and may be described as disambiguation under a mask.
+                </p>
+                <h3>What the work does</h3>
+                <p>
+                    The cuneiform surface introduces friction into reading and makes the conventions of a portfolio page, the name, the biography, the navigation, perceptible again. The effect is local rather than total: the portrait, the card layout and the link positions remain conventional. The work also makes visible the indifference of web protocols: Unicode encodes cuneiform, ISO 639-3 registers Sumerian, BCP 47 and ISO 15924 allow a script to be tagged, and HTML accepts all of them without distinction.
+                </p>
+                <blockquote>
+                    &ldquo;Transferring the melancholic stillness of human transience from the screen to the digital canvas: code re-imagined not as script, but as a monument carved in digital stone.&rdquo;
+                    <span class="cuneiform-caption">Artist&rsquo;s statement</span>
+                </blockquote>
+            </section>
+
+            <section>
+                <h2>5. Status and limits</h2>
+                <ul>
+                    <li>The strings of cuneiform signs on the edition carry no transliteration or translation and are not offered as verified Sumerian text; no philological review has been carried out.</li>
+                    <li>The sign-to-element assignments are symbolic. The assignment of TE to the idea of a foundation has not been verified against a standard sign list, and line-level attestations from the Cylinders are still to be documented.</li>
+                    <li>The cuneiform edition has no transliteration layer and is not available to screen readers. The <a href="https://zekiyahya.github.io/">English edition</a> presents the same portfolio in readable form.</li>
+                    <li>The study is a practice-based self-case study, with no control condition, no query-level data and no user study.</li>
+                    <li>The project is not a privacy tool and not a functional markup language for browsers.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Research and citation</h2>
+                <p>
+                    The project is documented in full in a research article, currently a manuscript. Source files, the notation and the data tables are described in the repository README.
+                </p>
+                <div class="cite">
+                    Yahya, Z. (2026). <em>Cuneiform on the surface, metadata beneath: A two-layer web artwork and the limits of linguistic resistance</em> [Manuscript]. ORCID 0009-0009-8229-3946.
+                </div>
+                <p style="margin-top: 25px;">
+                    <a href="sux/">Open the Sumerian-script edition</a> &rarr;
+                </p>
             </section>
         </main>
-        
+
         <div style="text-align: center; margin-top: 40px; font-style: italic; color: #888888; font-size: 0.9rem;">
-    This project is dedicated to Shireen... Always
-</div>
+            This project is dedicated to Shireen... Always
+        </div>
 
         <footer>
-            <div>© 2026 Zeki Yahya. All rights reserved.</div>
-            <div>Creative Direction & Visual Practice</div>
+            <div>&copy; 2026 Zeki Yahya. All rights reserved.</div>
+            <div>Creative Direction &amp; Visual Practice</div>
         </footer>
     </div>
 
