@@ -14,7 +14,7 @@
 
 ## Abstract
 
-*Digital Epigraphy* is an experimental web artwork. Its Sumerian-script edition presents Unicode cuneiform characters to human visitors while declaring the language code `sux` (ISO 639-3) in its markup. The accompanying article inventories the page into a visible cuneiform surface and a machine-readable substrate, examines SUX Markup, an allegorical notation inspired by the Cylinders of Gudea, and reports descriptive Google Search Console data for the page over three months (47 clicks and 277 impressions, concentrated in the first two months). It finds that the substrate is written in English and enriched with structured data linking the author to more than thirty external identifiers, that Google does not use the language declaration to detect page language, and that the page therefore cannot be said to resist algorithmic data capture. The work is best understood as a **double address**: a surface that estranges human readers and a substrate that remains fully legible to machines. Read this way, the work does not escape the economy of legibility but exposes its architecture, and the use of an extinct language operates as an aesthetic of defamiliarisation rather than as a technical countermeasure.
+*Digital Epigraphy* is an experimental web artwork. Its Sumerian-script edition presents Unicode cuneiform characters to human visitors while declaring the language code `sux` (ISO 639-3) in its markup. The accompanying article inventories the page into a visible cuneiform surface and a machine-readable substrate, examines SUX Markup, an allegorical notation inspired by the Cylinders of Gudea, and reports exported Google Search Console data for the page over 92 days (42 clicks and 255 impressions; every click attributed to a query came from a search for the author's name). It finds that the substrate is written in English and enriched with structured data linking the author to more than thirty external identifiers, that Google does not use the language declaration to detect page language, and that the page therefore cannot be said to resist algorithmic data capture. The work is best understood as a **double address**: a surface that estranges human readers and a substrate that remains fully legible to machines. Read this way, the work does not escape the economy of legibility but exposes its architecture, and the use of an extinct language operates as an aesthetic of defamiliarisation rather than as a technical countermeasure.
 
 **Keywords:** digital epigraphy; Sumerian; cuneiform; media archaeology; critical code studies; esoteric markup; structured data; surveillance capitalism; web art
 
@@ -52,7 +52,7 @@ The study is a practice-based self-case study: the author created the work and o
 - **Close reading** of the HTML source of the live edition (examined on 10 November 2026) and of this repository.
 - **Layer inventory**: every identifiable element classified as surface (addressed to humans), substrate (addressed to machines), or both.
 - **Claims audit**: claims commonly made about works of this kind were tested against the source and against published platform documentation.
-- **Search data**: Google Search Console, property `zekiyahya.github.io`, pages containing `/sux`, search type Web, three months to 10 November 2026. Only aggregate figures and the monthly chart were available. No inferential statistics are reported.
+- **Search data**: Google Search Console export (12 November 2026), property `zekiyahya.github.io`, exact page `/sux/`, search type Web, 11 August to 10 November 2026 (92 days): daily totals and breakdowns by query, country and device. Anonymised queries are excluded from the breakdowns (39 of 42 clicks, 213 of 255 impressions). No inferential statistics are reported.
 - No human participants; statements about visitor experience are interpretive.
 
 ## 4. The work: architecture of a two-layer page
@@ -71,7 +71,7 @@ The study is a practice-based self-case study: the author created the work and o
 | Main heading and biography line | Cuneiform characters | Surface | Cuneiform characters |
 | Manifesto block | Six lines of cuneiform characters | Surface | Cuneiform characters |
 | Film cards | Posters with English alt text; titles and statements in cuneiform; links to external databases | Both | Mixed |
-| Research cards | Links to PhilPapers and Zenodo records; titles and excerpts in cuneiform | Both | Mixed |
+| Research cards | Links to three earlier research records of the author (two PhilPapers entries and one Zenodo record); titles and excerpts in cuneiform | Both | Mixed |
 | Typeface | Stylesheet request to Google Fonts (Amiri) | Substrate (network request) | n/a |
 | Scripts | No analytics or advertising scripts in the source examined | n/a | n/a |
 
@@ -118,27 +118,58 @@ SUX Markup proposes four signs for the skeleton of a document. The allegory is i
 
 ## 5. Search visibility: descriptive findings
 
-**Table 1. Aggregate Search Console figures for the `/sux` page**
+**Table 1. Search Console figures for the `/sux/` page**
 
 | Metric | Value and scope |
 | :--- | :--- |
-| Property and filter | `zekiyahya.github.io`; pages containing `/sux`; search type Web |
-| Period | Three months to 10 November 2026 |
-| Total clicks | 47 |
-| Total impressions | 277 |
-| Average click-through rate | 17% |
-| Average position | 14 |
+| Property and filter | `zekiyahya.github.io`; exact page `/sux/`; search type Web |
+| Period | 11 August to 10 November 2026 (92 days); exported 12 November 2026 |
+| Total clicks | 42 |
+| Total impressions | 255 |
+| Average click-through rate | 16.47% |
+| Average position | 13.27 |
+| Breakdowns by query, country and device | 39 clicks and 213 impressions (anonymised queries excluded) |
 
-**Table 2. Approximate monthly distribution** (read from the Search Console chart; November is a partial month)
+**Table 2. Monthly totals**
 
-| Month (2026) | Clicks (approx.) | Impressions (approx.) |
+| Month (2026) | Clicks | Impressions |
 | :--- | :---: | :---: |
-| August | 29 | 175 |
+| August (from the 11th) | 24 | 155 |
 | September | 18 | 72 |
 | October | 0 | 24 |
-| November (to 10th) | 0 | fewer than 5 |
+| November (to the 10th) | 0 | 4 |
 
-**Reading.** The page was indexed, displayed, and received a small number of clicks; both clicks and impressions fell to near zero by October. A click-through rate of 17% at an average position of 14 is unusual and, in the author's reading, more characteristic of searches that already name the author or the site than of discovery by users searching for Sumerian content. This cannot be confirmed without query-level data. There is no control page, so nothing can be said about the effect of the `sux` declaration or of the cuneiform text as such.
+The last click was recorded on 27 September and the last impression on 5 November; the highest daily impression count (21) fell on 18 August.
+
+**Table 3. Queries**
+
+| Query | Clicks | Impressions | CTR | Average position |
+| :--- | :---: | :---: | :---: | :---: |
+| zeki yahya | 20 | 95 | 21.05% | 17.52 |
+| director zeki yahya | 11 | 39 | 28.21% | 17.87 |
+| filmmaker zeki yahya | 8 | 21 | 38.10% | 15.19 |
+| Eight queries, each a single cuneiform sign (combined) | 0 | 58 | 0% | 4.00 to 21.00 (range) |
+
+**Table 4. Clicks and impressions by country and device**
+
+| Dimension | Value | Clicks | Impressions |
+| :--- | :--- | :---: | :---: |
+| Country | Iraq | 37 | 150 |
+| Country | United States | 1 | 16 |
+| Country | Poland | 1 | 4 |
+| Country | Twenty-two other countries (combined) | 0 | 43 |
+| Device | Desktop | 35 | 157 |
+| Device | Mobile | 4 | 55 |
+| Device | Tablet | 0 | 1 |
+
+**Reading.**
+
+- All 39 clicks attributed to a query came from three searches that name the author. The page was found, where a click occurred, by people already searching for his name. This explains a click-through rate of about 16% at an average position of about 13, a pattern typical of navigational searches.
+- The eight single-sign queries produced 58 impressions and no clicks. The crawler indexed the cuneiform characters as ordinary text and matched them to queries; no searcher followed the result.
+- 37 of the 39 attributed clicks came from Iraq. Search Console does not separate the author's own searches and visits from those of other people.
+- There is no control page, so nothing can be said about the effect of the `sux` declaration or of the cuneiform text as such, and only Google is observed.
+
+The exported Search Console files are deposited with the article.
 
 ## 6. Discussion
 
@@ -182,13 +213,13 @@ Clay tablets persisted because firing and burial happened to preserve them. A we
 ## 7. Limitations
 
 1. Practice-based self-case study; proximity to the work cannot be fully separated from interest.
-2. No query-level data.
+2. Query-level data are partial: Google anonymises some queries, and Search Console does not separate the author's own searches and visits from those of other people.
 3. No control condition; the data are purely descriptive.
-4. Small sample, short window, approximate monthly values, incomplete final month.
+4. Small sample and short window: 92 days and a single page.
 5. The provenance of the cuneiform strings is not documented; no philological or Assyriological review; the sign-to-element mapping is not independently validated.
 6. Google only.
 7. No user study.
-8. Search Console data are private to the account holder; exported data should be deposited with the article for independent reproduction.
+8. Search Console data are private to the account holder; the exported files are deposited with the article so that the figures can be checked.
 
 ## 8. Conclusion
 
@@ -205,4 +236,3 @@ Berners-Lee, T., Hendler, J., & Lassila, O. (2001). The Semantic Web. *Scientifi
 ---
 
 *Creative Direction: Zeki Yahya • © 2026 Zeki Yahya. All rights reserved.*
-
