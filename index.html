@@ -689,15 +689,16 @@
                 font-size: 2.2rem;
                 letter-spacing: 5px;
             }
-            .film-still-below {
-    margin: 16px 0 32px 0;
-    width: 100%;
+     /* قاعدة مضبوطة لتفادي التمطط أو التشويه */
+.film-still-box {
+    max-width: 720px;
+    margin: 16px auto 32px auto;
 }
 
-.film-still-img {
+.film-still-thumb {
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 360px;
     object-fit: cover;
 }
         }
@@ -751,12 +752,12 @@
                     <a href="https://letterboxd.com/film/case-0-tomorrow/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
                     <a class="btn solid" href="films/case-0-tomorrow/">Explore the film</a>
                 </div>
-                <!-- ضع هذا الجزء مباشرة بعد إغلاق </article> للبطاقة -->
-<figure class="film-still-below">
-    <img src="../artistic-visual-direction-by-zeki-yahya-04.jpg" alt="Case 0: Tomorrow - Film still" class="film-still-img" loading="lazy">
-</figure>
             </div>
         </article>
+        <!-- ضع هذا مباشرة بعد إغلاق </article> للبطاقة -->
+<div class="film-still-box">
+    <img src="../CASE0TOMORROW-still-1.jpg" alt="Case 0: Tomorrow - Film still" class="film-still-thumb" loading="lazy">
+</div>
 
        <!-- FILM GONE -->
         <article class="film-card">
