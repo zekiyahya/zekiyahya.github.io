@@ -559,14 +559,20 @@
     .nav ul a{text-shadow:0 1px 10px rgba(0,0,0,.9)}
 
     .poster img{aspect-ratio:2/3;object-fit:contain;background:#0a0a0a}
-    /* ---------- MANIFESTO WITH IMAGE ---------- */
-.manifesto{max-width:1120px}
-.manifesto-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:56px;align-items:center}
-.manifesto-photo{position:relative}
-.manifesto-photo img{display:block;width:100%;height:auto;object-fit:cover;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.85);-webkit-mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%)}
+ /* ---------- MANIFESTO WITH IMAGE ---------- */
+.manifesto{max-width:1160px;margin:0 auto;padding:0 30px}
+.manifesto-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:stretch}
+.manifesto-copy h2{font-size:1.5rem;letter-spacing:.2em;text-transform:uppercase;text-align:left;margin-bottom:32px}
+.manifesto-copy p{font-size:1.04rem;line-height:2.1;color:var(--dim);text-align:justify;margin:0 0 24px}
+.manifesto-copy p:last-child{text-align:left;color:var(--text);font-family:var(--serif);font-size:1.3rem;font-style:italic;line-height:1.7;margin-bottom:0}
+.manifesto-photo{position:relative;min-height:100%}
+.manifesto-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.85);-webkit-mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%)}
+
 @media(max-width:900px){
     .manifesto-grid{grid-template-columns:1fr;gap:36px}
-    .manifesto-photo{max-width:340px;margin:0 auto}
+    .manifesto-copy h2,.manifesto-copy p:last-child{text-align:center}
+    .manifesto-photo{max-width:360px;margin:0 auto}
+    .manifesto-photo img{height:auto}
 }    
 </style>
 </head>
@@ -589,9 +595,9 @@
 <!-- ===== MANIFESTO ===== -->
 <section class="pad" id="manifesto">
     <div class="manifesto reveal">
-        <h2>The Cinematic Excavation</h2>
         <div class="manifesto-grid">
             <div class="manifesto-copy">
+                <h2>The Cinematic Excavation</h2>
         <p>Cinema, for me, is not merely a medium for storytelling; it is an act of spiritual and philosophical excavation. It is the pursuit of visualizing the unmanifested, capturing the silent struggles of existence before they take form.</p>
         <p>My cinematic inquiry is deeply rooted in the search for the ontology of truth. Drawing from the profound existential weight of Nietzschean philosophy and the meditative, melancholic stillness of the Tarkovskian tradition, I approach the screen not as a canvas, but as a mirror reflecting the ruins of the modern soul.</p>
         <p>In my ongoing journey—from dissecting the mechanics of reality in "The Illusion Industry" to exploring post-industrial alienation in "The Great City"—I have always sought to push the boundaries of visual expression. Today, we stand on the precipice of a new frontier: the synthetic image.</p>
@@ -599,7 +605,7 @@
         <p>I make films to document the silent collapse and mute resurrections of the human spirit. My work is an invitation to look into the abyss, not with fear, but with a profound desire to understand the architecture of our own illusions.</p>
    </div>
             <div class="manifesto-photo">
-                <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya">[cite: 3]
+                <img src="Zeki_Yahya_Director.1984.jpg" alt="Zeki Yahya">
             </div>
         </div>
     </div>
