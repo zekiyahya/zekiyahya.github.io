@@ -689,6 +689,22 @@
                 font-size: 2.2rem;
                 letter-spacing: 5px;
             }
+            .film-still-wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 14px auto 36px auto;
+    display: block;
+}
+
+.film-still-wrapper .film-still-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    aspect-ratio: auto;
+    object-fit: contain;
+}
         }
     </style>
 </head>
@@ -742,6 +758,10 @@
                 </div>
             </div>
         </article>
+        <!-- ضع هذا مباشرة بعد إغلاق </article> للبطاقة -->
+<div class="film-still-wrapper">
+    <img src="../CASE0TOMORROW-still-1.jpg" alt="Case 0: Tomorrow - Film still" class="film-still-photo" loading="lazy">
+</div>
 
        <!-- FILM GONE -->
         <article class="film-card">
