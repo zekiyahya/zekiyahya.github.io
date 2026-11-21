@@ -156,8 +156,8 @@
     .fgrid .poster{position:sticky;top:96px}
     .ftxt{max-width:660px}
     .ftxt .s{text-align:left;text-align-last:auto;text-shadow:none;font-size:1.1rem;line-height:2;color:#d6d3cc;margin:0 0 30px}
-    .ftxt .laurel{justify-content:flex-start}
-    .ftxt .links{justify-content:flex-start}
+    .ftxt .laurel{justify-content:center}
+    .ftxt .links{justify-content:center}
     .credit{font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin:0 0 30px}
     .credit b{font-weight:400;color:var(--text)}
     .reelsec{padding:70px 0 60px}
@@ -196,6 +196,12 @@
         .strip.reel{padding:22px 30px}.strip.reel::before,.strip.reel::after{width:30px}
     }
     @media(max-width:900px){.cap span:last-child{display:none}}
+
+    /* ---------- FILM PAGE: credits ---------- */
+    .credits{display:grid;grid-template-columns:max-content 1fr;gap:10px 32px;margin:0 0 38px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.95rem}
+    .credits dt{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);padding-top:.35em}
+    .credits dd{margin:0;color:var(--text)}
+    @media(max-width:900px){.credits{grid-template-columns:1fr;gap:2px 0}.credits dd{margin-bottom:12px}}
 </style>
     <script type="application/ld+json">
 {
@@ -283,7 +289,7 @@
 
 <!-- ===== FILM HERO ===== -->
 <header class="fhero">
-    <img class="fbg" src="../../stills/archaeology-of-unborn-faces-3.jpg" alt="Archaeology of Unborn Faces, still" onerror="this.remove()">
+    <img class="fbg" src="../../stills/archaeology-of-unborn-faces-3.jpg" alt="Archaeology of Unborn Faces, still" data-f="../../stills/archaeology-of-unborn-faces-1.jpg|../../stills/archaeology-of-unborn-faces-2.jpg" onerror="var f=(this.dataset.f||'').split('|').filter(Boolean);if(f.length){this.dataset.f=f.slice(1).join('|');this.src=f[0]}else{this.remove()}">
     <div class="fhero-in">
         <p class="meta-line">Avant-garde / Experimental Film · 2026</p>
         <h1>Archaeology of Unborn Faces</h1>
@@ -295,8 +301,15 @@
     <div class="wrap fgrid">
         <div class="poster reveal"><img src="../../poster-ARCHAEOLOGY-OF-UNBORN-FACES.jpg" alt="Archaeology of Unborn Faces (2026) poster"></div>
         <div class="ftxt reveal">
-            <p class="credit">Directed by <b>Zeki Yahya</b></p>
             <p class="s">A profound cinematic excavation of AI&#x27;s &quot;latent space.&quot; Moving beyond the critique of digital deception, this project investigates the ontology of synthetic existence itself. Embracing Tarkovsky’s philosophy of sculpting in time, the agonizingly slow takes and heavy silence force the viewer to endure the physical weight of time inside a machine that does not comprehend mortality. The flawless faces that emerge are not reflections of reality, but a Baudrillardian &quot;hyperreality&quot; concealing the absence of an origin.</p>
+            <dl class="credits">
+                <dt>Director &amp; Screenwriter</dt><dd>Zeki Yahya</dd>
+                <dt>Inspired by</dt><dd>Andrei Tarkovsky</dd>
+                <dt>Editing &amp; Sound Design</dt><dd>Zeki Yahya</dd>
+                <dt>Genre</dt><dd>Avant-garde / Experimental Film</dd>
+                <dt>Release Date</dt><dd>2026</dd>
+                <dt>Dedication</dt><dd>Dedicated to Shireen</dd>
+            </dl>
             <div class="links">
                 <a href="https://www.imdb.com/title/tt42460845/" target="_blank" rel="noopener noreferrer">IMDb</a>
                 <a href="https://letterboxd.com/film/archaeology-of-unborn-faces/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
