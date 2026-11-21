@@ -341,7 +341,7 @@ document.addEventListener('click',e=>{
   if(st){const strip=st.parentNode;list=[...strip.querySelectorAll('.still img')].map(x=>x.dataset.full||x.src);filmTitle=strip.dataset.t;lb.classList.remove('video');show([...strip.children].indexOf(st));openLb();return}
   const tz=e.target.closest('[data-teaser]');
   if(tz){let u=tz.dataset.teaser,id,src=u;
-    if(id=u.match(/(?:youtu\.be\/|v=)([\w-]{11})/))src='https://youtu.be/9RNWFfa0fIY';
+    if(id=u.match(/(?:youtu\.be\/|v=)([\w-]{11})/))src='https://www.youtube.com/embed/'+id[1]+'?autoplay=1&rel=0'';
     else if(id=u.match(/vimeo\.com\/(\d+)/))src='https://player.vimeo.com/video/'+id[1]+'?autoplay=1';
     lb.classList.add('video');lbm.innerHTML='<iframe allow="autoplay; fullscreen" allowfullscreen></iframe>';lbm.firstChild.src=src;lbc.textContent=tz.dataset.t+' · Teaser';openLb()}
 });
