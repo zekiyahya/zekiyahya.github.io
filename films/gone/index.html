@@ -176,14 +176,83 @@
 
     .poster img{aspect-ratio:2/3;object-fit:contain;background:#0a0a0a}
 
-    /* ---------- FILMSTRIP (perforations only) ---------- */
-    .strip{--hole:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='16'><rect x='8' y='3' width='14' height='10' rx='2.5' fill='%23030303' stroke='%23292929'/></svg>");
-        position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(1100px,calc(100% - 44px));margin:0 auto;padding:34px 22px;background:#0d0d0d;border:1px solid #1b1b1b;border-radius:3px;box-shadow:0 20px 50px rgba(0,0,0,.7)}
-    .strip::before,.strip::after{content:"";position:absolute;left:0;right:0;height:34px;background:var(--hole) repeat-x center}
-    .strip::before{top:0}.strip::after{bottom:0}
-    .strip .still{border-radius:2px}
-    .strip:not(:has(.still)),.strip:not(:has(.still))+.cap{display:none}
-    .cap{width:min(1100px,calc(100% - 44px));max-width:none;padding:0}
+   /* ---------- MUSEUM GALLERY GRID (Adaptive) ---------- */
+.strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px 22px;
+    width: min(1160px, calc(100% - 44px));
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.strip .still {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    aspect-ratio: auto;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+    padding: 0;
+}
+
+.strip .still img {
+    width: 100%;
+    aspect-ratio: 2.39 / 1;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    filter: brightness(.85) saturate(.88);
+    transition: border-color .4s ease, filter .6s ease, transform .8s ease;
+}
+
+.strip .still:hover img {
+    border-color: var(--bone);
+    filter: none;
+    transform: translateY(-2px);
+}
+
+.strip .still::after {
+    content: attr(data-n);
+    position: static;
+    display: block;
+    margin-top: 10px;
+    font-family: var(--serif);
+    font-size: .95rem;
+    letter-spacing: .18em;
+    color: var(--bone);
+    opacity: .75;
+    transition: opacity .3s ease;
+}
+
+.strip .still:hover::after {
+    opacity: 1;
+}
+
+.strip:not(:has(.still)),
+.strip:not(:has(.still)) + .cap {
+    display: none;
+}
+
+.cap {
+    width: min(1160px, calc(100% - 44px));
+    max-width: none;
+    padding: 0;
+}
+
+@media (max-width: 900px) {
+    .strip {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .cap span:last-child {
+        display: none;
+    }
+}
     /* film page: vertical reel */
     .strip.reel{--hole:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='30'><rect x='3' y='8' width='10' height='14' rx='2.5' fill='%23030303' stroke='%23292929'/></svg>");
         grid-template-columns:1fr;width:min(860px,calc(100% - 44px));padding:22px 40px}
