@@ -404,7 +404,6 @@
     </script>
 
     <style>
-
         :root{--bg:#030303;--panel:#0a0a0a;--text:#e8e6e1;--dim:#a3a09a;--mute:#8b8882;--bone:#d6cfbf;--line:#232323;--line2:#3a3a3a;
             --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',system-ui,sans-serif}
         *{box-sizing:border-box}
@@ -445,10 +444,24 @@
         .sec-head h2{font-size:clamp(2rem,4vw,3rem)}
         .sec-head::after{content:"";display:block;width:1px;height:48px;background:var(--line2);margin:28px auto 0}
         .about{max-width:720px;margin:0 auto;text-align:center;font-family:var(--serif);font-size:1.7rem;line-height:1.5;color:var(--bone)}
-        .manifesto{max-width:780px;margin:0 auto;padding:0 30px}
-        .manifesto h2{font-size:1.5rem;letter-spacing:.2em;text-transform:uppercase;text-align:center;margin-bottom:36px}
-        .manifesto p{font-size:1.04rem;line-height:2.1;color:var(--dim);text-align:justify;margin:0 0 24px}
-        .manifesto p:last-child{text-align:center;color:var(--text);font-family:var(--serif);font-size:1.3rem;font-style:italic;line-height:1.7}
+
+        /* ---------- MANIFESTO WITH IMAGE ---------- */
+        .manifesto{max-width:1160px;margin:0 auto;padding:0 30px}
+        .manifesto-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:stretch}
+        .manifesto-copy{display:flex;flex-direction:column;justify-content:space-between}
+        .manifesto-copy h2{font-size:1.3rem;letter-spacing:.2em;margin-right:-.2em;text-transform:uppercase;text-align:center;margin:0 0 22px}
+        .manifesto-copy p{font-size:.9rem;line-height:1.72;color:var(--dim);text-align:justify;margin:0 0 15px}
+        .manifesto-copy p:last-child{text-align:left;color:var(--text);font-family:var(--serif);font-size:1.1rem;font-style:italic;line-height:1.5;margin-bottom:0}
+        .manifesto-photo{position:relative;min-height:0}
+        .manifesto-photo img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:cover;object-position:center top;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.85);-webkit-mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 72%,transparent 100%)}
+        @media(max-width:900px){
+            .manifesto-grid{grid-template-columns:1fr;gap:36px}
+            .manifesto-copy{display:block}
+            .manifesto-copy h2,.manifesto-copy p:last-child{text-align:center}
+            .manifesto-photo{max-width:360px;margin:0 auto;min-height:auto}
+            .manifesto-photo img{position:static;height:auto}
+        }
+
         /* ---------- FILMS ---------- */
         .index{list-style:none;margin:0 0 70px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px}
         .index a{text-decoration:none;color:var(--dim);font-family:var(--serif);font-size:1.15rem;transition:color .3s}
@@ -527,95 +540,6 @@
             .strip{grid-template-columns:1fr}.cap{padding:0 22px}.about{font-size:1.4rem}
         }
         @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
-
-/* ---------- MANIFESTO WITH IMAGE ---------- */
-.manifesto {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.manifesto-grid {
-  display: grid;
-  grid-template-columns: 1.25fr .75fr;
-  gap: 56px;
-  align-items: stretch;
-}
-
-.manifesto-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.manifesto-copy h2 {
-  font-size: 1.3rem;
-  letter-spacing: .2em;
-  margin-right: -.2em;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 22px;
-}
-
-.manifesto-copy p {
-  font-size: .9rem;
-  line-height: 1.72;
-  color: var(--dim);
-  text-align: justify;
-  margin: 0 0 15px;
-}
-
-.manifesto-copy p:last-child {
-  text-align: left;
-  color: var(--text);
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-style: italic;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-
-.manifesto-photo {
-  position: relative;
-  min-height: 0;
-}
-
-.manifesto-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  max-height: none;
-  object-fit: cover;
-  object-position: center top;
-  border: 1px solid var(--line);
-  box-shadow: 0 24px 60px rgba(0,0,0,.85);
-  -webkit-mask-image: radial-gradient(ellipse at center,#000 72%,transparent 100%);
-  mask-image: radial-gradient(ellipse at center,#000 72%,transparent 100%);
-}
-
-@media (max-width: 900px) {
-  .manifesto-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-  .manifesto-copy {
-    display: block;
-  }
-  .manifesto-copy h2,
-  .manifesto-copy p:last-child {
-    text-align: center;
-  }
-  .manifesto-photo {
-    max-width: 360px;
-    margin: 0 auto;
-    min-height: auto;
-  }
-  .manifesto-photo img {
-    position: static;
-    height: auto;
-  }
-}
     /* ---------- FILMSTRIP (perforations only) ---------- */
     .strip{--hole:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='16'><rect x='8' y='3' width='14' height='10' rx='2.5' fill='%23030303' stroke='%23292929'/></svg>");
         position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(1200px,calc(100% - 44px));margin:0 auto;padding:34px 22px;background:#0d0d0d;border:1px solid #1b1b1b;border-radius:3px;box-shadow:0 20px 50px rgba(0,0,0,.7)}
@@ -636,7 +560,7 @@
         .strip.reel{padding:22px 30px}.strip.reel::before,.strip.reel::after{width:30px}
     }
     @media(max-width:900px){.cap span:last-child{display:none}}
-</style>
+    </style>
 </head>
 <body>
 <!-- ===== NAVIGATION ===== -->
@@ -768,7 +692,6 @@
 
 <!-- The Illusion Industry (2026) -->
 <section class="scene r" id="the-illusion-industry">
-    
     <div class="film-in">
         <div class="poster reveal">
             <img src="poster-the-illusion-industry.jpg" alt="The Illusion Industry (2026) - Analytical Documentary Film directed by Zeki Yahya" loading="lazy">
@@ -875,7 +798,6 @@
 
 <!-- The Pending Echo (2014) -->
 <section class="scene r" id="the-pending-echo">
-    
     <div class="film-in">
         <div class="poster reveal">
             <img src="The_Pending_Echo_2014_Film_Poster.jpg" alt="The Pending Echo (2014) - Documentary Film directed by Zeki Yahya" loading="lazy">
