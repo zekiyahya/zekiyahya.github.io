@@ -11,11 +11,11 @@
     <link rel="canonical" href="https://zekiyahya.github.io/films/Leeregedächtnis/" />
     <meta property="og:title" content="Leeregedächtnis (2018) | Zeki Yahya">
     <meta property="og:description" content="Emptied of the surrounding world yet overflowing with one haunting presence, the eye sees a single beloved figure reflected everywhere it turns…">
-    <meta property="og:image" content="https://zekiyahya.github.io/Leeregedächtnis_poster.jpg">
+    <meta property="og:image" content="https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg">
     <meta property="og:url" content="https://zekiyahya.github.io/films/Leeregedächtnis/">
     <meta property="og:type" content="video.movie">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://zekiyahya.github.io/Leeregedächtnis_poster.jpg">
+    <meta name="twitter:image" content="https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -272,7 +272,10 @@
     .credits dd{margin:0;color:var(--text)}
     @media(max-width:900px){.credits{grid-template-columns:1fr;gap:2px 0}.credits dd{margin-bottom:12px}}
     .fbg { opacity: .20 !important; }     
-</style>
+
+    /* long single-word title: keep it inside small screens */
+    @media(max-width:700px){.fhero h1{font-size:clamp(1.3rem,6vw,2.4rem);letter-spacing:.04em}}
+    </style>
     <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -311,7 +314,7 @@
     "name": "Shireen",
     "sameAs": "https://www.wikidata.org/wiki/Q140451401"
    },
-   "image": "https://zekiyahya.github.io/Leeregedächtnis_poster.jpg",
+   "image": "https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg",
    "description": "Emptied of the surrounding world yet overflowing with one haunting presence, the eye sees a single beloved figure reflected everywhere it turns."
   },
   {
@@ -332,7 +335,7 @@
     {
      "@type": "ListItem",
      "position": 3,
-     "name": "Gone",
+     "name": "Leeregedächtnis",
      "item": "https://zekiyahya.github.io/films/Leeregedächtnis/"
     }
    ]
@@ -351,10 +354,10 @@
 
 <!-- ===== FILM HERO ===== -->
 <header class="fhero">
-    <img class="fbg" src="https://zekiyahya.github.io/Leereged%C3%A4chtnis_still.jpg" alt="Gone, still" data-f="|" onerror="var f=(this.dataset.f||'').split('|').filter(Boolean);if(f.length){this.dataset.f=f.slice(1).join('|');this.src=f[0]}else{this.remove()}">
+    <img class="fbg" src="https://zekiyahya.github.io/Leereged%C3%A4chtnis_still.jpg" alt="Leeregedächtnis, still" data-f="|" onerror="var f=(this.dataset.f||'').split('|').filter(Boolean);if(f.length){this.dataset.f=f.slice(1).join('|');this.src=f[0]}else{this.remove()}">
     <div class="fhero-in">
         <p class="meta-line">Experimental Film · 2018</p>
-   <h1>Leeregedächtnis</h1>
+        <h1>Leeregedächtnis</h1>
     </div>
 </header>
 
@@ -371,28 +374,31 @@
                 <dt>Release Date</dt><dd>October 24, 2018</dd>
                 <dt>Dedication</dt><dd>Dedicated to Shireen</dd>
             </dl>
+            <!-- LINKS: uncomment and fill in when the URLs exist
             <div class="links">
                 <a href="" target="_blank" rel="noopener noreferrer">IMDb</a>
                 <a href="" target="_blank" rel="noopener noreferrer">Letterboxd</a>
                 <a href="" target="_blank" rel="noopener noreferrer">MUBI</a>
             </div>
+            -->
         </div>
     </div>
 </main>
 
-<!-- ===== STILLS ===== -->
+<!-- ===== STILLS (disabled until the still files exist) =====
 <section class="reelsec">
     <div class="wrap"><div class="sec-head"><small>Stills</small><h2>Frames from the film</h2></div></div>
-    <div class="strip" data-t="Gone">
+    <div class="strip" data-t="Leeregedächtnis">
     <button class="still" data-n="01" aria-label="Open still 1"><img src="" alt="Leeregedächtnis, still 1" loading="lazy" onerror="this.parentNode.remove()"></button>
     <button class="still" data-n="02" aria-label="Open still 2"><img src="" alt="Leeregedächtnis, still 2" loading="lazy" onerror="this.parentNode.remove()"></button>
     <button class="still" data-n="03" aria-label="Open still 3"><img src="" alt="Leeregedächtnis, still 3" loading="lazy" onerror="this.parentNode.remove()"></button></div>
 </section>
+-->
 
 <!-- ===== PREVIOUS / NEXT ===== -->
 <nav class="pn" aria-label="Films">
     <a href="../insistence-on-life/"><small>Previous film</small><span>Insistence on Life</span></a>
-    <a href="../the-pending-echo/"><small>Next film</small><span>The Pending Echo</span></a></nav>
+    <a href="../gone/"><small>Next film</small><span>Gone</span></a></nav>
 
 <!-- ===== FOOTER ===== -->
 <footer><a href="../../gallery.html">Visual archives</a><p>&copy; Zeki Yahya</p></footer>
