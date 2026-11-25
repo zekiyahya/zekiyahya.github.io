@@ -326,6 +326,21 @@
   },
   {
    "@type": "Movie",
+   "@id": "https://zekiyahya.github.io/films/leeregedaechtnis/#movie",
+   "url": "https://zekiyahya.github.io/films/leeregedaechtnis/",
+   "name": "Leeregedächtnis",
+   "datePublished": "2018",
+   "genre": [
+    "Experimental Film"
+   ],
+   "director": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "image": "https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg",
+   "description": "Emptied of the surrounding world yet overflowing with one haunting presence, the eye sees a single beloved figure reflected everywhere it turns."
+  },
+  {
+   "@type": "Movie",
    "@id": "https://zekiyahya.github.io/films/gone/#movie",
    "url": "https://zekiyahya.github.io/films/gone/",
    "name": "Gone",
@@ -575,6 +590,8 @@
         .strip.reel{padding:22px 30px}.strip.reel::before,.strip.reel::after{width:30px}
     }
     @media(max-width:900px){.cap span:last-child{display:none}}
+    /* long single-word title (Leeregedächtnis) on very small screens */
+    @media(max-width:380px){#leeregedaechtnis h3{font-size:1.5rem;letter-spacing:.04em}}
 </style>
 </head>
 <body>
@@ -621,6 +638,7 @@
         <li><a href="#the-illusion-industry"><i>2026</i>The Illusion Industry</a></li>
         <li><a href="#painting"><i>2024</i>Painting</a></li>
         <li><a href="#insistence-on-life"><i>2023</i>Insistence on Life</a></li>
+        <li><a href="#leeregedaechtnis"><i>2018</i>Leeregedächtnis</a></li>
         <li><a href="#gone"><i>2017</i>Gone</a></li>
         <li><a href="#the-pending-echo"><i>2014</i>The Pending Echo</a></li></ol></div>
 
@@ -787,33 +805,24 @@
 <p class="cap"><span>Insistence on Life</span><span>Click a frame to enlarge</span></p>
 
 <!-- Leeregedächtnis (2018) -->
-<section class="scene" id="Leeregedächtnis">
-    <img class="bgimg" src="stills/gone-2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<section class="scene" id="leeregedaechtnis">
     <div class="film-in">
         <div class="poster reveal">
-            <img src="Leeregedächtnis_poster.jpg" alt="Leeregedächtnis (2018) - Experimental Film directed by Zeki Yahya" loading="lazy">
+            <img src="Leereged%C3%A4chtnis_poster.jpg" alt="Leeregedächtnis (2018) - Experimental Film directed by Zeki Yahya" loading="lazy">
         </div>
         <div class="txt reveal">
             <p class="meta-line">Experimental Film · 2018</p>
-            <h3>Leeregedächtnis</h3>
+            <h3>LEEREGEDÄCHTNIS</h3>
             <p class="s">Emptied of the surrounding world yet overflowing with one haunting presence, the eye sees a single beloved figure reflected everywhere it turns.</p>
             <div class="links">
-                    <a class="btn solid" href="films/Leeregedächtnis/">Explore the film</a>
-                    <a href="" target="_blank" rel="noopener noreferrer">IMDb</a>
-                    <a href="" target="_blank" rel="noopener noreferrer">Letterboxd</a>
-                    <a href="" target="_blank" rel="noopener noreferrer">MUBI</a>
+                    <a class="btn solid" href="films/leeregedaechtnis/">Explore the film</a>
             </div>
         </div>
     </div>
 </section>
-<div class="strip" data-t="Leeregedächtnis">
-    <button class="still" data-n="01" aria-label="Open still 1"><img src="" alt="Leeregedächtnis, still 1" loading="lazy" onerror="this.parentNode.remove()"></button>
-    <button class="still" data-n="02" aria-label="Open still 2"><img src="" alt="Leeregedächtnis, still 2" loading="lazy" onerror="this.parentNode.remove()"></button>
-    <button class="still" data-n="03" aria-label="Open still 3"><img src="" alt="Leeregedächtnis, still 3" loading="lazy" onerror="this.parentNode.remove()"></button></div>
-<p class="cap"><span>Leeregedächtnis</span><span>Click a frame to enlarge</span></p>    
 
 <!-- Gone (2017) -->
-<section class="scene" id="gone">
+<section class="scene r" id="gone">
     <img class="bgimg" src="stills/gone-2.jpg" alt="" loading="lazy" onerror="this.remove()">
     <div class="film-in">
         <div class="poster reveal">
@@ -839,7 +848,7 @@
 <p class="cap"><span>Gone</span><span>Click a frame to enlarge</span></p>
 
 <!-- The Pending Echo (2014) -->
-<section class="scene r" id="the-pending-echo">
+<section class="scene" id="the-pending-echo">
     
     <div class="film-in">
         <div class="poster reveal">
