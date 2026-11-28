@@ -327,6 +327,27 @@
   },
   {
    "@type": "Movie",
+   "@id": "https://zekiyahya.github.io/films/Leeregedächtnis/#movie",
+   "url": "https://zekiyahya.github.io/films/Leeregedächtnis/",
+   "name": "Leeregedächtnis",
+   "sameAs": "https://www.wikidata.org/wiki/Q142279489",
+   "datePublished": "2018",
+   "genre": [
+    "実験映画"
+   ],
+   "director": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "contributor": {
+    "@type": "Person",
+    "name": "Shireen",
+    "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+   },
+   "image": "https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg",
+   "description": "周囲の世界から空っぽにされながらも、ひとつの憑きまとう存在であふれた眼は、向かうところすべてに映し出される、ただひとりの愛する姿を見る。"
+  },
+  {
+   "@type": "Movie",
    "@id": "https://zekiyahya.github.io/films/gone/#movie",
    "url": "https://zekiyahya.github.io/films/gone/",
    "name": "Gone",
@@ -368,7 +389,7 @@
   {
    "@type": "ScholarlyArticle",
    "@id": "https://zekiyahya.github.io/#thesis-fake-news",
-   "name": "幻想産業：フェイクニュースがいかにして世論を形成するか",
+   "name": "The Illusion Industry: How Fake News Shapes Public Opinion",
    "sameAs": "https://www.wikidata.org/wiki/Q140284075",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -391,7 +412,7 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-melancholic-realism",
-   "name": "メランコリック・リアリズム：デジタル映画におけるタルコフスキーの虚無の継承",
+   "name": "Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema",
    "sameAs": "https://www.wikidata.org/wiki/Q140580053",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -407,11 +428,63 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-simulated-realities",
-   "name": "シミュレートされた現実：スコセッシ、現代のメディアマシーン、そして幻想産業",
+   "name": "Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry",
    "url": "https://philpapers.org/rec/YAHSRS",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
    }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#article-cuneiform-surface-metadata",
+   "name": "Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance",
+   "url": "https://philpapers.org/rec/YAHCOT",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This article analyses an experimental web artwork: the Sumerian-script edition of a filmmaker’s website, which presents Unicode cuneiform characters to human visitors while declaring the language code sux (ISO 639-3) in its markup."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-architecture-of-submission",
+   "name": "The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood",
+   "url": "https://philpapers.org/rec/YAHTAO",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper presents a semiotic and philosophical re-evaluation of Paul Thomas Anderson’s There Will Be Blood (2007), moving beyond the classical dichotomy of religion versus capitalism to expose a deeper structural symbiosis of power."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-liquidity-privilege",
+   "name": "The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper argues that Heat is a study of the unequal distribution of liquidity."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#paper-intellectual-dependency",
+   "name": "Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity",
+   "url": "https://doi.org/10.5281/zenodo.21633989",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.21633989"
+   },
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper explores the phenomenon of intellectual dependency as the loss of critical autonomy due to external influences such as mass media and socialization."
   }
  ]
 }
@@ -584,7 +657,25 @@
     .txt h3{line-height:1.3}
     .art h3{line-height:1.5}
     .index a{font-size:1.1rem}
-</style>
+
+    /* ---------- WRITINGS: featured card + numbered grid ---------- */
+    .arts{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .art .art-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px;min-height:1.6rem}
+    .art .art-top .meta{margin:0}
+    .art .no{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1;color:var(--line2);letter-spacing:.04em;transition:color .4s}
+    .art:hover .no{color:var(--mute)}
+    .art .tag{align-self:flex-start;font:400 .64rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:5px 11px;margin-bottom:20px}
+    .art.feat{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:64px;padding:52px 56px;border-color:var(--line2);background:linear-gradient(135deg,#0e0e0e 0,var(--panel) 62%)}
+    .art.feat .art-l,.art.feat .art-r{display:flex;flex-direction:column;justify-content:center;min-width:0}
+    .art.feat .no{font-size:2.4rem}
+    .art.feat h3{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.18;margin-bottom:0}
+    .art.feat .art-r p{font-size:1.02rem;line-height:1.85;flex-grow:0;margin:0 0 26px}
+    div.art:hover{transform:none;border-color:var(--line)}
+    @media(max-width:1000px){.arts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.arts{grid-template-columns:1fr}.art{padding:28px}.art.feat{grid-template-columns:1fr;padding:32px 28px}.art.feat .art-l{margin-bottom:22px}}
+    /* very small screens: long film title and long headings */
+    @media(max-width:380px){#leeregedaechtnis h3{font-size:1.5rem;letter-spacing:.04em}h2{overflow-wrap:anywhere;hyphens:auto}}
+    </style>
 </head>
 <body>
 <!-- ===== NAVIGATION ===== -->
@@ -630,6 +721,7 @@
         <li><a href="#the-illusion-industry"><i>2026</i>The Illusion Industry</a></li>
         <li><a href="#painting"><i>2024</i>Painting</a></li>
         <li><a href="#insistence-on-life"><i>2023</i>Insistence on Life</a></li>
+        <li><a href="#leeregedaechtnis"><i>2018</i>Leeregedächtnis</a></li>
         <li><a href="#gone"><i>2017</i>Gone</a></li>
         <li><a href="#the-pending-echo"><i>2014</i>The Pending Echo</a></li></ol></div>
 
@@ -795,8 +887,28 @@
     <button class="still" data-n="03" aria-label="スチル3を開く"><img src="../stills/insistence-on-life-3.jpg" alt="Insistence on Life、スチル3" loading="lazy" onerror="this.parentNode.remove()"></button></div>
 <p class="cap"><span>Insistence on Life</span><span>スチルをクリックして拡大</span></p>
 
+<!-- Leeregedächtnis (2018) -->
+<section class="scene" id="leeregedaechtnis">
+    <div class="film-in">
+        <div class="poster reveal">
+            <img src="../Leereged%C3%A4chtnis_poster.jpg" alt="Leeregedächtnis (2018) – ゼキ・ヤヒヤ監督の実験映画" loading="lazy">
+        </div>
+        <div class="txt reveal">
+            <p class="meta-line">実験映画 · 2018</p>
+            <h3>LEEREGEDÄCHTNIS</h3>
+            <p class="s">周囲の世界から空っぽにされながらも、ひとつの憑きまとう存在であふれた眼は、向かうところすべてに映し出される、ただひとりの愛する姿を見る。</p>
+            <div class="links">
+                    <a class="btn solid" href="../films/Leereged%C3%A4chtnis/">作品を見る</a>
+                    <a href="https://www.imdb.com/title/tt52316788/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/leeregedachtnis/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                    <a href="https://www.themoviedb.org/movie/1845102-leeregedachtnis" target="_blank" rel="noopener noreferrer">TMDB</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Gone (2017) -->
-<section class="scene" id="gone">
+<section class="scene r" id="gone">
     <img class="bgimg" src="../stills/gone-2.jpg" alt="" loading="lazy" onerror="this.remove()">
     <div class="film-in">
         <div class="poster reveal">
@@ -822,7 +934,7 @@
 <p class="cap"><span>Gone</span><span>スチルをクリックして拡大</span></p>
 
 <!-- The Pending Echo (2014) -->
-<section class="scene r" id="the-pending-echo">
+<section class="scene" id="the-pending-echo">
     
     <div class="film-in">
         <div class="poster reveal">
@@ -850,9 +962,14 @@
 </section>
 <!-- ===== WRITINGS ===== -->
 <section class="pad" id="writings"><div class="wrap"><div class="sec-head"><small>リサーチ</small><h2>執筆と研究</h2></div><div class="arts">
-            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>メランコリック・リアリズム：デジタル映画におけるタルコフスキーの虚無の継承</h3><p>合成映画やデジタル映画の時代における、破壊的な視覚的方法論としての「メランコリック・リアリズム」を探求する、映画的かつ哲学的なマニフェスト。アンドレイ・タルコフスキーの1983年の傑作『ノスタルジア』との深遠な現象学的な類似性を引き出しながら、本論文は、現代の超現実的な完璧さに対する、物理的な摩擦、環境の衰退、そして苦悩に満ちた持続時間の武器化について考察する...</p><span>PhilPapersで読む ↗</span></a>
-            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>シミュレートされた現実：スコセッシ、現代のメディアマシーン、そして幻想産業</h3><p>本論文は、デジタル時代の認識論的危機を検証し、現代のメディア装置が真実を抑圧することによってではなく、高度にパーソナライズされたアルゴリズムの幻想を大量生産することによって社会を統制していると論じる。マーティン・スコセッシ監督の『シャッター アイランド』（2010年）を主要なメタファーとして用い、本エッセイは、アッシュクリフ病院の没入型で人工的な現実と現代のデジタルな反響室との対比を描き出す...</p><span>PhilPapersで読む ↗</span></a>
-            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — Zenodo</p><h3>幻想産業：フェイクニュースがいかにして世論を形成するか</h3><p>本研究は、現代のデジタル環境における危険な誤情報の現れとしてのフェイクニュースの現象に取り組む。それは、デジタルアルゴリズムと人間の心理的バイアスとの複雑な相互作用に基づく、意図的な幻想産業として機能している。記述的・分析的アプローチと記号論的分析に基づき...</p><span>Zenodoで読む ↗</span></a></div></div></section>
+            <a class="art reveal feat" href="https://philpapers.org/rec/YAHCOT" target="_blank" rel="noopener noreferrer"><div class="art-l"><div class="art-top"><i class="no">01</i><p class="meta">PhilPapers</p></div><small class="tag">デジタルアート</small><h3 lang="en">Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance</h3></div><div class="art-r"><p>本稿は実験的なウェブアート作品を分析する。映画作家のウェブサイトのシュメール文字版であり、人間の訪問者にはUnicodeの楔形文字を表示する一方、マークアップでは言語コードsux（ISO 639-3）を宣言している。批判的コード研究とメディア考古学に由来する実践に基づく方法を用い、本研究はこのページを、見える楔形文字の表層と、機械可読の基層に分けて整理する...</p><span>PhilPapersで読む ↗</span></div></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHTAO" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">02</i><p class="meta">PhilPapers</p></div><small class="tag">映画と哲学</small><h3 lang="en">The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood</h3><p>本稿は、ポール・トーマス・アンダーソン監督『There Will Be Blood』（2007）を記号論的・哲学的に再評価し、宗教対資本主義という古典的二項対立を超えて、権力のより深い構造的共生を明らかにする。ギー・ドゥボールの『スペクタクルの社会』とミシェル・フーコーの「従順な身体」の概念を用いて、本研究は...</p><span>PhilPapersで読む ↗</span></a>
+                        <!-- Link not added yet: turn this <div> into <a class="art reveal" href="..." target="_blank" rel="noopener noreferrer"> and add the platform in <p class="meta"> plus the read-link <span> -->
+            <div class="art reveal"><div class="art-top"><i class="no">03</i></div><small class="tag">映画と哲学</small><h3 lang="en">The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat</h3><p>マイケル・マン監督『Heat』（1995）の批評的受容は、法と犯罪という道徳的二項対立と、鏡像のような二人のプロフェッショナルの実存的ロマンスという二つの枠組みを軸に組織されてきた。どちらも、映画が執拗に構造化しているものを個人化してしまう。本稿は、『Heat』が流動性の不平等な分配についての研究であると論じる...</p></div>
+            <a class="art reveal" href="https://doi.org/10.5281/zenodo.21633989" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">04</i><p class="meta">Zenodo</p></div><small class="tag">メディアと権力</small><h3 lang="en">Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity</h3><p>本稿は、知的依存を、マスメディアや社会化といった外的影響による批判的自律性の喪失として考察する。それがいかに個人のアイデンティティの侵食と社会の停滞につながるかを検討し、批判的思考と分析的教育が、知的解放と独立した意識の形成にとって不可欠な道具であることを強調する。</p><span>Zenodoで読む ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">05</i><p class="meta">PhilPapers</p></div><small class="tag">映画と哲学</small><h3 lang="en">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3><p>合成映画やデジタル映画の時代における、破壊的な視覚的方法論としての「メランコリック・リアリズム」を探求する、映画的かつ哲学的なマニフェスト。アンドレイ・タルコフスキーの1983年の傑作『ノスタルジア』との深遠な現象学的な類似性を引き出しながら、本論文は、現代の超現実的な完璧さに対する、物理的な摩擦、環境の衰退、そして苦悩に満ちた持続時間の武器化について考察する...</p><span>PhilPapersで読む ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">06</i><p class="meta">PhilPapers</p></div><small class="tag">メディアと権力</small><h3 lang="en">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3><p>本論文は、デジタル時代の認識論的危機を検証し、現代のメディア装置が真実を抑圧することによってではなく、高度にパーソナライズされたアルゴリズムの幻想を大量生産することによって社会を統制していると論じる。マーティン・スコセッシ監督の『シャッター アイランド』（2010年）を主要なメタファーとして用い、本エッセイは、アッシュクリフ病院の没入型で人工的な現実と現代のデジタルな反響室との対比を描き出す...</p><span>PhilPapersで読む ↗</span></a>
+            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">07</i><p class="meta">Zenodo</p></div><small class="tag">メディアと権力</small><h3 lang="en">The Illusion Industry: How Fake News Shapes Public Opinion</h3><p>本研究は、現代のデジタル環境における危険な誤情報の現れとしてのフェイクニュースの現象に取り組む。それは、デジタルアルゴリズムと人間の心理的バイアスとの複雑な相互作用に基づく、意図的な幻想産業として機能している。記述的・分析的アプローチと記号論的分析に基づき...</p><span>Zenodoで読む ↗</span></a></div></div></section>
 <!-- ===== CONTACT ===== -->
 <section class="pad contact" id="contact"><div class="wrap"><div class="sec-head"><small>お問い合わせ</small><h2>上映・プレス</h2></div><p>映画祭プログラマー、キュレーター、研究者、報道関係者の方へ。</p><div class="cta"><a class="btn" href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer">FilmFreeway</a><a class="btn" href="mailto:zekiyahya40@gmail.com" target="_blank" rel="noopener noreferrer">メール</a><a class="btn" href="https://www.instagram.com/zekiyahya_/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></section>
 <!-- ===== PROFILES ===== -->
