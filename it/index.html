@@ -327,6 +327,27 @@
   },
   {
    "@type": "Movie",
+   "@id": "https://zekiyahya.github.io/films/Leeregedächtnis/#movie",
+   "url": "https://zekiyahya.github.io/films/Leeregedächtnis/",
+   "name": "Leeregedächtnis",
+   "sameAs": "https://www.wikidata.org/wiki/Q142279489",
+   "datePublished": "2018",
+   "genre": [
+    "Film sperimentale"
+   ],
+   "director": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "contributor": {
+    "@type": "Person",
+    "name": "Shireen",
+    "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+   },
+   "image": "https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg",
+   "description": "Svuotato del mondo circostante ma traboccante di un’unica presenza ossessiva, l’occhio vede una sola figura amata riflessa ovunque si volga."
+  },
+  {
+   "@type": "Movie",
    "@id": "https://zekiyahya.github.io/films/gone/#movie",
    "url": "https://zekiyahya.github.io/films/gone/",
    "name": "Gone",
@@ -368,7 +389,7 @@
   {
    "@type": "ScholarlyArticle",
    "@id": "https://zekiyahya.github.io/#thesis-fake-news",
-   "name": "L'industria dell'illusione: come le fake news modellano l'opinione pubblica",
+   "name": "The Illusion Industry: How Fake News Shapes Public Opinion",
    "sameAs": "https://www.wikidata.org/wiki/Q140284075",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -391,7 +412,7 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-melancholic-realism",
-   "name": "Realismo Malinconico: ereditare il vuoto tarkovskiano nel cinema digitale",
+   "name": "Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema",
    "sameAs": "https://www.wikidata.org/wiki/Q140580053",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -407,11 +428,63 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-simulated-realities",
-   "name": "Realtà Simulate: Scorsese, la moderna macchina dei media e l'industria dell'illusione",
+   "name": "Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry",
    "url": "https://philpapers.org/rec/YAHSRS",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
    }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#article-cuneiform-surface-metadata",
+   "name": "Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance",
+   "url": "https://philpapers.org/rec/YAHCOT",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This article analyses an experimental web artwork: the Sumerian-script edition of a filmmaker’s website, which presents Unicode cuneiform characters to human visitors while declaring the language code sux (ISO 639-3) in its markup."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-architecture-of-submission",
+   "name": "The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood",
+   "url": "https://philpapers.org/rec/YAHTAO",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper presents a semiotic and philosophical re-evaluation of Paul Thomas Anderson’s There Will Be Blood (2007), moving beyond the classical dichotomy of religion versus capitalism to expose a deeper structural symbiosis of power."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-liquidity-privilege",
+   "name": "The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper argues that Heat is a study of the unequal distribution of liquidity."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#paper-intellectual-dependency",
+   "name": "Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity",
+   "url": "https://doi.org/10.5281/zenodo.21633989",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.21633989"
+   },
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper explores the phenomenon of intellectual dependency as the loss of critical autonomy due to external influences such as mass media and socialization."
   }
  ]
 }
@@ -576,7 +649,25 @@
         .strip.reel{padding:22px 30px}.strip.reel::before,.strip.reel::after{width:30px}
     }
     @media(max-width:900px){.cap span:last-child{display:none}}
-</style>
+
+    /* ---------- WRITINGS: featured card + numbered grid ---------- */
+    .arts{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .art .art-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px;min-height:1.6rem}
+    .art .art-top .meta{margin:0}
+    .art .no{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1;color:var(--line2);letter-spacing:.04em;transition:color .4s}
+    .art:hover .no{color:var(--mute)}
+    .art .tag{align-self:flex-start;font:400 .64rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:5px 11px;margin-bottom:20px}
+    .art.feat{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:64px;padding:52px 56px;border-color:var(--line2);background:linear-gradient(135deg,#0e0e0e 0,var(--panel) 62%)}
+    .art.feat .art-l,.art.feat .art-r{display:flex;flex-direction:column;justify-content:center;min-width:0}
+    .art.feat .no{font-size:2.4rem}
+    .art.feat h3{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.18;margin-bottom:0}
+    .art.feat .art-r p{font-size:1.02rem;line-height:1.85;flex-grow:0;margin:0 0 26px}
+    div.art:hover{transform:none;border-color:var(--line)}
+    @media(max-width:1000px){.arts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.arts{grid-template-columns:1fr}.art{padding:28px}.art.feat{grid-template-columns:1fr;padding:32px 28px}.art.feat .art-l{margin-bottom:22px}}
+        /* very small screens: long film title and long headings */
+    @media(max-width:380px){#leeregedaechtnis h3{font-size:1.5rem;letter-spacing:.04em}h2{overflow-wrap:anywhere;hyphens:auto}}
+    </style>
 </head>
 <body>
 <!-- ===== NAVIGATION ===== -->
@@ -622,6 +713,7 @@
         <li><a href="#the-illusion-industry"><i>2026</i>The Illusion Industry</a></li>
         <li><a href="#painting"><i>2024</i>Painting</a></li>
         <li><a href="#insistence-on-life"><i>2023</i>Insistence on Life</a></li>
+        <li><a href="#leeregedaechtnis"><i>2018</i>Leeregedächtnis</a></li>
         <li><a href="#gone"><i>2017</i>Gone</a></li>
         <li><a href="#the-pending-echo"><i>2014</i>The Pending Echo</a></li></ol></div>
 
@@ -787,8 +879,28 @@
     <button class="still" data-n="03" aria-label="Apri il fotogramma 3"><img src="../stills/insistence-on-life-3.jpg" alt="Insistence on Life, fotogramma 3" loading="lazy" onerror="this.parentNode.remove()"></button></div>
 <p class="cap"><span>Insistence on Life</span><span>Clicca su un fotogramma per ingrandirlo</span></p>
 
+<!-- Leeregedächtnis (2018) -->
+<section class="scene" id="leeregedaechtnis">
+    <div class="film-in">
+        <div class="poster reveal">
+            <img src="../Leereged%C3%A4chtnis_poster.jpg" alt="Leeregedächtnis (2018) – film sperimentale diretto da Zeki Yahya" loading="lazy">
+        </div>
+        <div class="txt reveal">
+            <p class="meta-line">Film sperimentale · 2018</p>
+            <h3>LEEREGEDÄCHTNIS</h3>
+            <p class="s">Svuotato del mondo circostante ma traboccante di un’unica presenza ossessiva, l’occhio vede una sola figura amata riflessa ovunque si volga.</p>
+            <div class="links">
+                    <a class="btn solid" href="../films/Leereged%C3%A4chtnis/">Scopri il film</a>
+                    <a href="https://www.imdb.com/title/tt52316788/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/leeregedachtnis/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                    <a href="https://www.themoviedb.org/movie/1845102-leeregedachtnis" target="_blank" rel="noopener noreferrer">TMDB</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Gone (2017) -->
-<section class="scene" id="gone">
+<section class="scene r" id="gone">
     <img class="bgimg" src="../stills/gone-2.jpg" alt="" loading="lazy" onerror="this.remove()">
     <div class="film-in">
         <div class="poster reveal">
@@ -814,7 +926,7 @@
 <p class="cap"><span>Gone</span><span>Clicca su un fotogramma per ingrandirlo</span></p>
 
 <!-- The Pending Echo (2014) -->
-<section class="scene r" id="the-pending-echo">
+<section class="scene" id="the-pending-echo">
     
     <div class="film-in">
         <div class="poster reveal">
@@ -842,9 +954,14 @@
 </section>
 <!-- ===== WRITINGS ===== -->
 <section class="pad" id="writings"><div class="wrap"><div class="sec-head"><small>Ricerca</small><h2>Scritti e ricerca</h2></div><div class="arts">
-            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>Realismo Malinconico: ereditare il vuoto tarkovskiano nel cinema digitale</h3><p>Un manifesto cinematografico e filosofico che esplora il "Realismo Malinconico" come metodologia visiva dirompente nell'era del cinema sintetico e digitale. Tracciando profondi paralleli fenomenologici con il capolavoro di Andrej Tarkovskij del 1983, 'Nostalghia', questo saggio esamina la strumentalizzazione dell'attrito fisico, del decadimento ambientale e della durata agonizzante contro la perfezione iperreale contemporanea...</p><span>Leggi su PhilPapers ↗</span></a>
-            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>Realtà Simulate: Scorsese, la moderna macchina dei media e l'industria dell'illusione</h3><p>Questo articolo esamina la crisi epistemologica dell'epoca digitale, sostenendo che il moderno apparato mediatico controlla la società non sopprimendo la verità, ma producendo in massa illusioni algoritmiche iper-personalizzate. Utilizzando Shutter Island (2010) di Martin Scorsese come metafora principale, il saggio traccia parallelismi con la realtà immersiva e artificiale dell'Ashecliffe Hospital...</p><span>Leggi su PhilPapers ↗</span></a>
-            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — Zenodo</p><h3>L'industria dell'illusione: come le fake news modellano l'opinione pubblica</h3><p>Questa ricerca affronta il fenomeno delle fake news come una pericolosa manifestazione di disinformazione nell'ambiente digitale contemporaneo, operante come una consapevole industria dell'illusione basata su una complessa interazione tra algoritmi digitali e pregiudizi psicologici umani. Basandosi su un approccio descrittivo-analitico e sull'analisi semiotica...</p><span>Leggi su Zenodo ↗</span></a></div></div></section>
+            <a class="art reveal feat" href="https://philpapers.org/rec/YAHCOT" target="_blank" rel="noopener noreferrer"><div class="art-l"><div class="art-top"><i class="no">01</i><p class="meta">PhilPapers</p></div><small class="tag">Arte digitale</small><h3 lang="en">Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance</h3></div><div class="art-r"><p>Questo articolo analizza un’opera d’arte web sperimentale: l’edizione in scrittura sumerica del sito di un regista, che presenta caratteri cuneiformi Unicode ai visitatori umani dichiarando nel markup il codice di lingua sux (ISO 639-3). Con metodi basati sulla pratica, tratti dai critical code studies e dall’archeologia dei media, lo studio suddivide la pagina in una superficie cuneiforme visibile e in un substrato leggibile dalle macchine...</p><span>Leggi su PhilPapers ↗</span></div></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHTAO" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">02</i><p class="meta">PhilPapers</p></div><small class="tag">Cinema e filosofia</small><h3 lang="en">The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood</h3><p>Questo saggio propone una rivalutazione semiotica e filosofica di There Will Be Blood (2007) di Paul Thomas Anderson, che va oltre la dicotomia classica tra religione e capitalismo per mettere a nudo una più profonda simbiosi strutturale del potere. Impiegando «La società dello spettacolo» di Guy Debord e il concetto di «corpi docili» di Michel Foucault, la ricerca decostruisce...</p><span>Leggi su PhilPapers ↗</span></a>
+                        <!-- Link not added yet: turn this <div> into <a class="art reveal" href="..." target="_blank" rel="noopener noreferrer"> and add the platform in <p class="meta"> plus the read-link <span> -->
+            <div class="art reveal"><div class="art-top"><i class="no">03</i></div><small class="tag">Cinema e filosofia</small><h3 lang="en">The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat</h3><p>La ricezione critica di Heat (1995) di Michael Mann si è organizzata attorno a due cornici: una dicotomia morale tra legge e crimine e un romanzo esistenziale di due professionisti speculari. Entrambe individualizzano ciò che il film struttura con insistenza. Questo saggio sostiene che Heat è uno studio sulla distribuzione diseguale della liquidità...</p></div>
+            <a class="art reveal" href="https://doi.org/10.5281/zenodo.21633989" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">04</i><p class="meta">Zenodo</p></div><small class="tag">Media e potere</small><h3 lang="en">Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity</h3><p>Questo saggio esplora il fenomeno della dipendenza intellettuale come perdita di autonomia critica dovuta a influenze esterne come i mass media e la socializzazione. Esamina come ciò porti all’erosione dell’identità personale e alla stagnazione sociale, sottolineando la necessità del pensiero critico e dell’istruzione analitica come strumenti essenziali di liberazione intellettuale e di costruzione di una coscienza indipendente.</p><span>Leggi su Zenodo ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">05</i><p class="meta">PhilPapers</p></div><small class="tag">Cinema e filosofia</small><h3 lang="en">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3><p>Un manifesto cinematografico e filosofico che esplora il "Realismo Malinconico" come metodologia visiva dirompente nell'era del cinema sintetico e digitale. Tracciando profondi paralleli fenomenologici con il capolavoro di Andrej Tarkovskij del 1983, 'Nostalghia', questo saggio esamina la strumentalizzazione dell'attrito fisico, del decadimento ambientale e della durata agonizzante contro la perfezione iperreale contemporanea...</p><span>Leggi su PhilPapers ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">06</i><p class="meta">PhilPapers</p></div><small class="tag">Media e potere</small><h3 lang="en">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3><p>Questo articolo esamina la crisi epistemologica dell'epoca digitale, sostenendo che il moderno apparato mediatico controlla la società non sopprimendo la verità, ma producendo in massa illusioni algoritmiche iper-personalizzate. Utilizzando Shutter Island (2010) di Martin Scorsese come metafora principale, il saggio traccia parallelismi con la realtà immersiva e artificiale dell'Ashecliffe Hospital...</p><span>Leggi su PhilPapers ↗</span></a>
+            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">07</i><p class="meta">Zenodo</p></div><small class="tag">Media e potere</small><h3 lang="en">The Illusion Industry: How Fake News Shapes Public Opinion</h3><p>Questa ricerca affronta il fenomeno delle fake news come una pericolosa manifestazione di disinformazione nell'ambiente digitale contemporaneo, operante come una consapevole industria dell'illusione basata su una complessa interazione tra algoritmi digitali e pregiudizi psicologici umani. Basandosi su un approccio descrittivo-analitico e sull'analisi semiotica...</p><span>Leggi su Zenodo ↗</span></a></div></div></section>
 <!-- ===== CONTACT ===== -->
 <section class="pad contact" id="contact"><div class="wrap"><div class="sec-head"><small>Contatti</small><h2>Proiezioni e stampa</h2></div><p>Per programmatori di festival, curatori, ricercatori e stampa.</p><div class="cta"><a class="btn" href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer">FilmFreeway</a><a class="btn" href="mailto:zekiyahya40@gmail.com" target="_blank" rel="noopener noreferrer">E-mail</a><a class="btn" href="https://www.instagram.com/zekiyahya_/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></section>
 <!-- ===== PROFILES ===== -->
