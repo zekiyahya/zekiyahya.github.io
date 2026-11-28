@@ -327,6 +327,27 @@
   },
   {
    "@type": "Movie",
+   "@id": "https://zekiyahya.github.io/films/Leeregedächtnis/#movie",
+   "url": "https://zekiyahya.github.io/films/Leeregedächtnis/",
+   "name": "Leeregedächtnis",
+   "sameAs": "https://www.wikidata.org/wiki/Q142279489",
+   "datePublished": "2018",
+   "genre": [
+    "实验电影"
+   ],
+   "director": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "contributor": {
+    "@type": "Person",
+    "name": "Shireen",
+    "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+   },
+   "image": "https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg",
+   "description": "与周遭的世界隔空，却被一个萦绕不去的存在所充盈，眼睛所向之处，处处映照出同一个深爱的身影。"
+  },
+  {
+   "@type": "Movie",
    "@id": "https://zekiyahya.github.io/films/gone/#movie",
    "url": "https://zekiyahya.github.io/films/gone/",
    "name": "Gone",
@@ -368,7 +389,7 @@
   {
    "@type": "ScholarlyArticle",
    "@id": "https://zekiyahya.github.io/#thesis-fake-news",
-   "name": "幻觉工业：假新闻如何塑造公众舆论",
+   "name": "The Illusion Industry: How Fake News Shapes Public Opinion",
    "sameAs": "https://www.wikidata.org/wiki/Q140284075",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -391,7 +412,7 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-melancholic-realism",
-   "name": "忧郁现实主义：数字电影中对塔可夫斯式虚无的继承",
+   "name": "Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema",
    "sameAs": "https://www.wikidata.org/wiki/Q140580053",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -407,11 +428,63 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-simulated-realities",
-   "name": "模拟现实：斯科塞斯、现代媒体机器与幻觉工业",
+   "name": "Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry",
    "url": "https://philpapers.org/rec/YAHSRS",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
    }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#article-cuneiform-surface-metadata",
+   "name": "Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance",
+   "url": "https://philpapers.org/rec/YAHCOT",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This article analyses an experimental web artwork: the Sumerian-script edition of a filmmaker’s website, which presents Unicode cuneiform characters to human visitors while declaring the language code sux (ISO 639-3) in its markup."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-architecture-of-submission",
+   "name": "The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood",
+   "url": "https://philpapers.org/rec/YAHTAO",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper presents a semiotic and philosophical re-evaluation of Paul Thomas Anderson’s There Will Be Blood (2007), moving beyond the classical dichotomy of religion versus capitalism to expose a deeper structural symbiosis of power."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-liquidity-privilege",
+   "name": "The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper argues that Heat is a study of the unequal distribution of liquidity."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#paper-intellectual-dependency",
+   "name": "Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity",
+   "url": "https://doi.org/10.5281/zenodo.21633989",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.21633989"
+   },
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper explores the phenomenon of intellectual dependency as the loss of critical autonomy due to external influences such as mass media and socialization."
   }
  ]
 }
@@ -584,7 +657,25 @@
     .txt h3{line-height:1.3}
     .art h3{line-height:1.5}
     .index a{font-size:1.1rem}
-</style>
+
+    /* ---------- WRITINGS: featured card + numbered grid ---------- */
+    .arts{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .art .art-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px;min-height:1.6rem}
+    .art .art-top .meta{margin:0}
+    .art .no{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1;color:var(--line2);letter-spacing:.04em;transition:color .4s}
+    .art:hover .no{color:var(--mute)}
+    .art .tag{align-self:flex-start;font:400 .64rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:5px 11px;margin-bottom:20px}
+    .art.feat{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:64px;padding:52px 56px;border-color:var(--line2);background:linear-gradient(135deg,#0e0e0e 0,var(--panel) 62%)}
+    .art.feat .art-l,.art.feat .art-r{display:flex;flex-direction:column;justify-content:center;min-width:0}
+    .art.feat .no{font-size:2.4rem}
+    .art.feat h3{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.18;margin-bottom:0}
+    .art.feat .art-r p{font-size:1.02rem;line-height:1.85;flex-grow:0;margin:0 0 26px}
+    div.art:hover{transform:none;border-color:var(--line)}
+    @media(max-width:1000px){.arts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.arts{grid-template-columns:1fr}.art{padding:28px}.art.feat{grid-template-columns:1fr;padding:32px 28px}.art.feat .art-l{margin-bottom:22px}}
+    /* very small screens: long film title and long headings */
+    @media(max-width:380px){#leeregedaechtnis h3{font-size:1.5rem;letter-spacing:.04em}h2{overflow-wrap:anywhere;hyphens:auto}}
+    </style>
 </head>
 <body>
 <!-- ===== NAVIGATION ===== -->
@@ -630,6 +721,7 @@
         <li><a href="#the-illusion-industry"><i>2026</i>The Illusion Industry</a></li>
         <li><a href="#painting"><i>2024</i>Painting</a></li>
         <li><a href="#insistence-on-life"><i>2023</i>Insistence on Life</a></li>
+        <li><a href="#leeregedaechtnis"><i>2018</i>Leeregedächtnis</a></li>
         <li><a href="#gone"><i>2017</i>Gone</a></li>
         <li><a href="#the-pending-echo"><i>2014</i>The Pending Echo</a></li></ol></div>
 
@@ -795,8 +887,28 @@
     <button class="still" data-n="03" aria-label="打开剧照 3"><img src="../stills/insistence-on-life-3.jpg" alt="Insistence on Life，剧照 3" loading="lazy" onerror="this.parentNode.remove()"></button></div>
 <p class="cap"><span>Insistence on Life</span><span>点击剧照可放大</span></p>
 
+<!-- Leeregedächtnis (2018) -->
+<section class="scene" id="leeregedaechtnis">
+    <div class="film-in">
+        <div class="poster reveal">
+            <img src="../Leereged%C3%A4chtnis_poster.jpg" alt="Leeregedächtnis (2018) – 泽基·叶海亚执导的实验电影" loading="lazy">
+        </div>
+        <div class="txt reveal">
+            <p class="meta-line">实验电影 · 2018</p>
+            <h3>LEEREGEDÄCHTNIS</h3>
+            <p class="s">与周遭的世界隔空，却被一个萦绕不去的存在所充盈，眼睛所向之处，处处映照出同一个深爱的身影。</p>
+            <div class="links">
+                    <a class="btn solid" href="../films/Leereged%C3%A4chtnis/">了解影片</a>
+                    <a href="https://www.imdb.com/title/tt52316788/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/leeregedachtnis/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                    <a href="https://www.themoviedb.org/movie/1845102-leeregedachtnis" target="_blank" rel="noopener noreferrer">TMDB</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Gone (2017) -->
-<section class="scene" id="gone">
+<section class="scene r" id="gone">
     <img class="bgimg" src="../stills/gone-2.jpg" alt="" loading="lazy" onerror="this.remove()">
     <div class="film-in">
         <div class="poster reveal">
@@ -822,7 +934,7 @@
 <p class="cap"><span>Gone</span><span>点击剧照可放大</span></p>
 
 <!-- The Pending Echo (2014) -->
-<section class="scene r" id="the-pending-echo">
+<section class="scene" id="the-pending-echo">
     
     <div class="film-in">
         <div class="poster reveal">
@@ -850,9 +962,14 @@
 </section>
 <!-- ===== WRITINGS ===== -->
 <section class="pad" id="writings"><div class="wrap"><div class="sec-head"><small>研究</small><h2>著作与研究</h2></div><div class="arts">
-            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>忧郁现实主义：数字电影中对塔可夫斯基式虚无的继承</h3><p>一份探讨“忧郁现实主义”作为合成与数字电影时代颠覆性视觉方法的电影与哲学宣言。通过与安德烈·塔可夫斯基1983年的杰作《乡愁》建立深厚的现象学平行关系，本文审视了如何将物理摩擦、环境衰败和痛苦的持续时间武器化，以对抗当代的超真实完美...</p><span>在 PhilPapers 上阅读 ↗</span></a>
-            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>模拟现实：斯科塞斯、现代媒体机器与幻觉工业</h3><p>本文考察了数字时代的认识论危机，认为现代媒体 apparatus 控制社会的方式不是压制真相，而是大规模生产高度个性化的算法幻觉。以马丁·斯科塞斯的《禁闭岛》（2010）为核心隐喻，本文将阿什克利夫医院沉浸式、人造的现实与现代数字回音室联系起来...</p><span>在 PhilPapers 上阅读 ↗</span></a>
-            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — Zenodo</p><h3>幻觉工业：假新闻如何塑造公众舆论</h3><p>本研究将假新闻现象视为当代数字环境中错误信息的危险表现，它作为一个基于数字算法与人类心理偏见之间复杂交互的意识形态幻觉工业在运作。依托描述-分析方法与符号学分析...</p><span>在 Zenodo 上阅读 ↗</span></a></div></div></section>
+            <a class="art reveal feat" href="https://philpapers.org/rec/YAHCOT" target="_blank" rel="noopener noreferrer"><div class="art-l"><div class="art-top"><i class="no">01</i><p class="meta">PhilPapers</p></div><small class="tag">数字艺术</small><h3 lang="en">Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance</h3></div><div class="art-r"><p>本文分析一件实验性网络艺术作品：一位电影人网站的苏美尔文字版，它向人类访客呈现Unicode楔形文字字符，同时在标记中声明语言代码sux（ISO 639-3）。本研究运用源于批判性代码研究和媒介考古学的实践性方法，将该页面拆分为可见的楔形文字表层与机器可读的底层...</p><span>在 PhilPapers 上阅读 ↗</span></div></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHTAO" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">02</i><p class="meta">PhilPapers</p></div><small class="tag">电影与哲学</small><h3 lang="en">The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood</h3><p>本文对保罗·托马斯·安德森的There Will Be Blood（2007）做出符号学与哲学的重新评价，超越宗教与资本主义的经典二分，揭示权力更深层的结构性共生。本研究借助居伊·德波的《景观社会》与米歇尔·福柯的“驯顺的身体”概念，解构...</p><span>在 PhilPapers 上阅读 ↗</span></a>
+                        <!-- Link not added yet: turn this <div> into <a class="art reveal" href="..." target="_blank" rel="noopener noreferrer"> and add the platform in <p class="meta"> plus the read-link <span> -->
+            <div class="art reveal"><div class="art-top"><i class="no">03</i></div><small class="tag">电影与哲学</small><h3 lang="en">The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat</h3><p>围绕迈克尔·曼的Heat（1995）的批评接受主要形成于两个框架：法律与犯罪的道德二分，以及两位镜像般专业人士的存在主义浪漫。二者都把影片执着地结构化的东西个体化了。本文认为，Heat是一项关于流动性不平等分配的研究...</p></div>
+            <a class="art reveal" href="https://doi.org/10.5281/zenodo.21633989" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">04</i><p class="meta">Zenodo</p></div><small class="tag">媒体与权力</small><h3 lang="en">Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity</h3><p>本文探讨知识依赖现象，即由于大众媒体和社会化等外部影响而丧失批判性自主。文章考察这如何导致个人身份的侵蚀与社会的停滞，并强调批判性思维与分析性教育是知识解放和建立独立意识的必要工具。</p><span>在 Zenodo 上阅读 ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">05</i><p class="meta">PhilPapers</p></div><small class="tag">电影与哲学</small><h3 lang="en">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3><p>一份探讨“忧郁现实主义”作为合成与数字电影时代颠覆性视觉方法的电影与哲学宣言。通过与安德烈·塔可夫斯基1983年的杰作《乡愁》建立深厚的现象学平行关系，本文审视了如何将物理摩擦、环境衰败和痛苦的持续时间武器化，以对抗当代的超真实完美...</p><span>在 PhilPapers 上阅读 ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">06</i><p class="meta">PhilPapers</p></div><small class="tag">媒体与权力</small><h3 lang="en">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3><p>本文考察了数字时代的认识论危机，认为现代媒体 apparatus 控制社会的方式不是压制真相，而是大规模生产高度个性化的算法幻觉。以马丁·斯科塞斯的《禁闭岛》（2010）为核心隐喻，本文将阿什克利夫医院沉浸式、人造的现实与现代数字回音室联系起来...</p><span>在 PhilPapers 上阅读 ↗</span></a>
+            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">07</i><p class="meta">Zenodo</p></div><small class="tag">媒体与权力</small><h3 lang="en">The Illusion Industry: How Fake News Shapes Public Opinion</h3><p>本研究将假新闻现象视为当代数字环境中错误信息的危险表现，它作为一个基于数字算法与人类心理偏见之间复杂交互的意识形态幻觉工业在运作。依托描述-分析方法与符号学分析...</p><span>在 Zenodo 上阅读 ↗</span></a></div></div></section>
 <!-- ===== CONTACT ===== -->
 <section class="pad contact" id="contact"><div class="wrap"><div class="sec-head"><small>联系</small><h2>放映与媒体</h2></div><p>致电影节策划人、策展人、研究者与媒体。</p><div class="cta"><a class="btn" href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer">FilmFreeway</a><a class="btn" href="mailto:zekiyahya40@gmail.com" target="_blank" rel="noopener noreferrer">邮件</a><a class="btn" href="https://www.instagram.com/zekiyahya_/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></section>
 <!-- ===== PROFILES ===== -->
