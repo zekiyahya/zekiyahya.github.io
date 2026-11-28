@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zekiyahya.github.io/sitemap.xml
+Sitemap: https://zekiyahya.github.io/sitemap.xml 
