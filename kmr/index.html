@@ -327,6 +327,27 @@
   },
   {
    "@type": "Movie",
+   "@id": "https://zekiyahya.github.io/films/Leeregedächtnis/#movie",
+   "url": "https://zekiyahya.github.io/films/Leeregedächtnis/",
+   "name": "Leeregedächtnis",
+   "sameAs": "https://www.wikidata.org/wiki/Q142279489",
+   "datePublished": "2018",
+   "genre": [
+    "Fîlmê ceribandinî"
+   ],
+   "director": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "contributor": {
+    "@type": "Person",
+    "name": "Shireen",
+    "sameAs": "https://www.wikidata.org/wiki/Q140451401"
+   },
+   "image": "https://zekiyahya.github.io/Leereged%C3%A4chtnis_poster.jpg",
+   "description": "Ji cîhana derdorê vala bûye, lê bi hebûneke yekane ya şopîner tijî ye; çav li ku bizivire, hertim yek wêneyê hezkirî ku li wir tê neynikkirin dibîne."
+  },
+  {
+   "@type": "Movie",
    "@id": "https://zekiyahya.github.io/films/gone/#movie",
    "url": "https://zekiyahya.github.io/films/gone/",
    "name": "Gone",
@@ -368,7 +389,7 @@
   {
    "@type": "ScholarlyArticle",
    "@id": "https://zekiyahya.github.io/#thesis-fake-news",
-   "name": "Pîşesaziya xeyalê: Çawa nûçeyên sexte raya giştî çê dikin",
+   "name": "The Illusion Industry: How Fake News Shapes Public Opinion",
    "sameAs": "https://www.wikidata.org/wiki/Q140284075",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -391,7 +412,7 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-melancholic-realism",
-   "name": "Realîzma xemgîn: Mîrasa valahiya Tarkovskî di sînemaya dîjîtal de",
+   "name": "Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema",
    "sameAs": "https://www.wikidata.org/wiki/Q140580053",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
@@ -407,11 +428,63 @@
   {
    "@type": "Article",
    "@id": "https://zekiyahya.github.io/#essay-simulated-realities",
-   "name": "Rastiyên simulekirî: Scorsese, makîneya medyayê ya nûjen û pîşesaziya xeyalê",
+   "name": "Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry",
    "url": "https://philpapers.org/rec/YAHSRS",
    "author": {
     "@id": "https://zekiyahya.github.io/#person"
    }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#article-cuneiform-surface-metadata",
+   "name": "Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance",
+   "url": "https://philpapers.org/rec/YAHCOT",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This article analyses an experimental web artwork: the Sumerian-script edition of a filmmaker’s website, which presents Unicode cuneiform characters to human visitors while declaring the language code sux (ISO 639-3) in its markup."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-architecture-of-submission",
+   "name": "The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood",
+   "url": "https://philpapers.org/rec/YAHTAO",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper presents a semiotic and philosophical re-evaluation of Paul Thomas Anderson’s There Will Be Blood (2007), moving beyond the classical dichotomy of religion versus capitalism to expose a deeper structural symbiosis of power."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#essay-liquidity-privilege",
+   "name": "The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat",
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper argues that Heat is a study of the unequal distribution of liquidity."
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://zekiyahya.github.io/#paper-intellectual-dependency",
+   "name": "Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity",
+   "url": "https://doi.org/10.5281/zenodo.21633989",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.21633989"
+   },
+   "author": {
+    "@id": "https://zekiyahya.github.io/#person"
+   },
+   "datePublished": "2026",
+   "inLanguage": "en",
+   "description": "This paper explores the phenomenon of intellectual dependency as the loss of critical autonomy due to external influences such as mass media and socialization."
   }
  ]
 }
@@ -576,7 +649,25 @@
         .strip.reel{padding:22px 30px}.strip.reel::before,.strip.reel::after{width:30px}
     }
     @media(max-width:900px){.cap span:last-child{display:none}}
-</style>
+
+    /* ---------- WRITINGS: featured card + numbered grid ---------- */
+    .arts{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .art .art-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px;min-height:1.6rem}
+    .art .art-top .meta{margin:0}
+    .art .no{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1;color:var(--line2);letter-spacing:.04em;transition:color .4s}
+    .art:hover .no{color:var(--mute)}
+    .art .tag{align-self:flex-start;font:400 .64rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:5px 11px;margin-bottom:20px}
+    .art.feat{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:64px;padding:52px 56px;border-color:var(--line2);background:linear-gradient(135deg,#0e0e0e 0,var(--panel) 62%)}
+    .art.feat .art-l,.art.feat .art-r{display:flex;flex-direction:column;justify-content:center;min-width:0}
+    .art.feat .no{font-size:2.4rem}
+    .art.feat h3{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.18;margin-bottom:0}
+    .art.feat .art-r p{font-size:1.02rem;line-height:1.85;flex-grow:0;margin:0 0 26px}
+    div.art:hover{transform:none;border-color:var(--line)}
+    @media(max-width:1000px){.arts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.arts{grid-template-columns:1fr}.art{padding:28px}.art.feat{grid-template-columns:1fr;padding:32px 28px}.art.feat .art-l{margin-bottom:22px}}
+        /* very small screens: long film title and long headings */
+    @media(max-width:380px){#leeregedaechtnis h3{font-size:1.5rem;letter-spacing:.04em}h2{overflow-wrap:anywhere;hyphens:auto}}
+    </style>
 </head>
 <body>
 <!-- ===== NAVIGATION ===== -->
@@ -622,6 +713,7 @@
         <li><a href="#the-illusion-industry"><i>2026</i>The Illusion Industry</a></li>
         <li><a href="#painting"><i>2024</i>Painting</a></li>
         <li><a href="#insistence-on-life"><i>2023</i>Insistence on Life</a></li>
+        <li><a href="#leeregedaechtnis"><i>2018</i>Leeregedächtnis</a></li>
         <li><a href="#gone"><i>2017</i>Gone</a></li>
         <li><a href="#the-pending-echo"><i>2014</i>The Pending Echo</a></li></ol></div>
 
@@ -787,8 +879,28 @@
     <button class="still" data-n="03" aria-label="Dîmena 3 veke"><img src="../stills/insistence-on-life-3.jpg" alt="Insistence on Life, dîmen 3" loading="lazy" onerror="this.parentNode.remove()"></button></div>
 <p class="cap"><span>Insistence on Life</span><span>Ji bo mezinkirinê li dîmenekê bitikîne</span></p>
 
+<!-- Leeregedächtnis (2018) -->
+<section class="scene" id="leeregedaechtnis">
+    <div class="film-in">
+        <div class="poster reveal">
+            <img src="../Leereged%C3%A4chtnis_poster.jpg" alt="Leeregedächtnis (2018) – fîlmê ceribandinî, derhêner Zeki Yahya" loading="lazy">
+        </div>
+        <div class="txt reveal">
+            <p class="meta-line">Fîlmê ceribandinî · 2018</p>
+            <h3>LEEREGEDÄCHTNIS</h3>
+            <p class="s">Ji cîhana derdorê vala bûye, lê bi hebûneke yekane ya şopîner tijî ye; çav li ku bizivire, hertim yek wêneyê hezkirî ku li wir tê neynikkirin dibîne.</p>
+            <div class="links">
+                    <a class="btn solid" href="../films/Leereged%C3%A4chtnis/">Fîlm nas bike</a>
+                    <a href="https://www.imdb.com/title/tt52316788/" target="_blank" rel="noopener noreferrer">IMDb</a>
+                    <a href="https://letterboxd.com/film/leeregedachtnis/" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                    <a href="https://www.themoviedb.org/movie/1845102-leeregedachtnis" target="_blank" rel="noopener noreferrer">TMDB</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Gone (2017) -->
-<section class="scene" id="gone">
+<section class="scene r" id="gone">
     <img class="bgimg" src="../stills/gone-2.jpg" alt="" loading="lazy" onerror="this.remove()">
     <div class="film-in">
         <div class="poster reveal">
@@ -814,7 +926,7 @@
 <p class="cap"><span>Gone</span><span>Ji bo mezinkirinê li dîmenekê bitikîne</span></p>
 
 <!-- The Pending Echo (2014) -->
-<section class="scene r" id="the-pending-echo">
+<section class="scene" id="the-pending-echo">
     
     <div class="film-in">
         <div class="poster reveal">
@@ -842,9 +954,14 @@
 </section>
 <!-- ===== WRITINGS ===== -->
 <section class="pad" id="writings"><div class="wrap"><div class="sec-head"><small>Lêkolîn</small><h2>Nivîs û lêkolîn</h2></div><div class="arts">
-            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>Realîzma xemgîn: Mîrasa valahiya Tarkovskî di sînemaya dîjîtal de</h3><p>Manîfestoyek sînemayî û felsefî ku “Realîzma Xemgîn” wekî metodolojiyeke dîtbarî ya hilweşîner di serdema sînemaya sentetîk û dîjîtal de dikole. Bi kişandina paralelên kûr ên fenomenolojîk bi şahekara Andrei Tarkovskî ya sala 1983an, Nostalghia, ev kar bikaranîna kêşana fîzîkî, rizîna jîngehî û domdariya bi êş li hember kamilbûna hîperrealîst a hevçerx lêkolîn dike...</p><span>Li PhilPapers bixwîne ↗</span></a>
-            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — PhilPapers</p><h3>Rastiyên simulekirî: Scorsese, makîneya medyayê ya nûjen û pîşesaziya xeyalê</h3><p>Ev gotar krîza epîstemolojîk a serdema dîjîtal lêkolîn dike û angaşt dike ku dezgeha medyayê ya nûjen civakê ne bi bêdengkirina rastiyê, lê bi hilberîna girseyî ya xeyalên algorîtmîk ên pir-kesanekirî kontrol dike. Bi karanîna fîlma Shutter Island (2010) a Martin Scorsese wekî metafora navendî, gotar rastiya serdagirtî û çêkirî ya Nexweşxaneya Ashecliffe dide paralel kirin...</p><span>Li PhilPapers bixwîne ↗</span></a>
-            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><p class="meta">2026 — Zenodo</p><h3>Pîşesaziya xeyalê: Çawa nûçeyên sexte raya giştî çê dikin</h3><p>Ev lêkolîn diyardeya nûçeyên sexte wekî xuyabûneke xeternak a dezînformasyonê di jîngeha dîjîtal a hevçerx de digire dest, ku wekî pîşesaziyeke bi hişyarî ya xeyalê dixebite û li ser tevgera tevlihev a di navbera algorîtmayên dîjîtal û pêşdaraziyên derûnî yên mirovî de ava bûye. Bi girêdana bi nêzîkatiyeke vegotinî-analîtîk û analîza semiyotîk...</p><span>Li Zenodo bixwîne ↗</span></a></div></div></section>
+            <a class="art reveal feat" href="https://philpapers.org/rec/YAHCOT" target="_blank" rel="noopener noreferrer"><div class="art-l"><div class="art-top"><i class="no">01</i><p class="meta">PhilPapers</p></div><small class="tag">Hunera dîjîtal</small><h3 lang="en">Cuneiform on the Surface, Metadata Beneath: A Two-Layer Web Artwork and the Limits of Linguistic Resistance</h3></div><div class="art-r"><p>Ev gotar xebateke hunerî ya webê ya ceribandinî analîz dike: guhertoya bi nivîsa Sumerî ya malpera fîlmçêkerekî, ku karakterên kuneîform ên Unicode ji mêvanên mirovî re nîşan dide û di nîşankirina xwe de koda zimanê sux (ISO 639-3) radigihîne. Bi rêbazên li ser pratîkê hatine avakirin, ji lêkolînên rexneyî yên kodê û arkeolojiya medyayê hatine girtin, lêkolîn rûpelê dike du beş: rûyekî kuneîform ê xuya û binkeyek ku ji aliyê makîneyan ve tê xwendin...</p><span>Li PhilPapers bixwîne ↗</span></div></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHTAO" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">02</i><p class="meta">PhilPapers</p></div><small class="tag">Fîlm û felsefe</small><h3 lang="en">The Architecture of Submission: Savage Capital, the Proto-Influencer, and the Semiotics of Power in There Will Be Blood</h3><p>Ev gotar nirxandineke nû ya semiyotîk û felsefî ya fîlma There Will Be Blood (2007) a Paul Thomas Anderson pêşkêş dike, ku ji dualîteya klasîk a olê û kapîtalîzmê wêdetir diçe da ku sîmbiyoza avahîsazî ya kûrtir a hêzê eşkere bike. Bi “Civaka Şanoyê” ya Guy Debord û têgeha “laşên guhdar” a Michel Foucault, lêkolîn...</p><span>Li PhilPapers bixwîne ↗</span></a>
+                        <!-- Link not added yet: turn this <div> into <a class="art reveal" href="..." target="_blank" rel="noopener noreferrer"> and add the platform in <p class="meta"> plus the read-link <span> -->
+            <div class="art reveal"><div class="art-top"><i class="no">03</i></div><small class="tag">Fîlm û felsefe</small><h3 lang="en">The Liquidity Privilege: Contractor-Nomadism, Operational Containment, and the Semiotics of Weight in Michael Mann’s Heat</h3><p>Pêşwaziya rexneyî ya fîlma Heat (1995) a Michael Mann li dora du çarçoveyan hatiye rêxistin kirin: dualîteyeke exlaqî ya di navbera qanûn û sûcê de, û romansek hebûnî ya du profesyonelên neynikî. Herdu jî tiştê ku fîlm bi israr avahî dike kesane dikin. Ev gotar angaşt dike ku Heat lêkolîneke li ser belavkirina newekhev a lîkîdîteyê ye...</p></div>
+            <a class="art reveal" href="https://doi.org/10.5281/zenodo.21633989" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">04</i><p class="meta">Zenodo</p></div><small class="tag">Medya û hêz</small><h3 lang="en">Intellectual Dependency: The Crisis of Autonomy and the Quest for Identity</h3><p>Ev gotar diyardeya girêdayîbûna rewşenbîrî wekî windakirina xweserî ya rexneyî ji ber bandorên derve yên mîna medyaya girseyî û civakîbûnê lêkolîn dike. Ew dikole ka ev çawa dibe sedema rizîna nasnameya kesane û sekinîna civakî, û pêwîstiya ramana rexneyî û perwerdeya analîtîk wekî amûrên bingehîn ên rizgariya rewşenbîrî û avakirina hişmendiyeke serbixwe tekez dike.</p><span>Li Zenodo bixwîne ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHMRI" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">05</i><p class="meta">PhilPapers</p></div><small class="tag">Fîlm û felsefe</small><h3 lang="en">Melancholic Realism: Inheriting the Tarkovskian Void in Digital Cinema</h3><p>Manîfestoyek sînemayî û felsefî ku “Realîzma Xemgîn” wekî metodolojiyeke dîtbarî ya hilweşîner di serdema sînemaya sentetîk û dîjîtal de dikole. Bi kişandina paralelên kûr ên fenomenolojîk bi şahekara Andrei Tarkovskî ya sala 1983an, Nostalghia, ev kar bikaranîna kêşana fîzîkî, rizîna jîngehî û domdariya bi êş li hember kamilbûna hîperrealîst a hevçerx lêkolîn dike...</p><span>Li PhilPapers bixwîne ↗</span></a>
+            <a class="art reveal" href="https://philpapers.org/rec/YAHSRS" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">06</i><p class="meta">PhilPapers</p></div><small class="tag">Medya û hêz</small><h3 lang="en">Simulated Realities: Scorsese, the Modern Media Machine, and the Illusion Industry</h3><p>Ev gotar krîza epîstemolojîk a serdema dîjîtal lêkolîn dike û angaşt dike ku dezgeha medyayê ya nûjen civakê ne bi bêdengkirina rastiyê, lê bi hilberîna girseyî ya xeyalên algorîtmîk ên pir-kesanekirî kontrol dike. Bi karanîna fîlma Shutter Island (2010) a Martin Scorsese wekî metafora navendî, gotar rastiya serdagirtî û çêkirî ya Nexweşxaneya Ashecliffe dide paralel kirin...</p><span>Li PhilPapers bixwîne ↗</span></a>
+            <a class="art reveal" href="https://zenodo.org/records/20748757" target="_blank" rel="noopener noreferrer"><div class="art-top"><i class="no">07</i><p class="meta">Zenodo</p></div><small class="tag">Medya û hêz</small><h3 lang="en">The Illusion Industry: How Fake News Shapes Public Opinion</h3><p>Ev lêkolîn diyardeya nûçeyên sexte wekî xuyabûneke xeternak a dezînformasyonê di jîngeha dîjîtal a hevçerx de digire dest, ku wekî pîşesaziyeke bi hişyarî ya xeyalê dixebite û li ser tevgera tevlihev a di navbera algorîtmayên dîjîtal û pêşdaraziyên derûnî yên mirovî de ava bûye. Bi girêdana bi nêzîkatiyeke vegotinî-analîtîk û analîza semiyotîk...</p><span>Li Zenodo bixwîne ↗</span></a></div></div></section>
 <!-- ===== CONTACT ===== -->
 <section class="pad contact" id="contact"><div class="wrap"><div class="sec-head"><small>Têkilî</small><h2>Pêşandan û çapemenî</h2></div><p>Ji bo bernamekerên festîvalan, kuratoran, lêkolîneran û çapemeniyê.</p><div class="cta"><a class="btn" href="https://filmfreeway.com/zekiyahya" target="_blank" rel="noopener noreferrer">FilmFreeway</a><a class="btn" href="mailto:zekiyahya40@gmail.com" target="_blank" rel="noopener noreferrer">E-name</a><a class="btn" href="https://www.instagram.com/zekiyahya_/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></section>
 <!-- ===== PROFILES ===== -->
